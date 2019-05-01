@@ -42,17 +42,8 @@ useful to keep the 2D view open so you see what the camera sees.
 
 .. image:: /assets/images/Documentation/teach-model-picture.jpg
 
-Isolating the object
-^^^^^^^^^^^^^^^^^^^^
-
-Before creating a model of the object, we need to isolate the part from
-its surroundings to make sure that only points belonging to the object
-are captured in the model. This is done by using the :ref:`region-of-interest`.
-
-Go to the **Region of Interest** tab and modify the region of interest
-box boundaries until only points that belong to your objects are inside
-the ROI box. When you're done adapting the boundaries, you're ready to
-go to the next step.
+Make sure that the object is inside the :ref:`region-of-interest`, and that
+it is not occluded by other elements in the scene.
 
 .. image:: /assets/images/Documentation/teach-model-3d-points.png
 
@@ -70,20 +61,24 @@ successfully defined, the viewer will open the **Model
 tab** automatically and a **Model row** will be added to the models'
 widget.
 
-The **Model tab** shows a 3D visual representation of your model, a
-model bounding box as a green dashed line and the Pick frame. Note the
+The **Model tab** shows a 3D visual representation of your model, a green
+model bounding box and the Pick frame. Note the
 number in round brackets in the Model view tab name, this is the model
 ID.
 
-Previous steps can be repeated to Teach different models to Pickit Teach. 
-In one product file up to 8 different models can be taught. 
+The previous steps can be repeated to teach different models to Pickit Teach.
+In one product file up to 8 different models can be taught.
 This means that Pickit Teach is capable of looking for 8 different shapes in one detection.
-See :ref:`how-to-multiple-models` on how you can use the model id in a robot program. 
+
+See :ref:`how-to-multiple-models` on how you can use the model id in a robot program.
 
 Below 2 models of the same part are shown. The first model is the shape of the top of the part.
 The second model is the shape of the bottom of the part.
 
 .. image:: /assets/images/Documentation/teach-models.png
+
+After teaching a model for the first time, it is possible to alter it in different ways.
+Refer to the article :ref:`How-to-edit-existing-model` for further details.
 
 Detecting object(s)
 ~~~~~~~~~~~~~~~~~~~
