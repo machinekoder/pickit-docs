@@ -40,17 +40,8 @@ useful to keep the 2D view open so you see what the camera sees.
 
 .. image:: /assets/images/Documentation/Teach-object-under-camera.png
 
-Isolating the object
-^^^^^^^^^^^^^^^^^^^^
-
-Before creating a model of the object, we need to isolate the part from
-its surroundings to make sure that only points belonging to the object
-are captured in the model. This is done by using the :ref:`region-of-interest`.
-
-Go to the **Region of Interest** tab and modify the region of interest
-box boundaries until only points that belong to your objects are inside
-the ROI box. When you're done adapting the boundaries, you're ready to
-go to the next step.
+Make sure that the object is inside the :ref:`region-of-interest`, and that
+it is not occluded by other elements in the scene.
 
 Adding a model
 ^^^^^^^^^^^^^^
@@ -66,15 +57,55 @@ successfully defined, the viewer will open the **Model
 tab** automatically and a **Model row** will be added to the models'
 widget.
 
-The **Model tab** shows a 3D visual representation of your model, a
-model bounding box as a green dashed line and the Pick frame. Note the
+The **Model tab** shows a 3D visual representation of your model, a green
+model bounding box and the Pick frame. Note the
 number in round brackets in the Model view tab name, this is the model
 ID.
 
-Previous steps can be repeated to Teach different models to Pickit Teach. 
-In one product file up to 8 different models can be taught. 
+Previous steps can be repeated to Teach different models to Pickit Teach.
+In one product file up to 8 different models can be taught.
 This means that Pickit Teach is capable of looking for 8 different shapes in one detection.
-See :ref:`Using-the-model-id-in-a-robot-program` on how you can use the model id in a robot program. 
+See :ref:`Using-the-model-id-in-a-robot-program` on how you can use the model id in a robot program.
+
+Editing a model
+^^^^^^^^^^^^^^^
+
+**Choosing the Pick frame**
+
+Each model has a Pick frame, which indicates where and with which orientation
+the part will be picked by the robot. Upon teaching a model, the Pick frame is
+automatically set to the centroid of the model point cloud. The user can change
+the position and orientation of the Pick frame to the most suitable spot to pick.
+
+**Left: Default Pick frame after teaching the model. Right: Custom Pick frame set by the user.**
+.. image:: /assets/images/Documentation/Teach-model-pick-frame.png
+
+**Cropping and expanding the model**
+
+When clicking :guilabel:`Add a model`, the resulting model corresponds to
+the content of the current :ref:`region-of-interest`. However, the model
+point cloud can be cropped or expanded afterwards, using the arrows in the
+**Model** view.
+
+On the top left corner of the **Model** view, there is a **Auto-snap crop box**
+checkbox. If this option is enabled, the green model box automatically bounds
+the model points. This is useful for the user to check if the model contains
+undesired points that are difficult to spot.
+
+**If there are no undesired points in the model, the auto-snapped model box bounds the model points cleanly.**
+.. image:: /assets/images/Documentation/Teach-model-autosnap-on-ghostpoints.png
+
+**If the model contains undesired points that are difficult to see, the auto-snapped model box seems larger than the actual model.**
+.. image:: /assets/images/Documentation/Teach-model-autosnap-on-clean.png
+
+If the auto-snap option is disabled, the green model box is whatever the user
+defines using the model arrows.
+
+.. image:: /assets/images/Documentation/Teach-model-autosnap-off.png
+
+Notice that cropping or expanding the model does not replace the model with
+the content of the region-of-interest, but only changes the point cloud that
+was previously taught.
 
 Detecting object(s)
 ~~~~~~~~~~~~~~~~~~~
