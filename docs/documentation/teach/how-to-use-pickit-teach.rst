@@ -103,11 +103,12 @@ user defines using the model arrows.
 
 .. image:: /assets/images/Documentation/Teach-model-autosnap-off.png
 
-Cropping and expanding operations do not replace the model with the content of the
-current region-of-interest. Instead, they work on the point cloud that was captured
-at the moment of teaching. When expanding the model box (making it larger), it is
-possible to include points that were initially outside the region-of-interest at
-the time of teaching.
+.. note::
+  Cropping and expanding operations do not replace the model with the content of the
+  current region-of-interest. Instead, they work on the point cloud that was captured
+  at the moment of teaching. When expanding the model box (making it larger), it is
+  possible to include points that were initially outside the region-of-interest at
+  the time of teaching.
 
 Detecting object(s)
 ~~~~~~~~~~~~~~~~~~~
