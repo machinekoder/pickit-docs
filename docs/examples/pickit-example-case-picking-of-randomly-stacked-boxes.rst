@@ -43,11 +43,17 @@ Advanced ROI filter: Dynamic Box-based ROI filter
 -------------------------------------------------
 
 The boxes are stacked on a table in different layers.
-It seems logical that the robot should always focus on the top most layer first and afterwards proceed to the next layer. This is achieved by using the :ref:`Dynamic-box-based-roi-filter`, which discards any points below a specified distance from the highest points in the scene.
+It seems logical that the robot should always focus on the top most layer first
+and afterwards proceed to the next layer.
+This is achieved by using the :ref:`Dynamic-box-based-roi-filter`, which discards
+any points below a specified distance from the highest point in the Region of
+Interest (ROI).
 Below the effect of this filter is shown.
 
-Only when all boxes in the top layer are picked, the next layer becomes visible in the :ref:`Points view <points-view>`, since it now contains the highest points.
-For this application the system only keeps the points that are at most 20 mm below the highest point.
+Only when all boxes in the top layer are picked, the next layer becomes visible
+in the :ref:`Points view <points-view>`, since it now contains the highest points.
+For this application the system only keeps the points that are at most 20 mm
+below the highest point.
 
 If you are interested in more information about our advanced ROI filters you can have a look a this article: :ref:`advanced-roi-filters`.
 
@@ -87,7 +93,7 @@ Multiple step program
 After the first step the part is dropped on an isolated location.
 Then a new detection is triggered to determine the complete orientation of the part.
 For the second step a second setup and product file are created.
-The region of interest now focus on the isolated part.
+The ROI now focus on the isolated part.
 The part itself is detected using Pickit Flex, by looking for rectangles.
 
 The image below shows the complete robot program that has been used for this application.
@@ -97,17 +103,16 @@ Afterwards the setup and product files are changed back for doing step 1.
 
 .. image:: /assets/images/examples/example-case-boxes-ur-program.png
 
+.. _example-empty-roi:
+
 Detect empty ROI-box
 --------------------
 
-In the program above a sanity check is implemented.
-If in the second step for any reason the detection would not return a result.
-It is first checked if there is still something before the system looks again to find the box.
-If really nothing is found in the region of interest the program automatically goes back to the first step.
-
-To check if there is something beneath the camera a Flex detection is triggered.
-No clustering is applied, no cluster rejection is used, and no fitting is done (Blob). Objects are filtered out only based on the number of points: If less than 300 points in total are seen in the region of interest, we assume that nothing of importance is beneath the camera, so no new detection for finding the box is triggered.
-More extensive information about this method is explained in the :ref:`detect-empty-roi`.
+In the program above, the ``pickit_empty_roi()`` function is used to verify if
+there are contents inside the ROI (see :ref:`detecting-an-empty-roi` for more
+details).
+If the ROI is empty, the program goes back to the first step; else the program
+stays in the second step and looks again.
 
 Snapshots
 ---------
