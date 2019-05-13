@@ -82,15 +82,15 @@ the position and orientation of the Pick frame to the most suitable spot to pick
 
 **Cropping and expanding the model**
 
-When clicking :guilabel:`Add a model`, the resulting model corresponds to
-the content of the current :ref:`region-of-interest`. However, the model
-point cloud can be cropped or expanded afterwards, using the arrows in the
+When clicking :guilabel:`Add a model` or :guilabel:`Re-teach`, the resulting model
+corresponds to the content of the current :ref:`region-of-interest`. However, the
+model point cloud can be cropped or expanded afterwards, using the arrows in the
 **Model** view.
 
 On the top left corner of the **Model** view, there is a **Auto-snap crop box**
-checkbox. If this option is enabled, the green model box automatically bounds
-the model points. This is useful for the user to check if the model contains
-undesired points that are difficult to spot.
+checkbox. If this option is enabled, the green model box automatically adjusts to
+the limits of the model points. This is useful for the user to check if the model
+contains undesired points that are difficult to spot.
 
 **If there are no undesired points in the model, the auto-snapped model box bounds the model points cleanly.**
 .. image:: /assets/images/Documentation/Teach-model-autosnap-on-ghostpoints.png
@@ -98,14 +98,16 @@ undesired points that are difficult to spot.
 **If the model contains undesired points that are difficult to see, the auto-snapped model box seems larger than the actual model.**
 .. image:: /assets/images/Documentation/Teach-model-autosnap-on-clean.png
 
-If the auto-snap option is disabled, the green model box is whatever the user
-defines using the model arrows.
+If the auto-snap option is disabled, the green model box is set to whatever the
+user defines using the model arrows.
 
 .. image:: /assets/images/Documentation/Teach-model-autosnap-off.png
 
-Notice that cropping or expanding the model does not replace the model with
-the content of the region-of-interest, but only changes the point cloud that
-was previously taught.
+Cropping and expanding operations do not replace the model with the content of the
+current region-of-interest. Instead, they work on the point cloud that was captured
+at the moment of teaching. When expanding the model box (making it larger), it is
+possible to include points that were initially outside the region-of-interest at
+the time of teaching.
 
 Detecting object(s)
 ~~~~~~~~~~~~~~~~~~~
