@@ -78,6 +78,7 @@ automatically set to the centroid of the model point cloud. The user can change
 the position and orientation of the Pick frame to the most suitable spot to pick.
 
 **Left: Default Pick frame after teaching the model. Right: Custom Pick frame set by the user.**
+
 .. image:: /assets/images/Documentation/Teach-model-pick-frame.png
 
 **Cropping and expanding the model**
@@ -93,9 +94,11 @@ the limits of the model points. This is useful for the user to check if the mode
 contains undesired points that are difficult to spot.
 
 **If there are no undesired points in the model, the auto-snapped model box bounds the model points cleanly.**
+
 .. image:: /assets/images/Documentation/Teach-model-autosnap-on-ghostpoints.png
 
 **If the model contains undesired points that are difficult to see, the auto-snapped model box seems larger than the actual model.**
+
 .. image:: /assets/images/Documentation/Teach-model-autosnap-on-clean.png
 
 If the auto-snap option is disabled, the green model box is set to whatever the
