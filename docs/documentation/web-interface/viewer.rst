@@ -21,17 +21,18 @@ The following overlays are shown in all views:
 -  Top-left: Camera ID and indicator that a correct camera calibration
    was loaded.
 -  Lower-left: :ref:`Snapshot <Saving-a-snapshot>`
-   button and reset 3D view button (shown on mouse hover, not available
-   in 2D view).
--  Lower right: Maximize/minimize button and View settings for
-   customizing a particular view (shown on mouse hover).
+   button 
+-  Top-right: reset viewpoint button (not available
+   in 2D view) and change viewer size button.
+-  Lower right: View settings for
+   customizing a particular view.
 
-.. image:: /assets/images/Documentation/Viewer-overal.png
+.. image:: /assets/images/Documentation/viewer-21-objects.png
 
 Also common to all views, a notification is displayed when no camera is
 connected and no snapshot is loaded:
 
-.. image:: /assets/images/Documentation/No-connected-camera.png
+.. image:: /assets/images/Documentation/no-connected-camera-21.png
 
 .. _2d-view:
 
@@ -47,7 +48,7 @@ overlays on top of the image:
 After each detection, object frames, picking order identifiers and
 contour are also shown for a brief period of time.
 
-.. image:: /assets/images/Documentation/Viewer-2d.png
+.. image:: /assets/images/Documentation/viewer-21-2d.png
 
 3D view
 ~~~~~~~
@@ -59,7 +60,7 @@ Live 3D camera image stream when a camera is connected. It also renders:
 -  Optionally: The Pickit camera(s) and robot (Universal Robots only)
    3D models.
 
-.. image:: /assets/images/Documentation/Viewer-3d.png
+.. image:: /assets/images/Documentation/viewer-21-3d.png
 
 .. _points-view:
 
@@ -70,7 +71,7 @@ Displays the 3D point cloud used in the last Pickit detection. Only
 points contained in the ROI box are shown. It also renders the same
 additional elements listed for the the 3D view.
 
-.. image:: /assets/images/Documentation/Viewer-points.png
+.. image:: /assets/images/Documentation/viewer-21-points.png
 
 Clusters view
 ~~~~~~~~~~~~~
@@ -82,7 +83,7 @@ the same additional elements listed for the the 3D view.
 This view is only available for the Pickit Flex and Pattern detection
 engines.
 
-.. image:: /assets/images/Documentation/Viewer-clusters.png
+.. image:: /assets/images/Documentation/viewer-21-clusters.png
 
 Objects view
 ~~~~~~~~~~~~
@@ -107,7 +108,7 @@ following criteria:
 The objects view also renders the same additional elements listed for
 the the 3D view.
 
-.. image:: /assets/images/Documentation/Viewer-objects.png
+.. image:: /assets/images/Documentation/viewer-21-objects.png
 
 Model view
 ~~~~~~~~~~
@@ -118,4 +119,4 @@ the extent of the model and help detect undesired outliers in models.
 
 This view is only available for the Pickit Teach detection engine.
 
-.. image:: /assets/images/Documentation/Viewer-model.png
+.. image:: /assets/images/Documentation/viewer-21-model.png
