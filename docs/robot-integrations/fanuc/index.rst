@@ -1,6 +1,6 @@
 .. _fanuc:
 
-Setup Pickit with a Fanuc robot
+Setting up Pickit with a Fanuc robot
 ================================
 
 This setup manual helps you setup Pickit with a **Fanuc robot**. The

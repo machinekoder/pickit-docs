@@ -1,6 +1,6 @@
 .. _universal-robots:
 
-Set up Pickit with a Universal Robots
+Setting up Pickit with a Universal Robots
 =====================================
 
 .. toctree::

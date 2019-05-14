@@ -1,6 +1,6 @@
 .. _yaskawa:
 
-Setup Pickit with a Yaskawa robot
+Setting up Pickit with a Yaskawa robot
 ==================================
 
 This setup manual helps you setup Pickit with a Yaskawa robot. The
