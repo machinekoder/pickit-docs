@@ -36,7 +36,7 @@ Installing the Pickit URCap plugin
 
 To install the Pickit URCap plugin, follow these steps:
 
-#. `Download </downloads>`__ the Pickit URCap plugin archive containing the latest version of the URCap.
+#. :ref:`Download the Pickit URCap files <downloads:Universal Robots>` the Pickit URCap plugin archive containing the latest version of the URCap.
 #. Unzip the archive and copy its contents to an **empty** USB drive.
 #. Insert the drive into the USB port of either the robot controller or teach pendant while it is turned on.
 #. On the Polyscope home screen, press :guilabel:`Setup Robot` > :guilabel:`URCaps` to entery the **URCaps** section.
