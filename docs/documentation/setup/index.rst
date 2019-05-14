@@ -1,7 +1,7 @@
 .. _region-of-interest:
 
-Region of Interest
-==================
+Setup
+=====
 
 The \ **Region of Interest box (ROI box)** is the 3D region where object
 detection takes place. 
