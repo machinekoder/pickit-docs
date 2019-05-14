@@ -9,22 +9,26 @@ Follow the steps below to do your first detection with Pickit:
 -  Make sure that the Pickit camera is mounted 700mm above a flat work
    space. The work space is now seen in the 2D viewer on the Pickit
    user interface.
--  In the Pickit user interface press Stop Robot Mode.
--  In the Configuration tab under create a new setup and/or product fill
-   in 'Test\_Pickit' twice and press Create.
+-  In the Pickit user interface press Disable Robot Mode.
+-  Create a new setup: in the Setup tab, on top, click + New and name
+   the new setup file 'Test\_Pickit'. Press Continue.
 -  Place the three workspace markers, according the indicated arrows,
    inside the field of view of the camera.
--  Go to the Region of Interest > ROI Box filter and press Use Markers.
-   Wait till the blue box is updated. 
--  Set following values for Zmin and Zmax: 10mm and 150mm.
--  Press the Save button.
+-  Go to the Build ROI box section and press Around QR markers. This button
+   is only enabled if all three region-of-interest amrkers are visible.
+   Wait until the blue box is updated. 
+-  In section Fine-tune ROI box, set Z min to 10mm and Z max to 150mm.
+-  Press the Save button on top of the Setup tab.
 
 .. image:: /assets/images/First-steps/Empty-roi.png
 
--  In the Detection tab select Pickit Teach. 
+-  Create a new product: in the Product tab, on top, click + New and name
+   the new product file 'Test\_Pickit'. Press continue. 
+-  Make sure that Pickit Teach is selected.
 -  Now place a soda can on his side in the middle of the marks.
--  Under define your model(s) press Add a model. Now the model view is
+-  Under section Define your models press Add a model. Now the model view is
    opened and a point cloud of the soda can is shown.
+-  Press the Save button on top of the Detection tab.
 
 .. image:: /assets/images/First-steps/Model-soda-can.png
 
@@ -32,7 +36,6 @@ Follow the steps below to do your first detection with Pickit:
    arrows) appears above the soda can.
 -  Place the soda can somewhere else in between the markers and press
    Detect again.
--  Press the Save button.
 -  Congratulations with your first detections!
 
 .. image:: /assets/images/First-steps/First-detection.png
