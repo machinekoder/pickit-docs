@@ -3,8 +3,8 @@
 Installing the Pickit calibration plate
 ========================================
 
-To  **accurately pick** objects located by Pickit, a robot
-camera \ **calibration is needed**. Different methods of calibration are
+To  **accurately pick** objects located by Pickit, a robot-camera 
+\ **calibration is needed**. Different methods of calibration are
 described in the article :ref:`robot-camera-calibration`.
 
 Pickit provides the necessary equipment for mounting the calibration
