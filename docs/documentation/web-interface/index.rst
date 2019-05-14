@@ -62,7 +62,7 @@ Here the parameters of the Pickit system can be changed and saved. All
 settings and parameters are divided over several tabs. See article of
 each tab to have an extensive overview:
 
--  :ref:`Region-of-interest`
+-  :ref:`setup`
 -  :ref:`Flex`
 -  :ref:`Pattern`
 -  :ref:`Teach`
