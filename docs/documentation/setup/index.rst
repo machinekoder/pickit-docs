@@ -1,9 +1,17 @@
-.. _region-of-interest:
+.. _setup:
 
 Setup
 =====
 
-The \ **Region of Interest box (ROI box)** is the 3D region where object
+In the Setup tab the input for the Pickit system is determined. 
+Here you define where you want the Pickit system to look.
+
+.. _region-of-interest:
+
+Region of Interest
+------------------
+
+The **Region of Interest box (ROI box)** is the 3D region where object
 detection takes place. 
 
 In many applications, the field of view of the Pickit camera is greater
@@ -25,22 +33,21 @@ example if two bins are visible to the camera, but we only want to pick
 objects from one. Setting the ROI box around one of the bins will ignore
 the contents of the other.
 
-For \ **bin picking** applications, the ROI box can be used for \ **bin
+For **bin picking** applications, the ROI box can be used for **bin
 representation**, by fitting it to the internal borders of the bin.
 Pickit then can (optionally) perform bin collision avoidance and
 prevention. Refer to the :ref:`How-can-i-get-a-better-bin-picking-experience`
 article for more information on how to make the best use of the ROI box
 for such applications.
 
-The ROI box can be defined and modified from the **Region of
-Interest** page of the Pickit web interface, and the points contained
+The ROI box can be defined and modified from the **Setup** page of the Pickit web interface, and the points contained
 in it can be visualized in the **Points** tab of the viewer.
 
 .. toctree::
     :maxdepth: 2
 
-    defining-the-region-of-interest
-    modifying-the-region-of-interest
-    attaching-the-region-of-interest-to-the-world
-    color-filter
-    advanced-roi-filters
+    fix-roi-box
+    build-roi-box
+    fine-tune-roi-box
+    exclude-3d-information-based-on-color
+    advanced-filters

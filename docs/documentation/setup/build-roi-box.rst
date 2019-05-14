@@ -1,17 +1,18 @@
-.. _Defining-the-region-of-interest:
+.. _build-roi-box:
 
-Defining the Region of Interest
--------------------------------
+Build ROI box
+-------------
 
 There are three methods in Pickit for defining the ROI box:
 
--  :ref:`Use-markers`
--  :ref:`Use-plane`
--  :ref:`Use-camera`
+.. contents::
+    :backlinks: top
+    :local:
+    :depth: 1
 
 When a ROI box is defined, it specifies the **Pickit reference frame**.
 The axes of this frame are aligned with the box, and box bounds are
-reported with respect to this frame, as mentioned in the :ref:`Modifying-the-region-of-interest`. Furthermore, the
+reported with respect to this frame, as mentioned in the :ref:`fine-tune-roi-box`. Furthermore, the
 position of the detected objects displayed in the :ref:`detection-grid`
 is with respect to the Pickit reference frame.
 
@@ -21,8 +22,8 @@ is with respect to the Pickit reference frame.
 
 .. _Use-markers:
 
-Use markers
-~~~~~~~~~~~
+Around QR markers
+~~~~~~~~~~~~~~~~~
 
 This is the most common way of defining the ROI box. The ROI box is
 defined based on three markers laid out in the field of view of the
@@ -39,15 +40,13 @@ The markers are not interchangeable.
 #. Press Use markers (this button is on clickable when all three markers
    are in the field of view of the camera).
 #. If required, manually adjust the ROI box size as described in
-   the :ref:`Modifying-the-region-of-interest`.
+   the :ref:`fine-tune-roi-box`.
 
 .. note:: When defining the ROI box, the \ **Pickit reference
    frame** is defined in the left bottom corner of the ROI box.
 
-.. _Use-plane:
-
-Use plane
-~~~~~~~~~
+Automatically
+~~~~~~~~~~~~~
 
 With this strategy, the ROI box is located on top of the most dominant
 plane in the field of view of the camera.
@@ -56,15 +55,13 @@ plane in the field of view of the camera.
 #. Press Use plane.
 #. Input length and width of the desired ROI box.
 #. If required, manually adjust the ROI box size as described in
-   the :ref:`Modifying-the-region-of-interest`.
+   the :ref:`fine-tune-roi-box`.
 
 .. note:: When defining the ROI box, the **Pickit reference
    frame** is defined in the middle of the bottom of the ROI box.
 
-.. _Use-camera:
-
-Use camera
-~~~~~~~~~~
+From camera
+~~~~~~~~~~~
 
 In this way the ROI box is defined based of the camera frame.
 
@@ -72,7 +69,7 @@ In this way the ROI box is defined based of the camera frame.
 #. Press Use camera.
 #. Input length and width of the desired ROI box.
 #. If required, manually adjust the ROI box size as described in
-   the :ref:`Modifying-the-region-of-interest`.
+   the :ref:`fine-tune-roi-box`.
 
 .. note:: This method simply defines the camera frame as the **Pickit
    reference frame**.

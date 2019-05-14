@@ -1,7 +1,7 @@
-.. _Modifying-the-region-of-interest:
+.. _fine-tune-roi-box:
 
-Modifying the Region of Interest
---------------------------------
+Fine-tune ROI box
+-----------------
 
 Once an initial ROI box has been defined, you can manually adjust its
 size. When the **Region of Interest page** is open,
@@ -20,7 +20,7 @@ values here and the ROI box will be updated in the viewer.
 
 .. note:: Only the size and position of ROI box can be changed, not the
    orientation. To change the orientation the ROI box needs to be defined
-   again as described in :ref:`Defining-the-region-of-interest`.
+   again as described in :ref:`build-roi-box`.
 
 Modify ROI box to remove the ground plane
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

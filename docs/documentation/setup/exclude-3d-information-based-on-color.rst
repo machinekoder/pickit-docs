@@ -1,7 +1,7 @@
 .. _color-filter:
 
-Color filter
-------------
+Exclude 3D information based on color
+-------------------------------------
 
 The color filter can be used to explicitly include or exclude points
 from a certain color. Several use cases for the color filter are:
@@ -30,7 +30,7 @@ of a bin. There are several problems that need to be solved:
 
 .. image:: /assets/images/Documentation/Color-filter-points.png
 
-When :ref:`Defining-the-region-of-interest`
+When :ref:`build-roi-box`
 in a normal way we can see 2 problems:
 
 -  We still see some parts of the bottom in the Points view

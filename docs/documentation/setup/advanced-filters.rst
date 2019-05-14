@@ -1,7 +1,7 @@
 .. _advanced-roi-filters:
 
-Advanced ROI filters
---------------------
+Advanced filters
+----------------
 
 There are a number of advanced Region of Interest filters used for
 excluding points \ **inside the ROI box**.
