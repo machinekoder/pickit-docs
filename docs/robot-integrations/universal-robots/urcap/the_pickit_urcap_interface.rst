@@ -1,7 +1,7 @@
 .. _universal-robots-urcap-commands:
 
-Commands
-========
+The Pickit URCap interface
+==========================
 
 Pickit integrates seamlessly with Universal Robots by means of a URCap plugin. This plugin exposes a set of Pickit specific command blocks that make the creation of vision-guided programs simple and easy. This article documents the interface of the Pickit URCap plugin. For installation instructions please refer to the :ref:`universal-robots-urcap-installation` article.
 
@@ -134,8 +134,8 @@ To insert a new command, navigate to the **Command** tab select an entry from th
 |    to set Pickit to robot mode.                                          |
 |                                                                          |
 | Except for **Find calibration plate**, all other Pickit plugin commands  |
-| require robot mode to be Robot mode is enabled. Robot mode is enabled    |
-| from the Pickit web interface.                                           |
+| require robot mode to be enabled. Robot mode is enabled from the Pickit  |
+| web interface.                                                           |
 +--------------------------------------------------------------------------+
 
 .. _command-select:
@@ -181,7 +181,7 @@ To insert a new command, navigate to the **Command** tab select an entry from th
 |    .. image:: /assets/images/robot-integrations/ur/urcap-find-1.png      |
 |                                                                          |
 |    .. image:: /assets/images/robot-integrations/ur/urcap-find-2.png      |
-|                                                                          | 
+|                                                                          |
 | Refer to the cycle time optimization section of the                      |
 | :ref:`universal-robots-urcap-example` article for the motivation behind  |
 | performing robot motions while a Pickit detection is.                    |
@@ -200,7 +200,7 @@ To insert a new command, navigate to the **Command** tab select an entry from th
 | and the time overhead it entails.                                        |
 |                                                                          |
 | The next Pickit command after  **Find object(s)** should always          |
-| be **Get next object**, which waits until a response for the request     |
+| be **Get result**, which waits until a response for the request          |
 | is ready.                                                                |
 |                                                                          |
 |    .. image:: /assets/images/robot-integrations/ur/urcap-next-1.png      |
