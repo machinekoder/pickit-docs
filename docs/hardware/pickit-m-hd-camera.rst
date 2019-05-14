@@ -1,18 +1,17 @@
 Pickit M-HD camera
 ==================
 
-|image0|
+.. image:: /assets/images/hardware/m-hd.jpg
 
 On this page, you can find all information on the Pickit M-HD camera.
 
 What is Pickit M-HD?
 ---------------------
 
-Pickit M-HD is a 3D camera that is compatible with the  `Pickit 2.0
-processor <https://support.pickit3d.com/article/98-pick-it-processor>`__.
+Pickit M-HD is a 3D camera that is compatible with the 2.0 version of the :ref:`hardware/pickit-processor:Pickit processor`.
 It's called M-HD because it is a high definition camera with a field of
 view to detect medium-sized objects. The 3D camera is manufactured
-by \ `Zivid AS <https://zividlabs.com/>`__ in Norway. The camera
+by `Zivid AS <https://zividlabs.com/>`__ in Norway. The camera
 produces a high-resolution point cloud to detect and pick smaller
 objects with higher accuracy compared to the existing Pickit M camera. 
 
@@ -29,18 +28,18 @@ Field of View
 Technical specifications
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
--  **3D measurement** **method
-   **\ Structured light
+-  **3D measurement method**
+   Structured light
 -  **Image processing speed**
    10 Hz (100ms snapshots)
--  **3D Camera accuracy
-   **\ 0.1mm
--  **3D Camera repeatability
-   **\ < 1mm
--  **3D camera weight
-   **\ 2 kg
--  **3D camera connection to PC
-   **\ M12-8 (USB) - USB3
+-  **3D Camera accuracy**
+   0.1mm
+-  **3D Camera repeatability**
+   < 1mm
+-  **3D camera weight**
+   2 kg
+-  **3D camera connection to PC**
+   M12-8 (USB) - USB3
 -  **PC connection to** **robot**
    TCP/IP over Ethernet
 -  **Power supply**
@@ -60,7 +59,3 @@ Power consumption
 -  Booting: 35W
 -  Idle: 16W
 -  Detecting: 35W
-
-
-.. |image0| image:: https://s3.amazonaws.com/helpscout.net/docs/assets/583bf3f79033600698173725/images/5bb3e60b2c7d3a04dd5b3836/file-ABeT0lGCGq.jpg
-

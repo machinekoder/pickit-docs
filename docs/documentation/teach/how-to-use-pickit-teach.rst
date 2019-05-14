@@ -28,6 +28,8 @@ high-quality model has the following characteristics:
 #. It exactly matches the side of the object
    that you want to detect.
 
+See following guide, :ref:`how-to-good-model`, for more in depth information.
+
 Continue reading to learn how to build a high-quality model.
 
 Placing the object under the camera
@@ -38,7 +40,7 @@ possible to the camera to capture the most details while making sure
 that the object is lying fully in the field of view of the camera. It's
 useful to keep the 2D view open so you see what the camera sees.
 
-.. image:: /assets/images/Documentation/Teach-object-under-camera.png
+.. image:: /assets/images/Documentation/teach-model-picture.jpg
 
 Isolating the object
 ^^^^^^^^^^^^^^^^^^^^
@@ -51,6 +53,8 @@ Go to the **Region of Interest** tab and modify the region of interest
 box boundaries until only points that belong to your objects are inside
 the ROI box. When you're done adapting the boundaries, you're ready to
 go to the next step.
+
+.. image:: /assets/images/Documentation/teach-model-3d-points.png
 
 Adding a model
 ^^^^^^^^^^^^^^
@@ -74,25 +78,32 @@ ID.
 Previous steps can be repeated to Teach different models to Pickit Teach. 
 In one product file up to 8 different models can be taught. 
 This means that Pickit Teach is capable of looking for 8 different shapes in one detection.
-See :ref:`Using-the-model-id-in-a-robot-program` on how you can use the model id in a robot program. 
+See :ref:`how-to-multiple-models` on how you can use the model id in a robot program. 
+
+Below 2 models of the same part are shown. The first model is the shape of the top of the part.
+The second model is the shape of the bottom of the part.
+
+.. image:: /assets/images/Documentation/teach-models.png
 
 Detecting object(s)
 ~~~~~~~~~~~~~~~~~~~
 
 Now that you've added your models, it's time to detect objects. 
 
-Place your objects inside the region of interest box and press the
+Place your objects below the camera and create a new region of interest box and press the
 Detect button. On a successful detection, you will see in the 2D view
 that a frame appears on the detected objects and yellow lines indicate
 the bounding box. (For the yellow lines enable the "Show model box" in
 the Viewer options.)
 
-.. image:: /assets/images/Documentation/Teach-detecting-objects.png
+.. image:: /assets/images/Documentation/teach-scene-picture.jpg
 
 In the Objects view, the point cloud models are visualized as a colored
 cloud on top of the detected objects. When a detection failed because
 for example a threshold parameter was exceeded, the model cloud will be
 colored in red.
+
+.. image:: /assets/images/Documentation/teach-objects.png
 
 In the Objects table, you can see the detected object dimensions,
 matching score and the Model ID that was found. Take a look at this

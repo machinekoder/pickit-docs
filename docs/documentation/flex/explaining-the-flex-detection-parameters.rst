@@ -13,7 +13,14 @@ categories.
     :local:
     :depth: 1
 
-.. _Group-points-into-clusters:
+M-HD preset(M-HD camera only)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image:: /assets/images/Documentation/m-hd-preset.png
+
+In this tab the preset for the M-HD camera is chosen. This preset determines the settings of the camera and how a point cloud is captured.
+
+This guide helps you chosing a good preset for your application, :ref:`how-to-mhd-preset`.
 
 Group points into clusters
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -46,7 +53,7 @@ compatibility with older versions of Pickit. The expert-mode parameters
 are such that higher values will typically result in less and/or bigger
 clusters, while lower values result in more and/or smaller clusters.
 
-See following article, :ref:`Example-the-clustering-methods`, to
+See following article, :ref:`how-to-clustering-preset`, to
 see examples and use cases for each clustering method.
 
 .. _Reject-clusters:
@@ -168,8 +175,8 @@ These parameters affect the number of points of the captured point cloud
 used for object detection. The effect of modifying these parameters can
 be visualized in the **Points** view.
 
-Image fusion
-^^^^^^^^^^^^
+Image fusion(M/L camera only)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Image fusion is the combination of multiple camera captures into a
 single image. Enabling image fusion can provide  **more detail** in

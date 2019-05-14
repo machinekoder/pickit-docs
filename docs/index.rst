@@ -1,5 +1,5 @@
 Pickit Documentation
-=====================
+====================
 
 Pickit is a 3D vision application for picking a broad family of products in any
 location with any robot. Pickit can be used for lcoating objects during
@@ -21,9 +21,9 @@ assembly tasks with a robot or machine.
   Configuration <documentation/configuration/index>
   Camera(s) <documentation/cameras/index>
   Region of Interest <documentation/region-of-interest/index>
+  Teach <documentation/teach/index>
   Flex <documentation/flex/index>
   Pattern <documentation/pattern/index>
-  Teach <documentation/teach/index>
   Picking <documentation/picking/index>
   Files <documentation/files/index>
   Settings <documentation/settings/index>
@@ -38,7 +38,7 @@ assembly tasks with a robot or machine.
   ABB <robot-integrations/abb/index>
   Fanuc <robot-integrations/fanuc/index>
   KUKA <robot-integrations/kuka/index>
-  Staubli <robot-integrations/staubli/index>
+  Stäubli <robot-integrations/staubli/index>
   Universal Robots <robot-integrations/universal-robots/index>
   Yaskawa <robot-integrations/yaskawa/index>
 
@@ -59,3 +59,4 @@ assembly tasks with a robot or machine.
   :maxdepth: 1
 
   examples/index
+  exercises/index

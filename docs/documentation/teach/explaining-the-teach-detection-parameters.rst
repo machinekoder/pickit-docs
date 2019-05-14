@@ -11,6 +11,15 @@ The Pickit Teach vision engine is designed to detect complex
     :local:
     :depth: 1
 
+M-HD preset(M-HD camera only)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image:: /assets/images/Documentation/m-hd-preset.png
+
+In this tab the preset for the M-HD camera is chosen. This preset determines the settings of the camera and how a point cloud is captured.
+
+This guide helps you chosing a good preset for your application, :ref:`how-to-mhd-preset`.
+
 Define your model(s)
 ~~~~~~~~~~~~~~~~~~~~
 
@@ -26,6 +35,10 @@ Press :guilabel:`Add a model` to add your first model, the points
 currently visible within the ROI are now saved into a model. When the
 model is successfully created, the model will automatically be shown in
 the **Model** view.
+
+In one product file up to 8 different models can be taught. 
+This means that Pickit Teach is capable of looking for 8 different shapes in one detection. 
+See :ref:`how-to-multiple-models` on how you can use the model id in a robot program.
 
 Re-teach a model
 ^^^^^^^^^^^^^^^^
@@ -65,6 +78,8 @@ be done by check (Enable model - Default) or uncheck (Disable model).
 When disabling a model, the detection algorithm will completely ignore
 that specific model.
 
+.. _pick-frame-teach:
+
 Pick frame
 ^^^^^^^^^^
 
@@ -100,8 +115,8 @@ Optimize detections
 
 .. _image-fusion:
 
-Image fusion
-^^^^^^^^^^^^
+Image fusion(M/L camera only)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Image fusion is the combination of multiple camera captures into a
 single image. Enabling image fusion can provide **more detail** in
