@@ -13,11 +13,11 @@ able to see Pickit's user interface:   
 In the Pickit user interface the connection between the robot and the
 processor can be checked:
 
--  Press Disable Robot mode.
--  Press the Settings button on the top of the Pickit interface.
--  In the left menu, under the Network settings, select Pick-it port labeled 'ROBOT'.
--  Insert the IP address of your robot in the Robot IP field and press
-   Check.
+-  Press :guilabel:`Disable Robot mode`.
+-  Press the :guilabel:`Settings` button on the top of the Pickit interface.
+-  In the left menu, under the **Network settings**, select **Pick-it port labeled 'ROBOT'**.
+-  Insert the IP address of your robot in the **Robot IP** field and press
+   :guilabel:`Check`.
 -  A pop-up message indicating failure or success appears on the lower
    right corner of the screen. 
 

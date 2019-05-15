@@ -4,7 +4,7 @@ Your first pick
 The last step in this getting started guide is creating a robot program
 to do your first pick with Pickit. 
 
--  In the Pickit interface, on the top right press Enable Robot Mode.
+-  In the Pickit interface, on the top right, press :guilabel:`Enable Robot Mode`.
 -  On your robot open the example picking program supplied by Pickit.
 -  Define the correct Tool Center Point for the robot tool.
 -  In the robot program select the Test\_Pickit product and setup files.
