@@ -19,9 +19,9 @@ the fitting piece sticks out at the coloured side of the calibration
 plate.
 
 -  For 50 mm flanges use the biggest fitting piece and biggest 6 mm
-   dowel pin
+   dowel pin.
 -  For 31,5 mm flanges use the smallest fitting piece and smallest 5 mm
-   dowel pin
+   dowel pin.
 
 Align the dowel pin in the only diagonal hole and smack it with a soft
 hammer, so that it enters the plate.
@@ -32,7 +32,7 @@ Installing the Pickit calibration plate on the robot flange
 ------------------------------------------------------------
 
 #. Align the plate, dowel pin and holes with the robot flange.
-#. Screw the plate to the flange
+#. Screw the plate to the flange.
 
 .. image:: /assets/images/First-steps/Calibration-plate-robot-flange.jpg
 

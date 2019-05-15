@@ -33,7 +33,7 @@ does. The connection steps for both types of cameras are indicated below.
 M or L camera
 ^^^^^^^^^^^^^
 
-Connect the Pickit M or L camera with the 10m USB cable (CBL-USB-CAM-10) that
+Connect the Pickit M or L camera with the 10 m USB cable (CBL-USB-CAM-10) that
 is provided with Pickit and plug it into the **CAMERA** labeled USB
 port at the back side of the Pickit processor.
 
@@ -59,7 +59,7 @@ spinning.
 Connect the robot or machine controller
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Using the provided green 5m UTP network cable (CBL-CAT6-GREEN-5) connect
+Using the provided green 5 m UTP network cable (CBL-CAT6-GREEN-5) connect
 your robot or machine controller with the **ROBOT** labeled RJ45 port at
 the back side of the Pickit processor.
 
@@ -76,9 +76,9 @@ brand specific instruction pages:
 Connect a computer
 ~~~~~~~~~~~~~~~~~~
 
-There are 2 ways to connect your Pickit processor to a computer. You
+There are two ways to connect your Pickit processor to a computer. You
 can connect it directly with an ethernet cable or connect it to your
-network. You can use the provided gray/black 5m UTP network cable
+network. You can use the provided gray/black 5 m UTP network cable
 (CBL-CAT6-GRAY-5 / CBL-CAT6-BLACK-5).
 
 A connection with a computer is only required during setup and

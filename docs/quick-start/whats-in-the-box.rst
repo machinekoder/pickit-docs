@@ -11,12 +11,16 @@ What's in the box
 
 -  Pickit 3D Camera
 
-   -  10m camera USB cable
+   -  M or L camera:
+       - 10 m camera USB cable
+   -  M-HD camera:
+       - USB cable
+       - power supply and power chord
 
 -  Robot-to-camera Calibration Plate with dowel pin
 -  Set of 3 workspace markers
--  5m green ethernet cable
--  5m black ethernet cable
+-  5 m green ethernet cable
+-  5 m black ethernet cable
 -  Goodies
 -  Integration manual
 -  Camera manual
@@ -25,7 +29,7 @@ What's in the box
 
 These items can be ordered as options on the Pickit system. Please
 contact our `Sales team <mailto:sales@pickit3d.com>`__ if you would like
-to buy one of these options.
+to buy one or more of these options.
 
 -  Robot Mounting plate
 
