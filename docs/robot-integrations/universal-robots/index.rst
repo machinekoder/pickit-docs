@@ -1,7 +1,7 @@
 .. _universal-robots:
 
 Setting up Pickit with a Universal Robots
-=====================================
+=========================================
 
 .. toctree::
   :glob:
