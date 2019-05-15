@@ -273,6 +273,19 @@ To insert a new command, navigate to the **Command** tab select an entry from th
 | The saved snapshot can then be loaded or downloaded by going to the Files page on the Pickit web interface and searching for a file whose name contains the capture timestamp.    |
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
+.. _command-build-background:
+
++--------------------------------------------------------------------------+
+| **Build background**                                                     |
++==========================================================================+
+| Build the background cloud used in advanced Region of Interest filters.  |
+|                                                                          |
+| Calling this function will trigger a camera capture, so if the camera    |
+| mount is fixed, the robot must not occlude the camera view volume.       |
+| If instead the camera is robot-mounted, the robot must be in the same    |
+| pose used for object detection.                                          |
++--------------------------------------------------------------------------+
+
 .. _urcap-global-helper-functions:
 
 Helper functions
