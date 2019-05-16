@@ -260,7 +260,7 @@ To insert a new command, navigate to the **Command** tab select an entry from th
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **Find calibration plate**                                                                                                                                                            |
 +=======================================================================================================================================================================================+
-| Trigger detection of the robot-camera calibration plate.                                                                                                                              |
+| Trigger detection of the robot camera calibration plate.                                                                                                                              |
 | This command requires the Pickit web interface to be in the Calibration page, hence robot mode should be disabled. When Pickit is not in the calibration page, a pop-up is shown.     |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
