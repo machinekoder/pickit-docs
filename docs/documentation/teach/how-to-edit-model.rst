@@ -9,28 +9,12 @@ or delete models. This article explains how you can edit an existing model.
     :local:
     :depth: 1
 
-Defining the Pick frame
-~~~~~~~~~~~~~~~~~~~~~~~
-
-Each model has a Pick frame, which indicates where and with which orientation
-the part will be picked by the robot. Upon teaching a model, the Pick frame is
-automatically set to the centroid of the model point cloud. The user can change
-the position and orientation of the Pick frame to the most suitable spot to pick.
-
-**Left: Default Pick frame after teaching the model. Right: Custom Pick frame set by the user.**
-
-.. image:: /assets/images/Documentation/Teach-model-pick-frame.png
-
 Re-teaching the model cloud
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If you wish to change the model cloud from scratch, you can re-teach it. Similarly as for the
-:guilabel:`Add model` button, when you press :guilabel:`Re-teach`, the model cloud is replaced
-by the content of your :ref:`region-of-interest`.
-
-.. warning::
-  When re-teaching a specific model, the point-cloud data from the previous model
-  is overwritten. This action cannot be undone.
+If you wish to change the model cloud from scratch, you can re-teach it, by clicking on the
+:guilabel:`Re-teach` of the concerned model. This replaces the model cloud by the content of
+your current :ref:`region-of-interest`.
 
 A common example is when you realize that the model cloud quality could be improved. For
 instance, a model taught with the camera at a far distance might be missing important
