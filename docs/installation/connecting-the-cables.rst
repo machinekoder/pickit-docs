@@ -53,8 +53,8 @@ spinning.
 .. note::
   **Important**
 
-  -  A USB hub is not allowed between the Pickit processor and Pickit M, L or
-     M-HD camera.
+  -  A USB hub is not allowed between the Pickit processor and any of the
+     Pickit cameras.
 
 Connect the robot or machine controller
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

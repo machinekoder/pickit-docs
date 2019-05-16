@@ -6,18 +6,16 @@ For this we'll use a soda can. Note that this is the final step of this
 quick start guide that can be completed without having a robot.
 Follow the steps below to do your first detection with Pickit:
 
--  Make sure that the Pickit camera is mounted 700 mm above a flat work
-   space. The work space is now seen in the 2D viewer on the Pickit
-   user interface.
+-  Make sure that the Pickit camera is mounted approximately 700 mm above a flat
+   workspace. The workspace is now seen in the 2D viewer on the Pickit user interface.
 -  In the Pickit user interface press :guilabel:`Disable Robot Mode`.
 -  Create a new setup: in the **Setup** tab, on top, click :guilabel:`+ New` and name
    the new setup file 'Test\_Pickit'. Press :guilabel:`Continue`.
 -  Place the three workspace markers, according the indicated arrows,
    inside the field of view of the camera.
 -  Go to the **Build ROI box** section and press :guilabel:`Around QR markers`. This button
-   is only enabled if all three region-of-interest markers are visible.
+   is only enabled if all three Region of Interest markers are visible.
    Wait until the blue box is updated. 
--  In section **Fine-tune ROI box**, set Z min to 10 mm and Z max to 150 mm.
 -  Press the :guilabel:`Save` button on top of the Setup tab.
 
 .. image:: /assets/images/First-steps/Empty-roi.png
