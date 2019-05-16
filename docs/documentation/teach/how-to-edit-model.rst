@@ -1,3 +1,6 @@
+.. _How-to-edit-existing-model:
+
+
 How to edit an existing Pickit Teach model
 ------------------------------------------
 
