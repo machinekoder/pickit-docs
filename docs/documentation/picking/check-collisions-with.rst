@@ -26,7 +26,7 @@ with the actual bin. A rule of thumb for this to work properly is to set
 the dimensions of the region of interest box slightly smaller and
 slightly higher than the real bin.
 
-.. image:: /assets/images/Documentation/Check-collision-with-bin.png
+.. image:: /assets/images/Documentation/check-collision-with-bin-21.png
 
 Other objects
 ~~~~~~~~~~~~~
@@ -36,4 +36,4 @@ visible in the region of interest. As seen in the image below the object
 is not safe to pick because there is another object on top and the tool
 would collide with this other object.
 
-.. image:: /assets/images/Documentation/Check-collision-with-other-objects.png
+.. image:: /assets/images/Documentation/check-collision-with-other-objects-21.png

@@ -34,7 +34,7 @@ The provided robot tool models are:
 The screenshots below show an example of robot tool modelling for the
 **box-shaped tool**.
 
-.. image:: /assets/images/Documentation/robot-tool-model.png
+.. image:: /assets/images/Documentation/robot-tool-model-21.png
 
 Every tool model can be customized to closely resemble the actual robot
 tool. Besides the tool dimensions, one can also adapt distance and
