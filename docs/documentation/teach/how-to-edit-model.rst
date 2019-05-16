@@ -21,11 +21,30 @@ the position and orientation of the Pick frame to the most suitable spot to pick
 
 .. image:: /assets/images/Documentation/Teach-model-pick-frame.png
 
+Re-teaching the model cloud
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+If you wish to change the model cloud from scratch, you can re-teach it. Similarly as for the
+:guilabel:`Add model` button, when you press :guilabel:`Re-teach`, the model cloud is replaced
+by the content of your :ref:`region-of-interest`.
+
+.. warning::
+  When re-teaching a specific model, the point-cloud data from the previous model
+  is overwritten. This action cannot be undone.
+
+A common example is when you realize that the model cloud quality could be improved. For
+instance, a model taught with the camera at a far distance might be missing important
+details. In that case, you may want to :guilabel:`Re-teach` it from a closer distance.
+
+**Left: model taught at a long distance to the camera. Right: model re-taught at a short distance to the camera.**
+
+.. image:: /assets/images/Documentation/Teach-model-taught-far-close.png
+
 Cropping and expanding a model cloud
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 When clicking :guilabel:`Add a model` or :guilabel:`Re-teach`, the resulting model
-corresponds to the content of the current :ref:`region-of-interest`. However, the
+corresponds to the content of the current :ref:`region-of-interest`. The
 model point cloud can be cropped or expanded afterwards, using the arrows in the
 **Model** view.
 
