@@ -55,11 +55,11 @@ contains undesired points that are difficult to spot.
 
 **If there are no undesired points in the model, the auto-snapped model box bounds the model points cleanly.**
 
-.. image:: /assets/images/Documentation/Teach-model-autosnap-on-ghostpoints.png
+.. image:: /assets/images/Documentation/Teach-model-autosnap-on-clean.png
 
 **If the model contains undesired points that are difficult to see, the auto-snapped model box seems larger than the actual model.**
 
-.. image:: /assets/images/Documentation/Teach-model-autosnap-on-clean.png
+.. image:: /assets/images/Documentation/Teach-model-autosnap-on-ghostpoints.png
 
 If the auto-snap option is disabled, the green model box is set to whatever the
 user defines using the model arrows.
