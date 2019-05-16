@@ -3,8 +3,8 @@ Web interface
 
 When a Pickit system is connected to an additional device and in a
 Google chrome web browser following address is typed in 
-`http://192.168.66.1 <http://192.168.66.1/>`__, the user interface of
-Pickit shown. The user interface looks like the image below. In this
+`http://192.168.66.1 <http://192.168.66.1/>`__, the web interface of
+Pickit shown. The web interface looks like the image below. In this
 article a general overview of what you can see in this interface is
 discussed. The interface is divided into 3 part: top, left and right.
 

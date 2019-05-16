@@ -11,7 +11,7 @@ Follow the steps below to do a robot-camera calibration:
 
 -  Mount the robot-to-camera calibration plate to the flange of the
    robot. Make sure it is well fixed.
--  Click on the :guilabel:`Calibration` button on top of the user interface. Select a
+-  Click on the :guilabel:`Calibration` button on top of the web interface. Select a
    **stationary** camera mount and **Multi Poses Calibration**
    for the calibration method. For the robot type, select **6 DOF** or **4 DOF**
    depending on the number of degrees-of-freedom (DOF) of your robot. If your robot has

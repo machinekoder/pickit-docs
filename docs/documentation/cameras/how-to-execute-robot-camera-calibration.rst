@@ -127,7 +127,7 @@ calibration with :ref:`calibration-multi-poses`.
 Step 1: Install calibration plate
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Go to the **Calibration** tab of the Pickit user interface and
+Go to the **Calibration** tab of the Pickit web interface and
 select **Single pose calibration**.
 
 Mount the calibration plate to the robot flange directly or by making

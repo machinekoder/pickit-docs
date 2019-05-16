@@ -46,7 +46,7 @@ enter the following IP address to access the Pickit system.
 
     http://192.168.66.1
 
-In the Pickit user interface, go to the configuration tab and create
+In the Pickit web interface, go to the configuration tab and create
 new setup files and a product file:
 
 -  **Setup:** flex_demo.

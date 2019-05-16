@@ -7,8 +7,8 @@ quick start guide that can be completed without having a robot.
 Follow the steps below to do your first detection with Pickit:
 
 -  Make sure that the Pickit camera is mounted approximately 700 mm above a flat
-   workspace. The workspace is now seen in the 2D viewer on the Pickit user interface.
--  In the Pickit user interface press :guilabel:`Disable Robot Mode`.
+   workspace. The workspace is now seen in the 2D viewer on the Pickit web interface.
+-  In the Pickit web interface press :guilabel:`Disable Robot Mode`.
 -  Create a new setup: in the **Setup** tab, on top, click :guilabel:`+ New` and name
    the new setup file 'Test\_Pickit'. Press :guilabel:`Continue`.
 -  Place the three workspace markers, according the indicated arrows,
