@@ -14,7 +14,7 @@ The Pickit Teach vision engine is designed to detect complex
 M-HD preset(M-HD camera only)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: /assets/images/Documentation/m-hd-preset.png
+.. image:: /assets/images/Documentation/m-hd-preset-21.png
 
 In this tab the preset for the M-HD camera is chosen. This preset determines the settings of the camera and how a point cloud is captured.
 
@@ -23,7 +23,7 @@ This guide helps you chosing a good preset for your application, :ref:`how-to-mh
 Define your model(s)
 ~~~~~~~~~~~~~~~~~~~~
 
-.. image:: /assets/images/Documentation/Teach-model-grid.png
+.. image:: /assets/images/Documentation/teach-model-grid-21.png
 
 A list of thaught models is shown accompanied by their ID and
 the number of points. By default, there are no models defined.
