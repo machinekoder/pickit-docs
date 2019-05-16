@@ -16,7 +16,7 @@ To upgrade your system follow these steps:
 -  Press the **Settings** button in the top bar of Pickit's web
    interface.
 
-.. image:: /assets/images/Documentation/Settings-button-2.png
+   .. image:: /assets/images/Documentation/settings-button-21.png
 
 -  Under the **Upgrade Pickit version** drawer in the **Network
    settings** section of the screen, you should see the following
