@@ -73,21 +73,35 @@ user defines using the model arrows.
   possible to include points that were initially outside the region-of-interest at
   the time of teaching.
 
-Re-teaching the model cloud
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+There are several situations where cropping an existing model is extremely convenient, as opposed
+to re-teaching it from scratch:
 
-If you wish to change the model cloud in a way that cropping or expanding it caanot help,
-you can re-teach it. Similarly as for the :guilabel:`Add model` button, when you press
-:guilabel:`Re-teach`, the model cloud is replaced by the content of your :ref:`region-of-interest`.
+#. Suppose that, upon teaching the model, undesired small amounts of points, that are
+   difficult to spot, are accidentally included in the model cloud. The user can quickly
+   get rid of these points by cropping them out of the model, without the need to re-teach
+   the model with a cleaner workspace.
 
-.. warning::
-  When re-teaching a specific model, the point-cloud data from the previous model
-  is overwritten. This action cannot be undone.
+#. When using Pickit Teach, it is intuitive to teach the whole object to be detected. However,
+   depending on the part geometry, this might not lead to the best results. In particular, parts which
+   are **almost symmetrical except for a small detail** tend to be fit 180 degrees flipped around
+   the symmetry axis. Such wrong fits have a high matching score, since only a small percentage
+   of model points are unmatched. Consequently, both good and bad fits have a high score, making it
+   difficult to filter out bad fits. The image below illustrates this behavior for an almost symmetrical
+   tube, which has one of the tips slightly wider than the other.
 
-A common example is when you realize that the model cloud quality could be improved. For
-instance, a model taught with the camera at a far distance might be missing important
-details. In that case, you may want to :guilabel:`Re-teach` it from a closer distance.
+   .. image:: /assets/images/Documentation/Teach-full-model-symmetric.png
 
-**Left: model taught at a long distance to the camera. Right: model re-taught at a short distance to the camera.**
+   A way to increase the score gap between good and bad fits is to crop out some of the redundant
+   side of the part, keeping  mainly the small detail in the model. Using the cropped model, a 180
+   degree flipped fit will have a much worse matching score than a good fit, since now the percentage
+   of unmatched points is larger relatively to the total amount of model points.
 
-.. image:: /assets/images/Documentation/Teach-model-taught-far-close.png
+   .. image:: /assets/images/Documentation/Teach-cropped-model-symmetric.png
+
+#. As one can guess by the example given above, finding a good Teach model can sometimes be a
+   trial-and-error process. Compared to re-teaching a model, cropping an existing one is much
+   faster, since this does not require the part to be placed under the camera and the Region of
+   Interest to be adjusted. This ease of use allows the user to quickly try out different cropped
+   versions of the model and compare results.
+
+   .. image:: /assets/images/Documentation/Teach-crop-experiment.png
