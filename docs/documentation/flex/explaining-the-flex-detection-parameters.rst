@@ -16,7 +16,7 @@ categories.
 M-HD preset(M-HD camera only)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: /assets/images/Documentation/m-hd-preset.png
+.. image:: /assets/images/Documentation/m-hd-preset-21.png
 
 In this tab the preset for the M-HD camera is chosen. This preset determines the settings of the camera and how a point cloud is captured.
 
