@@ -127,7 +127,7 @@ calibration with :ref:`calibration-multi-poses`.
 Step 1: Install calibration plate
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Go to the **Calibration** tab of the Pickit user interface and
+Go to the **Calibration** tab of the Pickit web interface and
 select **Single pose calibration**.
 
 Mount the calibration plate to the robot flange directly or by making
@@ -184,7 +184,7 @@ robot
 programs <http://support.pickit3d.com/article/36-pick-it-robot-programs>`__.
 
 Once Pickit receives the request for calibration from the robot the
-robot-camera calibration is calculated. 
+robot camera calibration is calculated. 
 
 **At the end of a successful calibration, all indicators should be
 green.** If they do not turn green, consult the log window for

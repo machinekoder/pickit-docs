@@ -130,8 +130,8 @@ There are two sets of files installed in the robot controller that
 relate to Pickit communication:
 
 -  **Pickit application files.**
-   These are example programs that illustrate how to perform typical Pickit operations, like robot-camera calibration or object detection for pick and place.These are located in :guilabel:`R1` > :guilabel:`Progran` > :guilabel:`Pickit`.
--  **Pickit interface files.** 
+   These are example programs that illustrate how to perform typical Pickit operations, like robot camera calibration or object detection for pick and place.These are located in :guilabel:`R1` > :guilabel:`Progran` > :guilabel:`Pickit`.
+-  **Pickit interface files.**
    These are internal files that expose the high-level functions used by the application files, and manage low-level communication with the Pickit system. These files are not meant for editing and are located in :guilabel:`R1` > :guilabel:`TP` > :guilabel:`Connect` > :guilabel:`Pickit`.
 
 The Pickit application files can be loaded and executed as any other KUKA.KRL program. Please refer to the **KUKA KR-C4** user manual for further details.
