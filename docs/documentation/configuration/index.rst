@@ -1,7 +1,7 @@
 .. _Configuration:
 
-Setup/Product files
-===================
+Configuration
+=============
 
 The communication between a robot and the Pickit system is based on question and answer. 
 The robot asks a question to the Pickit system and then the Pickit system answers this question.
@@ -37,9 +37,8 @@ being active.
 Creating a new setup or product file
 ------------------------------------
 
-To create a new setup or product file, first press the :guilabel:`New` button and fill in the corresponding text
-fields and click the :guilabel:`Continue`. Pickit will make a new file with all settings set to the basic default settings.
-After creation, the new setup and product file will automatically be
+To create a new setup or product file, first press :guilabel:`New`, name the new file and press :guilabel:`Continue`. Pickit will make a new file with all settings set to the basic default settings.
+After creation, the new setup or product file will automatically be
 loaded.
 
 .. image:: /assets/images/Documentation/create-new-product-file.png
@@ -50,8 +49,8 @@ Saving a setup or product file
 Once settings are changed in Pickit they can be saved in the correct file. 
 The :guilabel:`Save` button can be found at the top of the page. 
 
-Pressing the :guilabel:`Save` updates the active file with the new data. 
-The :guilabel:`Save as` creates a new file with the new data. A name has to be given to this file. 
-Pressing :guilabel:`Reset` restores the settings of the last time saved.
+Pressing :guilabel:`Save` updates the active file with the new data. 
+The :guilabel:`Save as` button saves the data to a new file. 
+Pressing :guilabel:`Reset` restores the last saved settings.
 
 .. image:: /assets/images/Documentation/save-saveas-reset.png
