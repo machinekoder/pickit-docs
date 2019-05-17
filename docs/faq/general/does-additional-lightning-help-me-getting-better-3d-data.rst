@@ -2,7 +2,7 @@ Does additional lightning help me getting better 3D data?
 =========================================================
 
 Simple answer: no. 
-As explained in the article :ref:`how-does-the-pickit-3d-camera-works`, our cameras are based on the structured light principle. 
+As explained in the article :ref:`how-does-the-pickit-3d-camera-work`, our cameras are based on the structured light principle. 
 For this to work the structured light pattern needs to be the most present in the scene. 
 If additional light is added to the scene this can interfere with the known grid. 
 This interference can lead to worse 3D data.

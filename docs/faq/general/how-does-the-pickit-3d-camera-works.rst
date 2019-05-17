@@ -1,6 +1,6 @@
-.. _how-does-the-pickit-3d-camera-works:
+.. _how-does-the-pickit-3d-camera-work:
 
-How does the Pickit 3D camera works?
+How does the Pickit 3D camera work?
 ====================================
 
 The Pick-it 3D cameras use `structured light <https://en.wikipedia.org/wiki/Structured_light>`__ technology. 
