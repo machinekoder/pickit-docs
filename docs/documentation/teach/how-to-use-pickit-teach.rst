@@ -70,12 +70,12 @@ The previous steps can be repeated to teach different models to Pickit Teach.
 In one product file up to 8 different models can be taught.
 This means that Pickit Teach is capable of looking for 8 different shapes in one detection.
 
-See :ref:`how-to-multiple-models` on how you can use the model id in a robot program.
-
 Below 2 models of the same part are shown. The first model is the shape of the top of the part.
 The second model is the shape of the bottom of the part.
 
 .. image:: /assets/images/Documentation/teach-models.png
+
+See :ref:`how-to-multiple-models` on how you can use the model id in a robot program.
 
 After teaching a model for the first time, it is possible to alter it in different ways.
 Refer to the article :ref:`How-to-edit-existing-model` for further details.
