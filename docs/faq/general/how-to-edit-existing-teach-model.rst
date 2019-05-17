@@ -15,9 +15,9 @@ or delete models. This article explains how you can edit an existing model.
 Re-teaching the model cloud
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If you wish to change the model cloud from scratch, you can re-teach it, by clicking on the
-:guilabel:`Re-teach` of the concerned model. This replaces the model cloud by the content of
-your current :ref:`region-of-interest`.
+If you wish to change the model cloud from scratch, click on the :guilabel:`Re-teach` button of the
+concerned model. This replaces the model cloud by the content of your current
+:ref:`region-of-interest`.
 
 A common example is when you realize that the model cloud quality could be improved. For
 instance, a model taught with the camera at a far distance might be missing important
@@ -37,19 +37,21 @@ model point cloud can be cropped or expanded afterwards, using the arrows in the
 
 On the top left corner of the **Model** view, there is a **Auto-snap crop box**
 checkbox. If this option is enabled, the green model box automatically adjusts to
-the limits of the model points. This is useful for the user to check if the model
+the limits of the model points. This is useful for you to check if the model
 contains undesired points that are difficult to spot.
 
 **If there are no undesired points in the model, the auto-snapped model box bounds the model points cleanly.**
 
 .. image:: /assets/images/Documentation/Teach-model-autosnap-on-clean.png
 
-**If the model contains undesired points that are difficult to see, the auto-snapped model box seems larger than the actual model.**
+**If the model contains undesired points that are difficult to see, the auto-snapped model box
+seems larger than the actual model. In the model shown below, undesired points can be found on the
+top right corner of the model bounding box.**
 
 .. image:: /assets/images/Documentation/Teach-model-autosnap-on-ghostpoints.png
 
-If the auto-snap option is disabled, the green model box is set to whatever the
-user defines using the model arrows.
+If the auto-snap option is disabled, the green model box is set to whatever you define
+ using the model arrows.
 
 .. image:: /assets/images/Documentation/Teach-model-autosnap-off.png
 
@@ -64,7 +66,7 @@ There are several situations where cropping an existing model is extremely conve
 to re-teaching it from scratch:
 
 #. Suppose that, upon teaching the model, undesired small amounts of points, that are
-   difficult to spot, are accidentally included in the model cloud. The user can quickly
+   difficult to spot, are accidentally included in the model cloud. You can quickly
    get rid of these points by cropping them out of the model, without the need to re-teach
    the model with a cleaner workspace.
 
@@ -88,7 +90,7 @@ to re-teaching it from scratch:
 #. As one can guess by the example given above, finding a good Teach model can sometimes be a
    trial-and-error process. Compared to re-teaching a model, cropping an existing one is much
    faster, since this does not require the part to be placed under the camera and the Region of
-   Interest to be adjusted. This ease of use allows the user to quickly try out different cropped
+   Interest to be adjusted. This ease of use allows you to quickly try out different cropped
    versions of the model and compare results.
 
    .. image:: /assets/images/Documentation/Teach-crop-experiment.png
