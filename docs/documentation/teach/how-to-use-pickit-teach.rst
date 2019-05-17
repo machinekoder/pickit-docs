@@ -67,51 +67,8 @@ In one product file up to 8 different models can be taught.
 This means that Pickit Teach is capable of looking for 8 different shapes in one detection.
 See :ref:`Using-the-model-id-in-a-robot-program` on how you can use the model id in a robot program.
 
-Editing a model
-^^^^^^^^^^^^^^^
-
-**Choosing the Pick frame**
-
-Each model has a Pick frame, which indicates where and with which orientation
-the part will be picked by the robot. Upon teaching a model, the Pick frame is
-automatically set to the centroid of the model point cloud. The user can change
-the position and orientation of the Pick frame to the most suitable spot to pick.
-
-**Left: Default Pick frame after teaching the model. Right: Custom Pick frame set by the user.**
-
-.. image:: /assets/images/Documentation/Teach-model-pick-frame.png
-
-**Cropping and expanding the model**
-
-When clicking :guilabel:`Add a model` or :guilabel:`Re-teach`, the resulting model
-corresponds to the content of the current :ref:`region-of-interest`. However, the
-model point cloud can be cropped or expanded afterwards, using the arrows in the
-**Model** view.
-
-On the top left corner of the **Model** view, there is a **Auto-snap crop box**
-checkbox. If this option is enabled, the green model box automatically adjusts to
-the limits of the model points. This is useful for the user to check if the model
-contains undesired points that are difficult to spot.
-
-**If there are no undesired points in the model, the auto-snapped model box bounds the model points cleanly.**
-
-.. image:: /assets/images/Documentation/Teach-model-autosnap-on-ghostpoints.png
-
-**If the model contains undesired points that are difficult to see, the auto-snapped model box seems larger than the actual model.**
-
-.. image:: /assets/images/Documentation/Teach-model-autosnap-on-clean.png
-
-If the auto-snap option is disabled, the green model box is set to whatever the
-user defines using the model arrows.
-
-.. image:: /assets/images/Documentation/Teach-model-autosnap-off.png
-
-.. note::
-  Cropping and expanding operations do not replace the model with the content of the
-  current region-of-interest. Instead, they work on the point cloud that was captured
-  at the moment of teaching. When expanding the model box (making it larger), it is
-  possible to include points that were initially outside the region-of-interest at
-  the time of teaching.
+After teaching a model for the first time, it is possible to alter it in different ways.
+Refer to the article :ref:`How-to-edit-existing-model` for further details.
 
 Detecting object(s)
 ~~~~~~~~~~~~~~~~~~~
