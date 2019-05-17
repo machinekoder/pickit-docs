@@ -52,6 +52,10 @@ are saved into the model.
    data from the previous model is overwritten. This action cannot be
    undone.
 
+It is also possible to crop or expand an existing model, without the need
+to re-teach it. Refer to the article :ref:`How-to-edit-existing-model` for
+further details.
+
 Delete a model
 ^^^^^^^^^^^^^^
 
