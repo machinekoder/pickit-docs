@@ -33,16 +33,15 @@ The markers are not interchangeable.
 
 .. image:: /assets/images/Documentation/Roi-markers.jpg
 
-#. Open the **Region of Interest** page on the Pickit web interface.
 #. Open the **2D** view in the Pickit viewer.
 #. Place the three markers as shown in the image above in the field of
    view of the camera.
-#. Press Use markers (this button is on clickable when all three markers
+#. Press :guilabel:`Around QR markers` (this button is on clickable when all three markers
    are in the field of view of the camera).
 #. If required, manually adjust the ROI box size as described in
-   the :ref:`fine-tune-roi-box`.
+   the :ref:`fine-tune-roi-box` section.
 
-.. note:: When defining the ROI box, the \ **Pickit reference
+.. note:: When defining the ROI box, the **Pickit reference
    frame** is defined in the left bottom corner of the ROI box.
 
 Automatically
@@ -51,11 +50,10 @@ Automatically
 With this strategy, the ROI box is located on top of the most dominant
 plane in the field of view of the camera.
 
-#. Open the **Region of Interest** page on the Pickit web interface.
-#. Press Use plane.
+#. Press :guilabel:`Automatically`.
 #. Input length and width of the desired ROI box.
 #. If required, manually adjust the ROI box size as described in
-   the :ref:`fine-tune-roi-box`.
+   the :ref:`fine-tune-roi-box` section.
 
 .. note:: When defining the ROI box, the **Pickit reference
    frame** is defined in the middle of the bottom of the ROI box.
@@ -65,11 +63,10 @@ From camera
 
 In this way the ROI box is defined based of the camera frame.
 
-#. Open the Region of Interest page on the Pickit web interface.
-#. Press Use camera.
+#. Press :guilabel:`From camera`.
 #. Input length and width of the desired ROI box.
 #. If required, manually adjust the ROI box size as described in
-   the :ref:`fine-tune-roi-box`.
+   the :ref:`fine-tune-roi-box` section.
 
 .. note:: This method simply defines the camera frame as the **Pickit
    reference frame**.

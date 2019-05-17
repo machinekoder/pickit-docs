@@ -46,6 +46,7 @@ in it can be visualized in the **Points** tab of the viewer.
 .. toctree::
     :maxdepth: 2
 
+    active-cameras
     fix-roi-box
     build-roi-box
     fine-tune-roi-box

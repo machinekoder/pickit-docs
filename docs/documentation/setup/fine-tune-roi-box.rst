@@ -4,7 +4,7 @@ Fine-tune ROI box
 -----------------
 
 Once an initial ROI box has been defined, you can manually adjust its
-size. When the **Region of Interest page** is open,
+size. When section **Fine-tune ROI box** is opened, in the **Setup** page,
 colored arrows attached to the ROI are displayed in the viewer (in all
 views except 2D). Arrows are colored according to the Pickit reference
 frame direction: X→red, Y→green, Z→blue. You can interactively click and
@@ -12,8 +12,8 @@ drag the arrows to extend and contract the box along each of its sides.
 
 .. image:: /assets/images/Documentation/Roi-arrows.png
 
-The exact bounds and size of the ROI box are reported in the **Region of
-Interest** page, as shown below. You can also manually set the bound
+The exact bounds and size of the ROI box are reported in the **Fine-tune ROI box** section,
+as shown below. You can also manually set the bound
 values here and the ROI box will be updated in the viewer.
 
 .. image:: /assets/images/Documentation/Roi-values.png

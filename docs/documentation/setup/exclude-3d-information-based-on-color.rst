@@ -4,7 +4,7 @@ Exclude 3D information based on color
 -------------------------------------
 
 The color filter can be used to explicitly include or exclude points
-from a certain color. Several use cases for the color filter are:
+with a certain color. Several use cases for the color filter are:
 
 -  Excluding parts of the bin
 -  Detection of thin parts on a flat surface
@@ -17,13 +17,11 @@ Example of detecting thin parts on a flat surface
 
 .. image:: /assets/images/Documentation/Color-filter-2d.png
 
-This is an example case where we want to detect thin parts at the bottom
-of a bin. There are several problems that need to be solved:
-
--  The bottom of the bin is not straight, this results in parts of the
-   bottom being visible in the points view.
--  Because of the thin parts it's hard to distinguish them from the
-   bottom
+This is an example case where we want to detect thin parts at the bottom of a bin. 
+Since these parts are very thin, their 3D shape does not stand out from the bin bottom, 
+as their thickness is smaller than the noise levels of the cloud. 
+It is therefore impossible to define the ROI box dimensions such that only points from the parts are included, 
+without any points from the bin.
 
 1. Define your ROI
 ^^^^^^^^^^^^^^^^^^
@@ -50,23 +48,20 @@ this makes our point cloud unusable for detections.
 3. Exclude the color
 ^^^^^^^^^^^^^^^^^^^^
 
-.. image:: /assets/images/Documentation/Color-filter-exclude.png
+.. image:: /assets/images/Documentation/color-filter-exclude.png
 
-We can exclude all the points of the yellow bin by activating the color
-filter: on the Region of Interest page we select the Color filter tab
-and check the Color Filter checkbox.
+We can exclude all the points of the yellow bin by following these steps:
 
-#. Open the 2D view and click with your mouse cursor on the color you
-   would like to exclude
-#. Set the switch to Exclude as we want to remove all points of that
-   specific color
+#. On the **Setup** page, in section **Exclude 3D information based on color**, check the Color filter checkbox. 
+#. The 2D view is automatically opened, allowing you to click on the color to be filtered. 
+   In this case, select the yellow bin, since we want to exclude this color.
+#. Choose the Exclude option to discard the points of the yellow bin.
 #. Adjust the Threshold slider to adjust the range of color that will be
    excluded
 #. Go back to the Points view and press :guilabel:`Detect` to check the
    results.
 #. Adjust the Threshold until only the parts are visible.
 
-The result is that our parts are very visible with a very nice point
-cloud without parts of the bin being visible.
+In the resulting point cloud, the parts are cleanly visible, without any points of the bin.
 
 .. image:: /assets/images/Documentation/Color-filter-points-result.png

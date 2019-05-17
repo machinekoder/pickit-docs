@@ -8,7 +8,7 @@ for robot-mounted camera scenarios:
 
 Camera frame
 ~~~~~~~~~~~~
-roi-attached-to-camera.gif
+
 A ROI box attached to the **camera** moves relative to the robot base as
 the robot end-effector (and camera) move.To define the ROI box,
 a running connection between Pickit and the robot is not required.
