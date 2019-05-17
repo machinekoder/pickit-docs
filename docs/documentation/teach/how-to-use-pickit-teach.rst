@@ -49,7 +49,7 @@ Before creating a model of the object, we need to isolate the part from
 its surroundings to make sure that only points belonging to the object
 are captured in the model. This is done by using the :ref:`region-of-interest`.
 
-Go to the **Region of Interest** tab and modify the region of interest
+Go to the **Setup** page and, in the **Fine-tune ROI box** section, modify the region of interest
 box boundaries until only points that belong to your objects are inside
 the ROI box. When you're done adapting the boundaries, you're ready to
 go to the next step.
@@ -63,7 +63,7 @@ In this step, the actual model will be taught and saved. Go to the
 Detection tab and select the Pickit Teach engine. Open the ‘Define your
 model(s)’ section. Here you will see a widget that allows adding models.
 
-To add a new model, click the :guilabel:`Add a model`. Before clicking
+To add a new model, click :guilabel:`Add a model`. Before clicking
 this button, make sure that the previous steps are completed so that a correct side of the object is oriented to the
 camera. When a new model is
 successfully defined, the viewer will open the **Model
