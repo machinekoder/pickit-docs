@@ -2,7 +2,7 @@ Build a showcase demo with Pattern
 ==================================
 
 This article will guide you in setting up a simple robot picking demo
-with Pickit Pattern. The Pattern vision engine is made for picking
+with Pickit Pattern. This detection engine is made for picking
 objects with **simple geometrical** **shapes** stacked into an
 **organized pattern**. In this demo we are picking cardboard boxes.
 Click :ref:`here <pattern-demo-happy-picking>` to see the video of this demo.

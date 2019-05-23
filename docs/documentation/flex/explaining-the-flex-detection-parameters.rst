@@ -13,6 +13,8 @@ categories.
     :local:
     :depth: 1
 
+.. _M-HD-preset:
+
 M-HD preset (M-HD camera only)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -21,6 +23,8 @@ M-HD preset (M-HD camera only)
 The M-HD camera presets are a set of predefined configurations that optimize point cloud capture to specific materials.
 
 This guide helps you chosing a good preset for your application: :ref:`how-to-mhd-preset`.
+
+.. _Group-points-into-clusters:
 
 Group points into clusters
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -84,11 +88,11 @@ effect of modifying them can be visualized in the 
 applications where they are used:
 
 -  **Square** and **rectangle**: cardboard packaging, plastic bags,
-   industrial objects
+   industrial objects.
 -  **Circle** and **ellipse**: industrial rings, pipe ends, top of
-   soda cans 
--  **Cylinder**: coke cans, tubes, bottles
--  **Sphere**: oranges, footballs
+   soda cans.
+-  **Cylinder**: coke cans, tubes, bottles.
+-  **Sphere**: oranges, footballs.
 -  **Blob** is perfect for detecting objects that can be very well
    clustered but don't have a geometrical shape. Examples for these are
    vegetables and fruit (bananas, peppers ...) and special shaped boxes
@@ -109,7 +113,7 @@ For **3D object models** like cylinders and spheres, one can specify:
 .. image:: /assets/images/Documentation/3d-matching-tolerance.png
 
 For **2D object models**, Pickit first finds a flat regions and then
-looks for the selected model within this surface(square, rectangle, circle or
+looks for the selected model within this surface (square, rectangle, circle or
 ellipse). One can specify:
 
 -  Whether the shape is solid or has an internal **hole**, like a ring.
@@ -137,6 +141,8 @@ their **physical size** (length, width, diameter). Additionally,
 objects can be rejected depending on the value of the different matching
 scores, explained below.
 
+.. _Contour-score:
+
 2D contour score
 ^^^^^^^^^^^^^^^^
 
@@ -145,6 +151,8 @@ of the **2D model contour** that is covered with points within the
 **2D matching tolerance**.
 
 .. image:: /assets/images/Documentation/2d-contour-score.png
+
+.. _Surface-score:
 
 2D surface score
 ^^^^^^^^^^^^^^^^
@@ -175,8 +183,8 @@ These parameters affect the number of points of the captured point cloud
 used for object detection. The effect of modifying these parameters can
 be visualized in the **Points** view.
 
-Image fusion(M/L camera only)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Image fusion (M/L camera only)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Image fusion is the combination of multiple camera captures into a
 single image. Enabling image fusion can provide  **more detail** in

@@ -2,8 +2,7 @@ Build a showcase demo with Flex
 ===============================
 
 This article will guide you in setting up a simple robot picking demo
-with Pickit Flex. The Flex vision engine is the vision engine for
-finding objects with **simple geometrical shapes** in **random
+with Pickit Flex. This detection engine was designed for finding objects with **simple geometrical shapes** in **random
 orientations**. In this demo we are picking simple steel
 cylinders. Click :ref:`here <flex-demo-happy-picking>` to see the video of this demo.
 

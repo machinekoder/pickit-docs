@@ -3,7 +3,7 @@
 Explaining the Teach detection parameters
 -----------------------------------------
 
-The Pickit Teach vision engine is designed to detect complex
+The Pickit Teach detection engine is designed to detect complex
 3D shapes. This article explains its detection parameters.
 
 .. contents::
