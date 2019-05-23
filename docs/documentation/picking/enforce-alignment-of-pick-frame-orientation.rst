@@ -9,27 +9,25 @@ will be sent to the robot. This setting will make sure that one or more
 resulting pick frame axes have a parallel or perpendicular axis to the
 reference frame axes.
 
-.. warning:: Enforcing a pick frame orientation takes precedence over the
+.. warning:: 
+   Enforcing a pick frame orientation takes precedence over the
    object to reference frame alignment.
-
-There are multiple alignment options, which will all be discussed in
-this article.  
-
-.. contents::
-    :backlinks: top
-    :local:
-    :depth: 1
 
 Short overview
 ~~~~~~~~~~~~~~
 
--  **No alignment:** if the there is no tolerance for the gripper to pick
+There are multiple alignment options, which will all be discussed in
+this article.:
+
+-  :ref:`enforce-alignment-no-alignment`: If the there is no tolerance for the gripper to pick
    the part.
--  **Y⊥Z:** For cylindrical parts.
--  **Z\|\|Z:** If the gripper has enough compliance to pick the parts
+-  :ref:`enforce-alignment-y-perpendicular-z`: For parts with cylindrical symmetry. Orients the pick frame as close as possible with the vertical direction.
+-  :ref:`enforce-alignment-z-parallel-z`: If the gripper has enough compliance to pick the parts
    straight upwards.
--  **XYZ\|\|XYZ:** If the gripper has compliance to pick the objects
+-  :ref:`enforce-alignment-xyz-parallel-xyz`: If the gripper has compliance to pick the objects
    straight upwards and orientation of the parts is not important.
+
+.. _enforce-alignment-no-alignment:
 
 No alignment
 ~~~~~~~~~~~~
@@ -37,6 +35,8 @@ No alignment
 No alignment will be done, this option does not modify the pick frame.
 This is typically applied if there is only one correct way for the
 gripper to approach the object.
+
+.. _enforce-alignment-y-perpendicular-z:
 
 Y ⊥ Z
 ~~~~~
@@ -87,6 +87,8 @@ For this following parameters are used:
 
 .. image:: /assets/images/Documentation/allowed-correction-axis-deviation.png
 
+.. _enforce-alignment-z-parallel-z:
+
 Z || Z
 ~~~~~~
 
@@ -123,6 +125,8 @@ For this following parameters are used:
    is set the same as the angular modification away from box. If the
    gripper has different flexibility around his Y-axis than around his
    X-axis this can be set to a lower value.
+
+.. _enforce-alignment-xyz-parallel-xyz:
 
 XYZ || XYZ
 ~~~~~~~~~~
