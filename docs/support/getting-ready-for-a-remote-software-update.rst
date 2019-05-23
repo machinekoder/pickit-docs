@@ -57,7 +57,7 @@ inside so this works out of the box. 
 .. note:: Since this is a wireless device, it's important that it is
    positioned **outside a metal enclosure** (cage of Faraday). In case your
    Pickit system is in such an enclosure, you may use an extension cable
-   up to 2m to install the remote service modem outside this enclosure.
+   up to 2 m to install the remote service modem outside this enclosure.
 
 .. note:: Depending on **3G reception on site**, a Pickit support
    engineer could view and manipulate the Pickit web interface, install

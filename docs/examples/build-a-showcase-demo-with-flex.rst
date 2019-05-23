@@ -34,8 +34,8 @@ It is assumed that the Pickit system is mounted around 700 mm above the
 table and is running correctly. If you are not sure, please follow step
 1-4 from our :ref:`quick-start` guide. 
 
-Your first detection(configuring the Pickit files)
---------------------------------------------------
+Your first detection (configuring the Pickit files)
+---------------------------------------------------
 
 Now that every component is connected to the Pickit system, we are able
 to configure Pickit. Open a chrome web browser on your external PC and
@@ -69,7 +69,7 @@ done by defining the region of interest (ROI). See the article :ref:`region-of-
 on how to define a ROI. 
 
 Below you can see a pictures of a good defined ROI for this application.
-All useless information is filtered out(the bin and the table) only
+All useless information is filtered out (the bin and the table) only
 information of the parts in the bin are kept. Also make sure that the
 ROI is slightly higher than the real bin.
 
@@ -100,10 +100,10 @@ In this demo following parameters are used:
 -  No **rejecting clusters**
 -  **Object model:** Cylinder
 -  **Surface:** external only
--  **3D tolerance:** 5mm
+-  **3D tolerance:** 5 mm
 -  Filtering: 400 < **Points** < 500000
--  Filtering: 100mm < **Length** < 110mm
--  Filtering: 38mm < **Diameter** < 46mm
+-  Filtering: 100 mm < **Length** < 110 mm
+-  Filtering: 38 mm < **Diameter** < 46 mm
 -  **3D scene score:** 90%
 -  **Fusion:** None
 -  **Downsampling:** 1
@@ -138,8 +138,8 @@ is used to transform the object pick-frames into robot coordinates. A
 detailed description in robot-camera calibration can be found in the article :ref:`robot-camera-calibration`. 
 Do not forget to save after the calibration is finished.
 
-Your first pick(Program the robot)
-----------------------------------
+Your first pick (Program the robot)
+-----------------------------------
 
 Now Pickit is configured, the only thing left to do is programming the
 robot. The robot used in the demo video is a UR5, but a similar program

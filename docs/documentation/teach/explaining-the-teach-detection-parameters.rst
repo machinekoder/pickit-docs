@@ -11,8 +11,8 @@ The Pickit Teach detection engine is designed to detect complex
     :local:
     :depth: 1
 
-M-HD preset(M-HD camera only)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+M-HD preset (M-HD camera only)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: /assets/images/Documentation/m-hd-preset-21.png
 
@@ -36,8 +36,8 @@ currently visible within the ROI are now saved into a model. When the
 model is successfully created, the model will automatically be shown in
 the **Model** view.
 
-In one product file up to 8 different models can be taught. 
-This means that Pickit Teach is capable of looking for 8 different shapes in one detection. 
+In one product file up to 8 different models can be taught.
+This means that Pickit Teach is capable of looking for 8 different shapes in one detection.
 See :ref:`how-to-multiple-models` on how you can use the model id in a robot program.
 
 Re-teach a model
@@ -83,12 +83,12 @@ that specific model.
 Pick frame
 ^^^^^^^^^^
 
-The pick frame is the location where the TCP of the robot will be guided to. 
+The pick frame is the location where the TCP of the robot will be guided to.
 The location of the pick frame can be visualized from the **Model** view.
 By default, Pickit Teach provides an initial pick frame,
 but this will in general not be the best choice. It's possible to
 specify the desired  **pick frame** as a positional and rotational
-offset with respect to the object model. 
+offset with respect to the object model.
 
 .. image:: /assets/images/Documentation/Teach-pick-frame.png
 
@@ -115,8 +115,8 @@ Optimize detections
 
 .. _image-fusion:
 
-Image fusion(M/L camera only)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Image fusion (M/L camera only)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Image fusion is the combination of multiple camera captures into a
 single image. Enabling image fusion can provide **more detail** in

@@ -6,7 +6,7 @@ For this we'll use a soda can. Note that this is the final step of this
 quick start guide that can be completed without having a robot.
 Follow the steps below to do your first detection with Pickit:
 
--  Make sure that the Pickit camera is mounted 700mm above a flat work
+-  Make sure that the Pickit camera is mounted 700 mm above a flat work
    space. The work space is now seen in the 2D viewer on the Pickit
    user interface.
 -  In the Pickit user interface press Stop Robot Mode.
@@ -16,7 +16,7 @@ Follow the steps below to do your first detection with Pickit:
    inside the field of view of the camera.
 -  Go to the Region of Interest > ROI Box filter and press Use Markers.
    Wait till the blue box is updated. 
--  Set following values for Zmin and Zmax: 10mm and 150mm.
+-  Set following values for Zmin and Zmax: 10 mm and 150 mm.
 -  Press the Save button.
 
 .. image:: /assets/images/First-steps/Empty-roi.png

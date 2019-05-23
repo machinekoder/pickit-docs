@@ -11,12 +11,12 @@ What's in the box
 
 -  Pickit 3D Camera
 
-   -  10m camera USB cable
+   -  10 m camera USB cable
 
 -  Robot-to-camera Calibration Plate with dowel pin
 -  Set of 3 workspace markers
--  5m green ethernet cable
--  5m black ethernet cable
+-  5 m green ethernet cable
+-  5 m black ethernet cable
 -  Goodies
 -  Integration manual
 -  Camera manual

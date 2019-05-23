@@ -22,8 +22,8 @@ objects with higher accuracy compared to the existing Pickit M camera. 
 Field of View
 ~~~~~~~~~~~~~
 
--  780 x 490 mm @ 1.1m
--  425 x 267 mm @ 0.6m
+-  780 x 490 mm @ 1.1 m
+-  425 x 267 mm @ 0.6 m
 
 Technical specifications
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -31,11 +31,11 @@ Technical specifications
 -  **3D measurement method**
    Structured light
 -  **Image processing speed**
-   10 Hz (100ms snapshots)
+   10 Hz (100 ms snapshots)
 -  **3D Camera accuracy**
-   0.1mm
+   0.1 mm
 -  **3D Camera repeatability**
-   < 1mm
+   < 1 mm
 -  **3D camera weight**
    2 kg
 -  **3D camera connection to PC**

@@ -75,10 +75,10 @@ model bounding box as a green dashed line and the Pick frame. Note the
 number in round brackets in the Model view tab name, this is the model
 ID.
 
-Previous steps can be repeated to Teach different models to Pickit Teach. 
-In one product file up to 8 different models can be taught. 
+Previous steps can be repeated to Teach different models to Pickit Teach.
+In one product file up to 8 different models can be taught.
 This means that Pickit Teach is capable of looking for 8 different shapes in one detection.
-See :ref:`how-to-multiple-models` on how you can use the model id in a robot program. 
+See :ref:`how-to-multiple-models` on how you can use the model id in a robot program.
 
 Below 2 models of the same part are shown. The first model is the shape of the top of the part.
 The second model is the shape of the bottom of the part.
@@ -114,7 +114,7 @@ article to learn how to interpret the :ref:`detection-grid`.
 If you want to optimize your detections, the article :ref:`Explaining-the-teach-detection-parameters`
 goes more in depth on the different parameters of Pickit Teach. We
 advice you to experiment with different settings and multiple objects in
-different settings(tilted, on top of each other,..)
+different settings (tilted, on top of each other,..)
 
 .. note:: There is a hard limit on the Teach matching time of 5 seconds.
    Before applying any optimization, this limit could be reached.

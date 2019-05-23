@@ -27,8 +27,8 @@ It is assumed that the Pickit system is mounted around 700 mm above the
 table and is running correctly. If you are not sure, please follow step
 1-4 from our :ref:`quick-start` guide. 
 
-Your first detection(Configure the Pickit files)
-------------------------------------------------
+Your first detection (Configure the Pickit files)
+-------------------------------------------------
 
 Now that every component is connected to the Pickit system, we are able
 to configure Pickit. Open a chrome web browser on your external PC and
@@ -58,7 +58,7 @@ done by defining the region of interest (ROI). See the article :ref:`region-of-
 on how to define a ROI. 
 
 Below you can see a pictures of a good defined ROI for this application.
-All useless information is filtered out(the table and surroundings) only
+All useless information is filtered ou (the table and surroundings) only
 information of the parts on the table are kept. 
 
 Don't forget to save the settings in the corresponding Setup files.
@@ -86,10 +86,10 @@ In this demo following parameters are used
 -  No **rejecting clusters**
 -  **Object model:** rectangle
 -  **Contour:** inner and outer
--  **3D tolerance:** 15mm
--  **2D tolerance:** 10mm
--  **Expected length:** 115mm
--  **Expected width:** 65mm
+-  **3D tolerance:** 15 mm
+-  **2D tolerance:** 10 mm
+-  **Expected length:** 115 mm
+-  **Expected width:** 65 mm
 -  **Expected orientation:** either X||X or X||Y depending on
    the pattern orientation w.r.t. the reference frame in the 3D-view.
 -  **2D contour score:** 45%

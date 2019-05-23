@@ -1,7 +1,7 @@
 Maximum angle between pick frame Z-axis and surface normal
 ----------------------------------------------------------
 
-This setting becomes visible whenever an alignment is enforced(add
+This setting becomes visible whenever an alignment is enforced (add
 link). With this setting, you can specify the maximum angular difference
 between the Z axis of your adapted pick frame and the original pick
 frame. As seen in the image below, if the new frame is tilted more than
