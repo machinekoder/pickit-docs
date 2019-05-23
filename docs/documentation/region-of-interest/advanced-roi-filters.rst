@@ -46,7 +46,12 @@ Point-based ROI filter
 Removes all points located close to a point present in an image of the
 empty workspace.
 
-.. note:: This filter is only applied once when you press :guilabel:`Teach Workspace`.
+.. note:: This filter is only applied once when you press
+   :guilabel:`Build background` in the Pickit web interface.
+   Alternatively, you can programmatically call a background-building helper
+   function from your robot program.
+   Refer to the documentation of the Pickit robot integrations to learn the exact
+   syntax of this function for your robot brand.
 
 .. _Plane-based-roi-filter:
 
@@ -60,7 +65,12 @@ The initialization of the plane-based filtering consists of capturing a
 reference image of the empty workspace and finding the dominant plane
 through all points within the above-defined region of interest box.
 
-.. note:: This filter is only applied once when you press :guilabel:`Teach Workspace`.
+.. note:: This filter is only applied once when you press
+   :guilabel:`Build background` in the Pickit web interface.
+   Alternatively, you can programmatically call a background-building helper
+   function from your robot program.
+   Refer to the documentation of the Pickit robot integrations to learn the exact
+   syntax of this function for your robot brand.
 
 .. _Sphere-based-roi-filter:
 
@@ -74,4 +84,9 @@ The initialization of the sphere-based filtering consists of capturing a
 reference image of the empty workspace and finding the dominant sphere
 through all points within the above-defined region of interest box.
 
-.. note:: This filter is only applied once when you press :guilabel:`Teach Workspace`.
+.. note:: This filter is only applied once when you press
+   :guilabel:`Build background` in the Pickit web interface.
+   Alternatively, you can programmatically call a background-building helper
+   function from your robot program.
+   Refer to the documentation of the Pickit robot integrations to learn the exact
+   syntax of this function for your robot brand.
