@@ -4,8 +4,8 @@ Flex
 ====
 
 The Pickit Flex engine easily finds geometric shapes (cylinders, boxes,
-planes, circles ... ) and can handle a variety of sizes with one
-configuration. In the image below an example of a Flex detection is
+planes, circles ... ) and can handle a variety of sizes with a single
+configuration. In the image below, an example Flex detection is
 shown. Here Pickit finds all cylindrical shapes in the bin.
 
 .. image:: /assets/images/Documentation/Flex-detection.gif

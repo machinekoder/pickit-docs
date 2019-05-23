@@ -3,7 +3,7 @@
 Explaining the Flex detection parameters
 ----------------------------------------
 
-The process of detecting objects with the Flex vision engine is all
+The process of detecting objects with the Flex detection engine is all
 about step by step testing and fine-tuning parameters until you get a
 good result. The parameters for Flex detection are split into five
 categories.
@@ -13,14 +13,14 @@ categories.
     :local:
     :depth: 1
 
-M-HD preset(M-HD camera only)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+M-HD preset (M-HD camera only)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: /assets/images/Documentation/m-hd-preset-21.png
 
-In this tab the preset for the M-HD camera is chosen. This preset determines the settings of the camera and how a point cloud is captured.
+The M-HD camera presets are a set of predefined configurations that optimize point cloud capture to specific materials.
 
-This guide helps you chosing a good preset for your application, :ref:`how-to-mhd-preset`.
+This guide helps you chosing a good preset for your application: :ref:`how-to-mhd-preset`.
 
 Group points into clusters
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -40,8 +40,8 @@ initially depends on how the parts are presented in the scene. 
    cylinders or spheres. In the system a few preset configurations exist, and you
    should experiment with them to determine which works best with your
    parts.
--  For **plane-based clustering**, the system looks for flat surfaces. 
-   If two surfaces are touching but the orientation of the surface is different they are considered as separate clusters. 
+-  For **plane-based clustering**, the system looks for flat surfaces.
+   If two flat surfaces are touching but their orientation is different, they are considered as separate clusters.
    A typical example where this is used is random boxes in a bin.
 -  For **non-touching parts**, you specify the **clustering distance
    threshold**, which represents the minimum distance to consider
