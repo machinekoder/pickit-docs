@@ -1,3 +1,5 @@
+.. _support-remote-service:
+
 Getting ready for remote service
 ================================
 

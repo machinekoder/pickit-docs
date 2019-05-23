@@ -17,16 +17,13 @@ Units
 .. image:: /assets/images/Documentation/settings-units.png
 
 This setting allows you to select the length unit of choice
-(meters, inches, ...) after which all length values in the interface
+(meters, inches, ...) after which length values in the interface
 will be converted to the newly selected unit.
 
 Automatic detections
 ~~~~~~~~~~~~~~~~~~~~
 
 .. image:: /assets/images/Documentation/settings-automatic-detections.png
-
-Here you can choose to automatically trigger a new detection if a
-parameter is changed.
 
 Share usage statistics
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -73,7 +70,7 @@ Pickit port labeled LAN
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 This port has the purpose of connecting your Pickit processor to a
-network. 
+network, to bring the system online for remote support (see article :ref:`support-remote-service`). 
 
 .. image:: /assets/images/Documentation/settings-port-lan.png
 
