@@ -193,7 +193,7 @@ typically occurs when working with **reflective materials**. There are
 three possible fusion configurations: **None**, **Light fusion** and
 **Heavy fusion**.
 
-Image fusion can increase total detection time by up to half a second.
+Image fusion can increase total detection time by up to a second.
 The recommended practice is to use None in the absence of flickering,
 and try first Light fusion over Heavy fusion when flickering is
 present. 

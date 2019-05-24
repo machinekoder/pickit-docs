@@ -2,11 +2,10 @@ How to use Pickit Teach
 -----------------------
 
 This article describes how to get started with the Pickit Teach engine.
-Pickit Teach is a detection engine in Pickit which can search for
+Pickit Teach is a detection engine which can search for
 objects based on a previously shown example object. It is primarily used
 to find irregularly shaped objects that don't fit in one of the basic
-shape categories, like cylinders, spheres, squares, rectangles, circles,
-and ellipses.
+shape categories, like cylinders, spheres, squares, rectangles, circles or ellipses.
 
 .. contents::
     :backlinks: top
@@ -16,7 +15,7 @@ and ellipses.
 Teach a model based on your product
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Teaching a model of an object is the most important step when setting up
+Teaching an object model is the most important step when setting up
 the Pickit Teach engine to detect your object. The model is the only
 thing that is used by Pickit Teach to search for your objects in a
 scene, so a better quality model results in better detections. A
@@ -66,11 +65,10 @@ model(s)’ section. Here you will see a widget that allows adding models.
 To add a new model, click :guilabel:`Add a model`. Before clicking
 this button, make sure that the previous steps are completed so that a correct side of the object is oriented to the
 camera. When a new model is
-successfully defined, the viewer will open the **Model
-tab** automatically and a **Model row** will be added to the models'
+successfully defined, the viewer will open the :ref:`Model view <model-view>` automatically and a **Model row** will be added to the models'
 widget.
 
-The **Model tab** shows a 3D visual representation of your model, a
+The :ref:`Model view <model-view>` shows a 3D visual representation of your model, a
 model bounding box as a green dashed line and the Pick frame. Note the
 number in round brackets in the Model view tab name, this is the model
 ID.
