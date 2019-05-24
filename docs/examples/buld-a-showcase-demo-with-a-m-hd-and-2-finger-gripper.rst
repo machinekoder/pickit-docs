@@ -1,9 +1,9 @@
-Build a showcase demo with a M-HD-Camera and 2 finger gripper
+Build a showcase demo with a M-HD-Camera and two-finger gripper
 =============================================================
 
 This article will guide you in setting up a simple showcase demo with Pickit and a UR that you can show at trade fairs.
 For this demo a Pickit M-HD camera is used to detect cylindrical red parts in a bin.
-The parts are picked from the bin with a UR5 robot and a 2 finger gripper.
+The parts are picked from the bin with a UR5 robot and a two-finger gripper.
 A video of the end result can be seen below.
 
 .. raw:: html
@@ -25,17 +25,15 @@ The list below shows the different hardware that has been used to set up this de
 -  UR5 robot
 -  Stand to mount the robot and the camera on
 -  On robot gripper RG2
--  Bin 400 x 300 x 120 mm
+-  Bin with size 400 x 300 x 120 mm
 -  Cylindrical red parts (contact Pickit if you want to show this demo at a fair with these parts)
-
-Similar hardware can be used to set up a similar demo.
 
 Mounting instructions
 ---------------------
 
 -  The robot and camera are mounted on a stand. The camera is mounted at a height of 700 mm above the work surface.
--  The 2 finger gripper is mounted on the flange of the robot.
--  The bin is placed at a distance of 500 mm (center of robot base to center of bin)and is placed 40 mm lower than the robot base.
+-  The two-finger gripper is mounted on the flange of the robot.
+-  The bin is placed at a distance of 500 mm (center of robot base to center of bin) and is placed 40 mm lower than the robot base.
 
 .. image:: /assets/images/examples/teach-mhd-demo-red-parts-general.png
 
@@ -43,8 +41,7 @@ Setting up the Pickit files
 ---------------------------
 
 `Here <https://drive.google.com/uc?export=download&id=12iiU1HLtKBrvqzbBKzhXPDhJMWQc7iZ7>`__ you can download a snapshot of the demo.
-In the snapshot you can see that the parts are detected by using the Teach detection engine with a 2 different models.
-A model from the top side and a model from the bottom side.
+In the snapshot, you can see that the parts are detected by using the Teach detection engine with 2 different models, namely one from the top side and one from the bottom side.
 
 Setup file
 ~~~~~~~~~~
@@ -53,33 +50,38 @@ For this demo the ROI box is set to similar dimensions as the real bin, the set 
 This will be important because the dimensions of the ROI box will be used for collision prevention.
 Last, the ROI box is attached to the Robot base frame. No other settings are used for this demo.
 
-Need help to set these settings? See this article for more information: :ref:`region-of-interest`.
+Need help with these settings? See the :ref:`region-of-interest` article for more information.
 
 Product file
 ~~~~~~~~~~~~
 
-The product file that has been used can be copied from the snapshot mentioned above.
-Download the snapshot, upload it to your Pickit system, open the snapshot on your Pickit system and press Save these settings.
-
-The models that are being used is the shape from the top and from the bottom.
+The models that are being used correspond to the shape of the top and  bottom of the part.
 The difference lies within the height of both models.
 The **pick frame** of each model is put in the center.
 The **matching score** and **tolerance** is set to 85% and 1.8 mm.
 No **downsampling** is applied and the **detection speed** is set to Fast.
 
-Need help to set these settings? See this article for more information: :ref:`Teach`.
+Need help with these settings? See the :ref:`Teach` article for more information.
 
 In the Picking tab no alignments are **enforced**. For this demo **collision prevention** is applied.
 It is checked that the calculated pick frames are not steeper than 30 degrees.
-Also possible collision with bin and other objects are checked.
-For this check it is important that a good model of the tool is defined.
+Also, possible collision with bin and other objects are checked.
+For this check it is important that a good tool model is defined.
 See below for the used model for the two finger gripper in the video.
 
 .. image:: /assets/images/examples/teach-mhd-demo-red-parts-tool.png
 
 .. warning:: Possible collision with the support of the camera is not checked.
 
-Need help to set these settings? See this article for more information: :ref:`Picking`.
+Need help with these settings? See the :ref:`Picking` article for more information.
+
+Calibration
+-----------
+
+Next step is the robot-camera calibration. This process teaches Pickit
+where the robot base is located w.r.t. to the camera. This information
+is used to transform the object pick-frames into robot coordinates. A
+detailed description in robot-camera calibration can be found in the article :ref:`robot-camera-calibration`. 
 
 Setting up the robot program
 ----------------------------
@@ -87,15 +89,15 @@ Setting up the robot program
 `Here <https://drive.google.com/uc?export=download&id=1Fu4gwsM4iYYZPHg6Y31Caa-xIJRaQAu5>`__ you can download the UR robot program.
 The idea of the program is to pick one part.
 Depending on which side is picked (top/bottom) it is shown in a different way.
-After showing the part is dropped back into the bin.
+After showing the part it is dropped back into the bin.
 The drop off position alternates between two predefined waypoints.
 
 .. image:: /assets/images/examples/teach-mhd-demo-red-parts-ur-program.png
 
-Following still needs to be defined in this robot program:
+The following still needs to be defined in this robot program:
 
 -  Pickit select command, the correct setup and product file need to be filled in.
--  The detect_pose is a waypoint defined outside the field of view of the camera, this is also the starting position of the
+-  The detect_pose is a waypoint defined outside the field of view of the camera, this is also the starting position of the program.
 -  Above_bin is a fixed waypoint on the center top of the bin. This intermediate waypoint is used to get in to and to get out of the bin.
 -  Before the robot will move in the bin the gripper is closed. Once the robot is in the pick pose the gripper is opened again to grab the parts.
 -  Depending on which side is picked it is decided how the part is shown. For this 2 different waypoints need to be defined. One position is upside down to show a clear difference on how the part has been picked.

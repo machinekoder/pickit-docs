@@ -31,14 +31,9 @@ Your first detection (Configure the Pickit files)
 -------------------------------------------------
 
 Now that every component is connected to the Pickit system, we are able
-to configure Pickit. Open a chrome web browser on your external PC and
-enter the following IP address to access the Pickit system.
+to configure Pickit.
 
-::
-
-    http://192.168.66.1
-
-In the Pickit user interface, go to the configuration tab and create
+In the Pickit :ref:`web-interface`, go to the configuration tab and create
 new setup files and a product file:
 
 -  **Setup:** pattern_demo.
@@ -50,16 +45,14 @@ Configuring the Pickit comes down to three simple steps:
 #. Define the shape of objects that need to be picked
 #. Define a picking strategy
 
-create a scene
+Create a scene
 ~~~~~~~~~~~~~~
 
 The first step defines where Pickit has to look for objects. This is
-done by defining the region of interest (ROI). See the article :ref:`region-of-interest`
-on how to define a ROI. 
+done by defining the :ref:`region-of-interest` (ROI). 
 
-Below you can see a pictures of a good defined ROI for this application.
-All useless information is filtered ou (the table and surroundings) only
-information of the parts on the table are kept. 
+Below you can see a picture of a well-defined ROI for this application.
+All useless information is filtered out (the table and surroundings), keeping only information of the parts. 
 
 Don't forget to save the settings in the corresponding Setup files.
 
@@ -72,15 +65,15 @@ The second step consists in setting up the Pickit Pattern detection
 engine. In this application Pickit will look for fixed sized
 rectangular shapes.
 
-See below for images of the results of the clustering and the fitting
-step. Below the images all used detection parameters are given. See
+The below images show the results of the clustering and fitting
+steps. See the
 following article on how to use Pickit :ref:`Pattern`.
 
 .. image:: /assets/images/examples/pattern-demo-clusters.png
 
 .. image:: /assets/images/examples/pattern-demo-objects.png
 
-In this demo following parameters are used
+In this demo, the following parameters are used:
 
 -  **Clustering:** Non-touching 
 -  No **rejecting clusters**
@@ -95,7 +88,7 @@ In this demo following parameters are used
 -  **2D contour score:** 45%
 -  **2D surface score:** 95%
 -  **Fusion:** None
--  **Downsampling:** 1
+-  **Downsampling:** 1 mm
 
 Don't forget to save the settings. This will update the Product file.
 
@@ -103,7 +96,7 @@ Define the picking parameters
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Finally the picking strategy is defined. For this application no special
-strategies are applied. However more information about the picking
+strategies are applied. However, more information about the picking
 strategies can be found in the :ref:`Picking` article.
 
 -  **Enforce alignment:** No alignment
@@ -128,10 +121,10 @@ Now Pickit is configured, the only thing left to do is programming the
 robot. The robot used in the demo video is a UR5, but a similar program
 can be created on any other robot.
 
-The idea of the program is to trigger a detection and take all found
+The idea of the program is to trigger a detection and pick all found
 parts one by one. The parts are dropped off on a running conveyor. Since
 the boxes are nicely stacked and it is unlikely that a part will move
-when one is taken away it is not necessary to trigger a new detection
+when one is pickit, it is not necessary to trigger a new detection
 every time.
 
 -  **The UR robot program:** Download

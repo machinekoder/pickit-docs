@@ -26,16 +26,14 @@ The list below shows the different hardware that has been used to set up this de
 -  UR5 robot
 -  Stand to mount the robot on
 -  Schmalz Vacuum gripper ECBPi 12 24V-DC M12-8, 15 cm extended with vacuum cup SPB4f 40
--  Bin 400 x 300 x 120 mm
+-  Bin with size 400 x 300 x 120 mm
 -  Round boxes of cheese ø110 mm and height 20 mm
 -  Stand of the same height of the bin to drop off the parts, in this demo a similar bin has been put upside down
-
-Similar hardware can be used to set up a similar demo.
 
 Mounting instructions
 ---------------------
 
--  The robot is mounted on a stand.
+-  The robot is mounted on the stand.
 -  The camera is mounted on the robot flange of the robot with the help of a mounting plate.
 -  The vacuum gripper is mounted on the robot flange beneath the camera. The distance between the end effector of the vacuum and the mounted camera should be bigger than the depth of the bin. In the example the bin is 120 mm deep and the distance between the end effector and camera is 150 mm.
 -  The bin is placed at a distance of 700 mm (center of robot base to center of bin) and is placed 200 mm lower than the robot.
@@ -52,23 +50,20 @@ In the snapshot you can see that the boxes are detected by using the Teach detec
 Setup file
 ~~~~~~~~~~
 
-For this demo the ROI box is set to similar dimensions as the real bin, the set ROI is slightly smaller and slightly higher.
+For this demo the :ref:`region-of-interest` (ROI) is set to similar dimensions as the real bin, the set ROI is slightly smaller and slightly higher.
 Last, the ROI box is attached to the Robot base frame. No other settings are used for this demo.
 
-Need help to set these settings? See this article for more information: :ref:`region-of-interest`.
+Need help with these settings? See the :ref:`region-of-interest` article for more information.
 
 Product file
 ~~~~~~~~~~~~
 
-The product file that has been used can be copied from the snapshot mentioned above.
-Download the snapshot, upload it to your Pickit system, open the snapshot on your Pickit system and press Save these settings.
-
 The model that is being used is the shape from the top, which is a circle.
-The **pick frame** of this model is put in the center of the circle.
+The **pick frame** of this model is located in the center of the circle.
 The **matching score** and **tolerance** is set to 90% and 1.5 mm.
 No **fusion** or **downsampling** is applied and the **detection speed** is set to Fast.
 
-Need help to set these settings? See this article for more information: :ref:`Teach`.
+Need help with these settings? See the :ref:`Teach` article for more information.
 
 In the Picking tab the **pick frames are enforced** to XYZ||XYZ alignment.
 This setting makes sure that all calculated pick frames have the same orientation.
@@ -78,7 +73,15 @@ Another benefit is that the head of the robot doesn't need to turn so there are 
 To ensure that the robot will not try to pick boxes that are too tilted the **maximum angle between pick frame Z-axis and surface normal** is set to 30 degrees.
 No other settings in the picking tab are being used for this demo.
 
-Need help to set these settings? See this article for more information: :ref:`Picking`.
+Need help with these settings? See the :ref:`Picking` article for more information.
+
+Calibration
+-----------
+
+Next step is the robot-camera calibration. This process teaches Pickit
+where the robot base is located w.r.t. to the camera. This information
+is used to transform the object pick-frames into robot coordinates. A
+detailed description in robot-camera calibration can be found in the article :ref:`robot-camera-calibration`. 
 
 Setting up the robot program
 ----------------------------
@@ -89,7 +92,7 @@ Once three boxes are picked they are pushed back in the bin. Then these steps ar
 
 .. image:: /assets/images/examples/teach-m-demo-cheese-ur-program.png
 
-Following still needs to be defined in this robot program:
+The following still needs to be defined in this robot program:
 
 -  Pickit select command, the correct setup and product file need to be filled in.
 -  Above_bin is a fixed waypoint on the center top of the bin. This intermediate waypoint is used to get in to and to get out of the bin.

@@ -18,7 +18,7 @@ If you are not yet confident with these detection engines you can get up to spee
 Motivation
 ----------
 
-In this application boxes are picked that are stacked in a random way.
+This application picks randomly stacked boxes.
 From the way they are presented it is hard to see the orientation of the boxes.
 As you can see in the image below: The 3D information shows one big surface.
 From the yellow plane it is a challenge to determine the exact location of all 5 boxes.
