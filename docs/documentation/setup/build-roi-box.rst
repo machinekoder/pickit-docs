@@ -28,12 +28,12 @@ Around QR markers
 This is the most common way of defining the ROI box. The ROI box is
 defined based on three markers laid out in the field of view of the
 camera. The Pickit text of all markers should be oriented in the same
-direction and the arrows of the same color should be pointing to each other.
+direction and the arrows of the same color should be pointing towards each other.
 The markers are not interchangeable.
 
 .. image:: /assets/images/Documentation/Roi-markers.jpg
 
-#. Open the **2D** view in the Pickit viewer.
+#. Open the :ref:`2D view <2d-view>` view in the Pickit viewer.
 #. Place the three markers as shown in the image above in the field of
    view of the camera.
 #. Press :guilabel:`Around QR markers` (this button is on clickable when all three markers

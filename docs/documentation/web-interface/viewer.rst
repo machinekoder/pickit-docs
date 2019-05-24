@@ -50,6 +50,8 @@ contour are also shown for a brief period of time.
 
 .. image:: /assets/images/Documentation/viewer-21-2d.png
 
+.. _3d-view:
+
 3D view
 ~~~~~~~
 
@@ -73,6 +75,8 @@ additional elements listed for the the 3D view.
 
 .. image:: /assets/images/Documentation/viewer-21-points.png
 
+.. _clusters-view:
+
 Clusters view
 ~~~~~~~~~~~~~
 
@@ -84,6 +88,8 @@ This view is only available for the Pickit Flex and Pattern detection
 engines.
 
 .. image:: /assets/images/Documentation/viewer-21-clusters.png
+
+.. _objects-view:
 
 Objects view
 ~~~~~~~~~~~~
@@ -109,6 +115,8 @@ The objects view also renders the same additional elements listed for
 the the 3D view.
 
 .. image:: /assets/images/Documentation/viewer-21-objects.png
+
+.. _model-view:
 
 Model view
 ~~~~~~~~~~

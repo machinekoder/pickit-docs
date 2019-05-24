@@ -20,7 +20,7 @@ values here and the ROI box will be updated in the viewer.
 
 .. note:: Only the size and position of ROI box can be changed, not the
    orientation. To change the orientation the ROI box needs to be defined
-   again as described in :ref:`build-roi-box`.
+   again as described in the :ref:`build-roi-box` article.
 
 Modify ROI box to remove the ground plane
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

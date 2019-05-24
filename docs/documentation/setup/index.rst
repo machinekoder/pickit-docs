@@ -3,8 +3,18 @@
 Setup
 =====
 
-In the Setup tab the input for the Pickit system is determined. 
-Here you define where you want the Pickit system to look.
+In the **Setup** page you define where you want Pickit to look for objects.
+
+.. _active-cameras:
+
+Active cameras
+--------------
+
+One Pickit processor can be connected to two different Pickit cameras at the same time. This can be two M-cameras, two L-cameras or a M and L-camera combined.
+
+Here you select which camera to use in the setup file. Each setup file should have exactly one active camera.
+
+.. note:: This option is only available if multiple cameras are connected to the processor.
 
 .. _region-of-interest:
 
@@ -18,8 +28,8 @@ In many applications, the field of view of the Pickit camera is greater
 than the region where we want to perform object detection. For example,
 in a bin picking application we are only interested in the contents of
 the bin. In the below image, we compare the camera field of view
-(**3D** in the Pickit viewer), with the contents of the ROI box
-(**Points** in the Pickit viewer).
+(:ref:`3D <3d-view>` in the Pickit viewer), with the contents of the ROI box
+(:ref:`Points <points-view>` in the Pickit viewer).
 
 .. image:: /assets/images/Documentation/Region-of-interest-example.png
 
@@ -46,7 +56,6 @@ in it can be visualized in the **Points** tab of the viewer.
 .. toctree::
     :maxdepth: 2
 
-    active-cameras
     fix-roi-box
     build-roi-box
     fine-tune-roi-box
