@@ -3,11 +3,11 @@ Pickit example case: Picking of randomly stacked boxes
 
 .. image:: /assets/images/examples/example-case-boxes-general.jpg
 
-In this article you will learn how to pick the cardboard boxes in the picture above with Pick-it.
+In this article you will learn how to pick the cardboard boxes in the picture above with Pickit.
 We cover the basics of the application as well as the robot program used in this application.
 The result will be a working robot application to pick the boxes with a vacuum gripper and drop them off with exact orientation.
 
-For this article we assume knowledge about the basics of Pick-it Flex and Pattern.
+For this article we assume knowledge about the basics of Pickit Flex and Pattern.
 If you are not yet confident with these detection engines you can get up to speed by reading the following articles: :ref:`Flex` & :ref:`Pattern`
 
 .. contents::
@@ -45,7 +45,7 @@ Advanced ROI filter: Dynamic Box-based ROI filter
 
 The boxes are stacked on a table in different layers.
 It seems logical that the robot should always focus on the top most layer first and afterwards proceed to the next layer.
-This is something that can be forced in the Pick-it system by using one of our advanced ROI-filters: :ref:`Dynamic-box-based-roi-filter`.
+This is something that can be forced in the Pickit system by using one of our advanced ROI-filters: :ref:`Dynamic-box-based-roi-filter`.
 
 With this filter additional filtering on the points in the region of interest is done.
 Now the system is forced to only focus on the highest point and the points that lie slightly lower than this highest point.
@@ -67,7 +67,7 @@ To solve this kind of applications a two step method is applied. In the first st
 This is done by attaching our gripper to a part and to drop it somewhere isolated.
 For this first step it is not important where the gripper is attached to the part it should just be a good place where the gripper can attach himself.
 
-Here the application is solved by looking for squares with Pick-it Pattern.
+Here the application is solved by looking for squares with Pickit Pattern.
 The dimension of the squares that is looked for is the same as the width of the objects.
 By looking for these squares we know that each attachment point is found is always somewhere on the part.
 See image below to see how 4 different attachment points are calculated for the first layer (2 for each box).
@@ -94,7 +94,7 @@ After the first step the part is dropped on an isolated location.
 Then a new detection is triggered to determine the complete orientation of the part.
 For the second step a second setup and product file are created.
 The region of interest now focus on the isolated part.
-The part itself is detected using Pick-it Flex by looking for rectangles.
+The part itself is detected using Pickit Flex by looking for rectangles.
 
 The image below shows the complete robot program that has been used for this application.
 The second step is done in a second loop in the program.

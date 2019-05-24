@@ -1,8 +1,8 @@
 Build a showcase demo with a M-camera and suction cup
 =====================================================
 
-This article will guide you in setting up a simple showcase demo with Pick-it and a UR that you can show at trade fairs.
-For this demo a Pick-it M camera is used to detect round boxes of cheese in a bin.
+This article will guide you in setting up a simple showcase demo with Pickit and a UR that you can show at trade fairs.
+For this demo a Pickit M camera is used to detect round boxes of cheese in a bin.
 The parts are picked from the bin with a UR5 robot and a vacuum cup.
 A video of the end result can be seen below.
 
@@ -21,7 +21,7 @@ Requirements
 
 The list below shows the different hardware that has been used to set up this demo.
 
--  Pick-it system with M camera
+-  Pickit system with M camera
 -  Mounting plate to mount camera on to the robot
 -  UR5 robot
 -  Stand to mount the robot on
@@ -43,7 +43,7 @@ Mounting instructions
 
 .. image:: /assets/images/examples/teach-m-demo-cheese-general.png
 
-Setting up the Pick-it files
+Setting up the Pickit files
 ----------------------------
 
 `Here <https://drive.google.com/uc?export=download&id=1ZxINM11VzqtcqRFUwdHqHHLTfkFbek9k>`__ you can download a snapshot of the demo.
@@ -61,7 +61,7 @@ Product file
 ~~~~~~~~~~~~
 
 The product file that has been used can be copied from the snapshot mentioned above.
-Download the snapshot, upload it to your Pick-it system, open the snapshot on your Pick-it system and press Save these settings.
+Download the snapshot, upload it to your Pickit system, open the snapshot on your Pickit system and press Save these settings.
 
 The model that is being used is the shape from the top, which is a circle.
 The **pick frame** of this model is put in the center of the circle.
@@ -91,7 +91,7 @@ Once three boxes are picked they are pushed back in the bin. Then these steps ar
 
 Following still needs to be defined in this robot program:
 
--  Pick-it select command, the correct setup and product file need to be filled in.
+-  Pickit select command, the correct setup and product file need to be filled in.
 -  Above_bin is a fixed waypoint on the center top of the bin. This intermediate waypoint is used to get in to and to get out of the bin.
 -  In the picking sequence the vacuum needs to be set to active.
 -  The dropping sequence uses a pallet function. Here the StartPos_1 and Endpos_1 are defined 280 mm apart from each other. The Approach_1 and Exit_1 are the same and are defined 100 mm above the PatternPoint_1. In this dropping sequence the vacuum is also turned off.

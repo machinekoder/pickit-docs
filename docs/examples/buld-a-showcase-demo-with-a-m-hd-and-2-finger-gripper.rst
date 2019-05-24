@@ -1,8 +1,8 @@
 Build a showcase demo with a M-HD-Camera and 2 finger gripper
 =============================================================
 
-This article will guide you in setting up a simple showcase demo with Pick-it and a UR that you can show at trade fairs.
-For this demo a Pick-it M-HD camera is used to detect cylindrical red parts in a bin.
+This article will guide you in setting up a simple showcase demo with Pickit and a UR that you can show at trade fairs.
+For this demo a Pickit M-HD camera is used to detect cylindrical red parts in a bin.
 The parts are picked from the bin with a UR5 robot and a 2 finger gripper.
 A video of the end result can be seen below.
 
@@ -21,12 +21,12 @@ Requirements
 
 The list below shows the different hardware that has been used to set up this demo.
 
--  Pick-it system with M-HD camera
+-  Pickit system with M-HD camera
 -  UR5 robot
 -  Stand to mount the robot and the camera on
 -  On robot gripper RG2
 -  Bin 400 x 300 x 120 mm
--  Cylindrical red parts (contact Pick-it if you want to show this demo at a fair with these parts)
+-  Cylindrical red parts (contact Pickit if you want to show this demo at a fair with these parts)
 
 Similar hardware can be used to set up a similar demo.
 
@@ -59,7 +59,7 @@ Product file
 ~~~~~~~~~~~~
 
 The product file that has been used can be copied from the snapshot mentioned above.
-Download the snapshot, upload it to your Pick-it system, open the snapshot on your Pick-it system and press Save these settings.
+Download the snapshot, upload it to your Pickit system, open the snapshot on your Pickit system and press Save these settings.
 
 The models that are being used is the shape from the top and from the bottom.
 The difference lies within the height of both models.
@@ -94,7 +94,7 @@ The drop off position alternates between two predefined waypoints.
 
 Following still needs to be defined in this robot program:
 
--  Pick-it select command, the correct setup and product file need to be filled in.
+-  Pickit select command, the correct setup and product file need to be filled in.
 -  The detect_pose is a waypoint defined outside the field of view of the camera, this is also the starting position of the
 -  Above_bin is a fixed waypoint on the center top of the bin. This intermediate waypoint is used to get in to and to get out of the bin.
 -  Before the robot will move in the bin the gripper is closed. Once the robot is in the pick pose the gripper is opened again to grab the parts.
@@ -117,7 +117,7 @@ This will result in nice robot movements to pick these parts.
 
 .. image:: /assets/images/examples/teach-mhd-demo-red-parts-scene-1.png
 
-If parts are positioned on their side Pick-it can still find them.
+If parts are positioned on their side Pickit can still find them.
 But they are not send back to the robot because the calculated pick frame is to steep.
 If all parts would be dropped like this the robot will not be able to pick any part.
 That is why it is advised to have some interaction with the demo while it is running.
