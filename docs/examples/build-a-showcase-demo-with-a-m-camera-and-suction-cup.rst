@@ -50,7 +50,7 @@ In the snapshot you can see that the boxes are detected by using the Teach detec
 Setup file
 ~~~~~~~~~~
 
-For this demo the :ref:`region-of-interest` (ROI) is set to similar dimensions as the real bin, the set ROI is slightly smaller and slightly higher.
+For this demo the :ref:`region-of-interest` (ROI) has similar dimensions as the real bin, the set ROI is slightly smaller and slightly higher.
 Last, the ROI box is attached to the Robot base frame. No other settings are used for this demo.
 
 Need help with these settings? See the :ref:`region-of-interest` article for more information.

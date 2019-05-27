@@ -10,7 +10,7 @@ Using the following simple scene as an example, this article explains important 
 
 .. image:: /assets/images/faq/how-to-good-model-2d.png
 
-Lets start with showing the good model for this part. In the rest of the article typical mistakes when teaching a model will be discussed. The figure below shows a good model (left) and a successful fit of that model in the scene (right).
+Let's start with showing what a good model for this part looks like. In the rest of the article typical mistakes when teaching a model will be discussed. The figure below shows a good model (left) and a successful fit of that model in the scene (right).
 
 .. image:: /assets/images/faq/how-to-good-model-good.png
 
@@ -46,8 +46,8 @@ Clean (no outlier points)
 When teaching the model it is important that only points that belong to the object are included.
 All other points of the suroundings should be filtered away by the :ref:`region-of-interest` (ROI) box before teaching the model.
 In the example below the ROI box was set to a too low value.
-Now the ROI markers that are lying next to the part are taken into account as a part of the object.
-So whenever a detection is triggered Pickit will look both for the part as for markers lying next to the part.
+Now, the ROI markers that are lying next to the object are considered as part of the object.
+Whenever a detection is triggered Pickit will look both for the part and for the markers lying next to it.
 If these markers are missing in a new scene (which is quite likely) it will have a big effect on the matching score.
 
 .. image:: /assets/images/faq/how-to-good-model-unclean.png

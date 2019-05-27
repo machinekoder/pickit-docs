@@ -9,7 +9,7 @@ This results in a 3D point cloud.
 
 The below image illustrates the structured light principle.
 The red triangle represents the projected pattern, while the green triangle represents where the sensor can detect it.
-When there is an overlap between the two , 3D data in the form a point cloud can be obtained, shown as a thick green line.
+When there is an overlap between the two, 3D data in the form of a point cloud can be obtained, shown as a thick green line.
 In this case, there is 3D data for the upper part of the circle and for the flat surface below it.
 
 .. image:: /assets/images/faq/Pickit-camera-3d-data.png

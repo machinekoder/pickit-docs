@@ -21,7 +21,7 @@ Motivation
 This application picks randomly stacked boxes.
 From the way they are presented it is hard to see the orientation of the boxes.
 As you can see in the image below: The 3D information shows one big surface.
-From the yellow plane it is a challenge to determine the exact location of all 5 boxes.
+From the yellow plane it is a challenge to determine the exact location of all five boxes.
 Here we will discuss a method that is able to solve these kind of cases.
 
 .. image:: /assets/images/examples/example-case-boxes-3d-clusters.png
@@ -64,7 +64,7 @@ For this first step it is not important where the gripper is attached to the par
 Here the application is solved by looking for squares with Pickit Pattern.
 The dimension of the squares that is looked for is the same as the width of the objects.
 By looking for these squares we know that each attachment point is found is always somewhere on the part.
-See image below to see how 4 different attachment points are calculated for the first layer (2 for each box).
+See image below to see how four different attachment points are calculated for the first layer (two for each box).
 The system does not look for the object as a whole but will look for small planes on the object good enough to attach himself to.
 This is what we call the small plane strategy.
 
@@ -88,7 +88,7 @@ After the first step the part is dropped on an isolated location.
 Then a new detection is triggered to determine the complete orientation of the part.
 For the second step a second setup and product file are created.
 The region of interest now focus on the isolated part.
-The part itself is detected using Pickit Flex looking for rectangles.
+The part itself is detected using Pickit Flex, by looking for rectangles.
 
 The image below shows the complete robot program that has been used for this application.
 The second step is done in a second loop in the program.

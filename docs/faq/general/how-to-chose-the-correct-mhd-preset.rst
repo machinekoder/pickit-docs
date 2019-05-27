@@ -4,7 +4,7 @@ How to chose the correct M-HD preset
 ====================================
 
 The Pickit M-HD camera is a high end camera with many different options on how to capture a point cloud of the scene.
-For instance the camera can be optimized to better detect bright parts or to better detect dark parts.
+For instance, the camera can be optimized to better detect bright or dark parts.
 When set to detect bright parts typically the captured point cloud is darker, to compensate for the brightness of the parts.
 On the contrary when it is set to detect darker parts the point cloud becomes brighter.
 

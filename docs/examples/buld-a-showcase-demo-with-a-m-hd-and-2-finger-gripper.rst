@@ -46,7 +46,7 @@ In the snapshot, you can see that the parts are detected by using the Teach dete
 Setup file
 ~~~~~~~~~~
 
-For this demo the ROI box is set to similar dimensions as the real bin, the set ROI is slightly smaller and slightly higher.
+For this demo the ROI box has similar dimensions as the real bin, except that it's slightly smaller and higher.
 This will be important because the dimensions of the ROI box will be used for collision prevention.
 Last, the ROI box is attached to the Robot base frame. No other settings are used for this demo.
 
@@ -55,7 +55,7 @@ Need help with these settings? See the :ref:`region-of-interest` article for mor
 Product file
 ~~~~~~~~~~~~
 
-The models that are being used correspond to the shape of the top and  bottom of the part.
+The models that are being used correspond to the shape of the top and bottom of the part.
 The difference lies within the height of both models.
 The **pick frame** of each model is put in the center.
 The **matching score** and **tolerance** is set to 85% and 1.8 mm.
@@ -63,9 +63,10 @@ No **downsampling** is applied and the **detection speed** is set to Fast.
 
 Need help with these settings? See the :ref:`Teach` article for more information.
 
-In the **Picking** page no alignments are **enforced**. For this demo **collision prevention** is applied.
+In the **Picking** page no alignments are **enforced**. For this demo, **collision prevention**
+is enabled.
 It is checked that the calculated pick frames are not steeper than 30 degrees.
-Also, possible collision with bin and other objects are checked.
+Also, collisions between the tool and the bin or other objects are checked.
 For this check it is important that a good tool model is defined.
 See below for the used model for the two finger gripper in the video.
 
@@ -100,8 +101,8 @@ The following still needs to be defined in this robot program:
 -  The detect_pose is a waypoint defined outside the field of view of the camera, this is also the starting position of the program.
 -  Above_bin is a fixed waypoint on the center top of the bin. This intermediate waypoint is used to get in to and to get out of the bin.
 -  Before the robot will move in the bin the gripper is closed. Once the robot is in the pick pose the gripper is opened again to grab the parts.
--  Depending on which side is picked it is decided how the part is shown. For this 2 different waypoints need to be defined. One position is upside down to show a clear difference on how the part has been picked.
--  After the showing of the part it is dropped back into the bin. Here the program alternates between 2 different drop off poses. One drop off position is defined on each side of the bin. After reaching the drop off position the gripper is closed to drop the part.
+-  Depending on which side is picked, it is decided how the part is shown. For this two different waypoints need to be defined. One position is upside down to show a clear difference on how the part has been picked.
+-  After the showing of the part it is dropped back into the bin. Here the program alternates between two different drop off poses. One drop off position is defined on each side of the bin. After reaching the drop off position the gripper is closed to drop the part.
 
 Interaction with the running demo
 ---------------------------------
