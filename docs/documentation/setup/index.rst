@@ -51,7 +51,7 @@ article for more information on how to make the best use of the ROI box
 for such applications.
 
 The ROI box can be defined and modified from the **Setup** page of the Pickit web interface, and the points contained
-in it can be visualized in the **Points** tab of the viewer.
+in it can be visualized in the :ref:`Points view <points-view>`.
 
 .. toctree::
     :maxdepth: 2

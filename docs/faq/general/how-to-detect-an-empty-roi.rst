@@ -44,7 +44,7 @@ Define the minimum number of points
 .. Note:: Make sure that your ROI is empty when no objects are present.
    This is especially relevant when the ROI models the inner side of a bin.
    No points belonging to the sides or bottom of the bin should be visible
-   in the **Points view** when an empty bin is presented to the camera. 
+   in the :ref:`Points view <points-view>` when an empty bin is presented to the camera. 
 
 The following is a strategy for determining the minimum number of points
 needed to discriminate if the ROI is empty or not. Generally speaking,

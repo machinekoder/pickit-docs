@@ -9,7 +9,7 @@ Some of the benefits of using the Pickit URCap plugin:
 
 -  Less typing and less code.
 -  Graphical command interface with in-place documentation.
--  Pickit 2D view available from the UR Teach Pendant.
+-  Pickit :ref:`2D view <2d-view>` available from the UR Teach Pendant.
 
 Pre-requisites
 --------------

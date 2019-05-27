@@ -69,7 +69,7 @@ This makes it impossible to obtain 3D information around the object, as shown in
 
 The above scenarios exemplify edge cases.
 Often parts are only partially reflective or semi-transparent.
-When in doubt about a part, it is recommended to test it by placing it under the camera, trigger a detection and inspect the point cloud in the **Points** tab of the :ref:`Viewer`.
+When in doubt about a part, it is recommended to test it by placing it under the camera, trigger a detection and inspect the point cloud in the :ref:`Points view <points-view>`.
 If not enough 3D data is captured, know that this can be further optimized.
 For the Pickit M and L cameras, :ref:`image fusion <image-fusion>` leads to a more stable point cloud.
 For the Pickit M-HD camera, a different camera preset can be used.

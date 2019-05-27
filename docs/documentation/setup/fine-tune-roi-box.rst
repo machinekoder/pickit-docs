@@ -27,7 +27,7 @@ Modify ROI box to remove the ground plane
 
 Removing the ground plane from the ROI box is one of the simplest ways
 to have faster detection times. The below sequence shows
-the **Points** view before and after raising the bottom of the box
+the :ref:`Points view <points-view>` before and after raising the bottom of the box
 just above the ground plane.
 
 .. image:: /assets/images/Documentation/Remove-ground-roi.png
@@ -40,7 +40,7 @@ recommend to define it :ref:`Use-markers`, and aligning
 them with the bin corners. Once the initial ROI box is set with a
 correct orientation, adjust the borders such that it excludes most bin
 points, and includes all relevant bin contents. The below sequence shows
-the **Points** view before and after adjusting the box boundaries to
+the :ref:`Points view <points-view>` before and after adjusting the box boundaries to
 the inside of the bin.
 
 .. image:: /assets/images/Documentation/Bin-representation-roi.png

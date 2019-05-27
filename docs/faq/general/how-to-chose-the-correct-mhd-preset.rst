@@ -38,6 +38,6 @@ Pickit provides a few M-HD settings presets, which are suitable for capturing th
 -  **Polished metal** (3 captures).
 
 To find the best setting for your application, it is recommended to try different presets and chose the one that gives the best results for your scene.
-The result of a certain preset is best visualized in the :ref:`points-view` of the Pickit viewer.
+The result of a certain preset is best visualized in the :ref:`Points view <points-view>`.
 
 .. hint:: Teaching the same model with different settings can help you choose the best setting, typically the preset that leads to the highest number of points in the model is the best preset for this part.

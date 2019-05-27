@@ -7,8 +7,7 @@ quick start guide that can be completed without having a robot.
 Follow the steps below to do your first detection with Pickit:
 
 -  Make sure that the Pickit camera is mounted 700 mm above a flat work
-   space. The work space is now seen in the 2D viewer on the Pickit
-   user interface.
+   space. The work space is now seen in the :ref:`2D view <2d-view>`.
 -  In the Pickit user interface press Stop Robot Mode.
 -  In the Configuration tab under create a new setup and/or product fill
    in 'Test\_Pickit' twice and press Create.
@@ -23,12 +22,12 @@ Follow the steps below to do your first detection with Pickit:
 
 -  In the Detection tab select Pickit Teach. 
 -  Now place a soda can on his side in the middle of the marks.
--  Under define your model(s) press Add a model. Now the model view is
+-  Under define your model(s) press Add a model. Now the :ref:`Model view <model-view>` is
    opened and a point cloud of the soda can is shown.
 
 .. image:: /assets/images/First-steps/Model-soda-can.png
 
--  Go back to the 2D view and press Detect, a Pick Frame (red-green-blue
+-  Go back to the :ref:`2D view <2d-view>` and press Detect, a Pick Frame (red-green-blue
    arrows) appears above the soda can.
 -  Place the soda can somewhere else in between the markers and press
    Detect again.

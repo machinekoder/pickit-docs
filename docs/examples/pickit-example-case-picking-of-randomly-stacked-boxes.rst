@@ -46,7 +46,7 @@ The boxes are stacked on a table in different layers.
 It seems logical that the robot should always focus on the top most layer first and afterwards proceed to the next layer. This is achieved by using the :ref:`Dynamic-box-based-roi-filter`, which discards any points below a specified distance from the highest points in the scene.
 Below the effect of this filter is shown.
 
-Only when all boxes in the top layer are picked, the next layer becomes visible in the Points view, since it now contains the highest points.
+Only when all boxes in the top layer are picked, the next layer becomes visible in the :ref:`Points view <points-view>`, since it now contains the highest points.
 For this application the system only keeps the points that are at most 20 mm below the highest point.
 
 If you are interested in more information about our advanced ROI filters you can have a look a this article: :ref:`advanced-roi-filters`.

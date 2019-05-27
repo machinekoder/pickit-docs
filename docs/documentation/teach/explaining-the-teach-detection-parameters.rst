@@ -63,7 +63,7 @@ Select and visualize a model
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 A model can be selected by clicking on the respective table row. When the model is
-loaded, it will automatically be shown in the Model view.
+loaded, it will automatically be shown in the :ref:`Model view <model-view>`.
 
 Enable or disable a model
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -76,7 +76,7 @@ Pick frame
 ^^^^^^^^^^
 
 The pick frame is the location where the Tool Center Point (TCP) of the robot will be guided to.
-The location of the pick frame can be visualized from the **Model** view.
+The location of the pick frame can be visualized from the :ref:`Model view <model-view>`.
 By default, Pickit Teach provides an initial pick frame,
 but this will in general not be the best choice. It's possible to
 specify the desired  **pick frame** as a positional and rotational

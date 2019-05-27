@@ -8,9 +8,9 @@ This setting allows you to discard pick frames that would result in collision. T
 When collision checking yields that a certain object pose will result in
 a collision,  the object will be labeled as unpickable and not sent to
 the robot. In the Pickit web interface, unpickable objects are
-displayed orange in the Objects view and the :ref:`detection-grid`.
+displayed orange in the :ref:`Objects view <objects-view>` and the :ref:`detection-grid`.
 When clicking on the unpickable object, the modeled tool will appear in
-the “Objects” tab of the 3D view to illustrate why the given object is
+the :ref:`Objects view <objects-view>` to illustrate why the given object is
 unpickable.
 
 Bin

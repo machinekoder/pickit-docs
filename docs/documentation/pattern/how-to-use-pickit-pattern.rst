@@ -19,11 +19,11 @@ optimize detection parameters. These detection parameters are explained
 in the article :ref:`Explaining-the-pattern-detection-parameters`.
 
 In the image below an example of a good defined scene is shown. First,
-in the 3D view all points within the field of view of the camera are
-shown. Second, in the Points view only the points of the parts  are
+in the :ref:`3D view <3d-view>` all points within the field of view of the camera are
+shown. Second, in the :ref:`Points view <points-view>` only the points of the parts  are
 shown. The table is filtered out. 
 
-The information shown in the Points view is what will be transferred to
+The information shown in the :ref:`Points view <points-view>` is what will be transferred to
 the next step. All other information is not taken into account for the
 detection with Pickit Pattern.
 
@@ -43,7 +43,7 @@ one of the two planes could be rejected based on the size or dimensions
 of the plane. But in this example this is not necessary so no rejecting
 is done.
 
-The boundary of a planar cluster is known as its contour. In the Clusters view, contour points can be distinguished from inner cluster points by its thickness. The 2D shape model is fit to this contour, and therefore the quality of the match depends on the quality of the contour. Parameters that
+The boundary of a planar cluster is known as its contour. In the :ref:`Clusters view <clusters-view>`, contour points can be distinguished from inner cluster points by its thickness. The 2D shape model is fit to this contour, and therefore the quality of the match depends on the quality of the contour. Parameters that
 have an influence on contour points are explained in :ref:`Fit-objects-to-clusters`.
 
 .. image:: /assets/images/Documentation/Pattern-points-clusters.gif

@@ -37,7 +37,7 @@ Placing the object under the camera
 Place your object under the camera and try to put it as close as
 possible to the camera to capture the most details while making sure
 that the object is lying fully in the field of view of the camera. It's
-useful to keep the 2D view open so you see what the camera sees.
+useful to keep the :ref:`2D view <2d-view>` open so you see what the camera sees.
 
 .. image:: /assets/images/Documentation/teach-model-picture.jpg
 
@@ -70,7 +70,7 @@ widget.
 
 The :ref:`Model view <model-view>` shows a 3D visual representation of your model, a
 model bounding box as a green dashed line and the Pick frame. Note the
-number in round brackets in the Model view tab name, this is the model
+number in round brackets in the :ref:`Model view <model-view>` tab name, this is the model
 ID.
 
 Previous steps can be repeated to Teach different models to Pickit Teach.
@@ -89,14 +89,14 @@ Detecting object(s)
 Now that you've added your models, it's time to detect objects. 
 
 Place your objects below the camera and create a new region of interest box and press the
-Detect button. On a successful detection, you will see in the 2D view
+Detect button. On a successful detection, you will see in the :ref:`2D view <2d-view>`
 that a frame appears on the detected objects and yellow lines indicate
 the bounding box. (For the yellow lines enable the "Show model box" in
 the Viewer options.)
 
 .. image:: /assets/images/Documentation/teach-scene-picture.jpg
 
-In the Objects view, the point cloud models are visualized as a colored
+In the :ref:`Objects view <objects-view>`, the point cloud models are visualized as a colored
 cloud on top of the detected objects. When a detection failed because
 for example a threshold parameter was exceeded, the model cloud will be
 colored in red.

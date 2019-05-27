@@ -31,7 +31,7 @@ without any points from the bin.
 When :ref:`building the ROI box <build-roi-box>`
 without the color filter, we can see 2 problems:
 
--  We still see some parts of the bottom in the Points view
+-  We still see some parts of the bottom in the :ref:`Points view <points-view>`
 -  The point cloud of our parts is not very good.
 
 When dealing with parts that are not as thin as these, we can increase the Z-min of the ROI to remove the
@@ -53,12 +53,12 @@ this makes our point cloud unusable for detections.
 We can exclude all the points of the yellow bin by following these steps:
 
 #. On the **Setup** page, in section **Exclude 3D information based on color**, check the Color filter checkbox.
-#. The 2D view is automatically opened, allowing you to click on the color to be filtered.
+#. The :ref:`2D view <2d-view>` is automatically opened, allowing you to click on the color to be filtered.
    In this case, select the yellow bin, since we want to exclude this color.
 #. Choose the Exclude option to discard the points of the yellow bin.
 #. Adjust the Threshold slider to adjust the range of color that will be
    excluded
-#. Go back to the Points view and press :guilabel:`Detect` to check the
+#. Go back to the :ref:`Points view <points-view>` and press :guilabel:`Detect` to check the
    results.
 #. Adjust the Threshold until only the parts are visible.
 

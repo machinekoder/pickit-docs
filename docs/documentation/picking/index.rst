@@ -56,7 +56,7 @@ Collision prevention
 
 This section allows you to discard detected objects that would result in a collision between the robot tool and the bin or other objects in the scene. Such objects are labeled as unpickable and are not sent to the robot. In
 the Pickit web interface, unpickable objects are displayed in orange in
-the Objects view and the :ref:`detection-grid`.
+the :ref:`Objects view <objects-view>` and the :ref:`detection-grid`.
 
 Maximum angles
 ~~~~~~~~~~~~~~

@@ -39,7 +39,7 @@ are always in the field of view of the camera, as the layers of buckets
 are emptied.
 
 In this stage, it is useful to have the Pickit web interface opened,
-showing the 2D view. This provides immediate visual feedback of the
+showing the :ref:`2D view <2d-view>`. This provides immediate visual feedback of the
 effectiveness of the camera mounting.
 
 For this application, we choose to have a tilted camera mount to make
@@ -73,7 +73,7 @@ and not to the camera.
 .. image:: /assets/images/faq/depal-buckets-5.png
 
 Before continuing, make sure there is a connection between Pickit and
-the robot. 
+the robot.
 
 .. image:: /assets/images/faq/depal-buckets-6.png
 
@@ -83,7 +83,7 @@ a :ref:`region-of-interest`.
 
 .. image:: /assets/images/faq/depal-buckets-7.png
 
-Using the arrows in the 3D view of the web interface, adjust the region
+Using the arrows in the :ref:`3D view <3d-view>` of the web interface, adjust the region
 of interest, such that its height fits the whole loaded pallet. The
 region of interest should be wide enough to fit the pallet and tolerate
 uncertainties in the pallet positioning. It should not include external

@@ -49,7 +49,7 @@ The key difference between the Flex and Pattern detection engines lies in this s
 .. Note ::
   This additional piece of information (orientation and exact dimmensions) allows Pickit to detect objects even if different parts belong to the same cluster (for instance, aligned boxes touching each other). Flex, on the other hand, requires that different parts are grouped into separate clusters.
 
-The effect of modifying the objects shape and orientation can be visualized in the **Objects** view. 
+The effect of modifying the objects shape and orientation can be visualized in the :ref:`Objects view <objects-view>`. 
 
 - For circles, you can define the diameter, for the other geometrical models you can define length and width.
 - If the parts are aligned, the **expected orientation** indicates whether the long side of the objects (X-axis) is aligned with the reference (Region of Interest) X- or Y-axis. If the parts do not follow any particular alignment, choose an unknown orientation.

@@ -125,7 +125,7 @@ The program execution can be stopped or paused by clicking on the stop and pause
 Monitoring Pickit from Polyscope
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The Pickit URCap plugin exposes the view of the Pickit camera highlighted with the region of interest and detected object markers (the same as the 2D view in the Pickit web interface). This is very convenient, as it allows to perform basic Pickit monitoring without having to connect a separate computer to the Pickit processor for opening the web interface.
+The Pickit URCap plugin exposes the view of the Pickit camera highlighted with the region of interest and detected object markers (the same as the :ref:`2D view <2d-view>` in the Pickit web interface). This is very convenient, as it allows to perform basic Pickit monitoring without having to connect a separate computer to the Pickit processor for opening the web interface.
 
 To access the camera view, select any Pickit URCap command on the robot program, and navigate to the ``Command`` tab on the right hand panel.
 

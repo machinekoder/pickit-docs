@@ -33,7 +33,7 @@ These parameters affect the clustering (grouping) of points. Clustering
 points is a way of grouping points belonging to individual objects. A
 good way to detect multiple objects is to try and group points that
 belong to the same object. The effect of modifying these parameters can
-be visualized in the  **Clusters** view.
+be visualized in the :ref:`Clusters view <clusters-view>`.
 
 There are multiple clustering strategies available, and the choice
 initially depends on how the parts are presented in the scene. 
@@ -72,7 +72,7 @@ size** (length, width and height). Clusters can also be rejected if they
 touch the **Region of Interest (ROI) box limits** (top, bottom, and/or
 sides).
 
-Rejected clusters are not shown in the  **Clusters** tab of the viewer,
+Rejected clusters are not shown in the  :ref:`Clusters view <clusters-view>`,
 and their count is listed in the detection summary.
 
 .. image:: /assets/images/Documentation/Reject-clusters.png
@@ -84,7 +84,7 @@ Fit objects to clusters
 
 These parameters determine the kind of object you want to find. The
 effect of modifying them can be visualized in the 
-**Objects** view. Below there is a list of all models and a typical
+:ref:`Objects view <objects-view>`. Below there is a list of all models and a typical
 applications where they are used:
 
 -  **Square** and **rectangle**: cardboard packaging, plastic bags,
@@ -181,7 +181,7 @@ Optimize detections
 
 These parameters affect the number of points of the captured point cloud
 used for object detection. The effect of modifying these parameters can
-be visualized in the **Points** view.
+be visualized in the :ref:`Points view <points-view>`.
 
 Image fusion (M/L camera only)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

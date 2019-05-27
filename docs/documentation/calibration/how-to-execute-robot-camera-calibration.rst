@@ -100,7 +100,7 @@ can always restart from the beginning by pressing the **Reset
 poses** button.
 
 .. note::
-  Always :ref:`verify-calibration` in the 3D view as
+  Always :ref:`verify-calibration` in the :ref:`3D view <3d-view>` as
   shown below. 
 
 .. _calibration-single-pose:
@@ -193,7 +193,7 @@ instructions.
 .. image:: /assets/images/Documentation/Calibration-input-end.png
 
 .. note::
-  Always :ref:`verify-calibration` in the 3D view as
+  Always :ref:`verify-calibration` in the :ref:`3D view <3d-view>` as
   shown below. 
 
 .. _verify-calibration:
@@ -201,7 +201,7 @@ instructions.
 Verify calibration
 ------------------
 
-Verify the result of the calibration in the 3D view, by looking at the
+Verify the result of the calibration in the :ref:`3D view <3d-view>`, by looking at the
 robot_base frame and the camera frame locations and their relative
 positions. It is recommended to have a look from different viewpoints
 to verify that the position and orientation of the robot_base frame
@@ -231,7 +231,7 @@ correctness of calibration. To do so, follow these steps:
    robot program is running and the Robot status indicator at the top of
    the web interface shows a checkmark. .. image:: /assets/images/Documentation/Communication-robot.png
 
--  Navigate to the **3D view** and click on the **View settings** button
+-  Navigate to the :ref:`3D view <3d-view>` and click on the **View settings** button
    on the lower right of the viewport.
    .. image:: /assets/images/Documentation/Settings-button.png
 -  Toggle the **visualize Robot** check mark.
