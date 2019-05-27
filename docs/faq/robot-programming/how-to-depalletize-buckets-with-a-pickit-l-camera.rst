@@ -61,7 +61,7 @@ Robot camera calibration
 ------------------------
 
 Once the camera is mounted to the robot flange, robot camera calibration
-should be carried out. Refer to :ref:`robot camera-calibration`
+should be carried out. Refer to :ref:`robot-camera-calibration`
 for further guidance.
 
 Teach the region of interest
@@ -73,7 +73,7 @@ and not to the camera.
 .. image:: /assets/images/faq/depal-buckets-5.png
 
 Before continuing, make sure there is a connection between Pickit and
-the robot. 
+the robot.
 
 .. image:: /assets/images/faq/depal-buckets-6.png
 

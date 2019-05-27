@@ -31,9 +31,9 @@ Pickit, while others relate to your hardware setup.
 
    .. image:: /assets/images/faq/Ordering-center-part.png
 
--  Enable :ref:`checking collisions <check-collision-with>`
+-  Enable :ref:`checking collisions <check-collisions-with>`
    between tool and bin, and between tool and other objects in the bin.
-   
+
    .. image:: /assets/images/faq/Collision-prevention.png
 
 -  :ref:`enforce-alignment-of-pick-frame-orientation`
