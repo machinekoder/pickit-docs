@@ -1,7 +1,7 @@
 .. _universal-robots-urcap-commands:
 
-Commands
-========
+The Pickit URCap interface
+==========================
 
 Pickit integrates seamlessly with Universal Robots by means of a URCap plugin. This plugin exposes a set of Pickit specific command blocks that make the creation of vision-guided programs simple and easy. This article documents the interface of the Pickit URCap plugin. For installation instructions please refer to the :ref:`universal-robots-urcap-installation` article.
 
@@ -134,8 +134,8 @@ To insert a new command, navigate to the **Command** tab select an entry from th
 |    to set Pickit to robot mode.                                          |
 |                                                                          |
 | Except for **Find calibration plate**, all other Pickit plugin commands  |
-| require robot mode to be Robot mode is enabled. Robot mode is enabled    |
-| from the Pickit web interface.                                           |
+| require robot mode to be enabled. Robot mode is enabled from the Pickit  |
+| web interface.                                                           |
 +--------------------------------------------------------------------------+
 
 .. _command-select:
@@ -200,7 +200,7 @@ To insert a new command, navigate to the **Command** tab select an entry from th
 | and the time overhead it entails.                                        |
 |                                                                          |
 | The next Pickit command after  **Find object(s)** should always          |
-| be **Get next object**, which waits until a response for the request     |
+| be **Get result**, which waits until a response for the request          |
 | is ready.                                                                |
 |                                                                          |
 |    .. image:: /assets/images/robot-integrations/ur/urcap-next-1.png      |
@@ -257,21 +257,39 @@ To insert a new command, navigate to the **Command** tab select an entry from th
 
 .. _command-find-calibration-plate:
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Find calibration plate**                                                                                                                                                            |
-+=======================================================================================================================================================================================+
-| Trigger detection of the robot-camera calibration plate.                                                                                                                              |
-| This command requires the Pickit web interface to be in the :guilabel:`Calibration` page, hence robot mode should be disabled. When Pickit is not in the :guilabel:`Calibration` page, a pop-up is shown.     |
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------+
+| **Find calibration plate**                                               |
++==========================================================================+
+| Trigger detection of the robot-camera calibration plate.                 |
+| This command requires the Pickit web interface to be in the              |
+| :guilabel:`Calibration` page, hence robot mode should be disabled.       |
+| When Pickit is not in the :guilabel:`Calibration` page, a pop-up is      |
+| shown.                                                                   |
++--------------------------------------------------------------------------+
 
 .. _command-save-snapshot:
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Save snapshot**                                                                                                                                                                 |
-+===================================================================================================================================================================================+
-| Save a snapshot with the latest detection results.                                                                                                                                |
-| The saved snapshot can then be loaded or downloaded by going to the :guilabel:`Files` page on the Pickit web interface and searching for a file whose name contains the capture timestamp.    |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------+
+| **Save snapshot**                                                        |
++==========================================================================+
+| Save a snapshot with the latest detection results.                       |
+| The saved snapshot can then be loaded or downloaded by going to the      |
+| :guilabel:`Files` page on the Pickit web interface and searching for a   |
+| file whose name contains the capture timestamp.                          |
++--------------------------------------------------------------------------+
+
+.. _command-build-background:
+
++--------------------------------------------------------------------------+
+| **Build background**                                                     |
++==========================================================================+
+| Build the background cloud used in advanced Region of Interest filters.  |
+|                                                                          |
+| Calling this function will trigger a camera capture, so if the camera    |
+| mount is fixed, the robot must not occlude the camera view volume.       |
+| If instead the camera is robot-mounted, the robot must be in the same    |
+| pose used for object detection.                                          |
++--------------------------------------------------------------------------+
 
 .. _urcap-global-helper-functions:
 

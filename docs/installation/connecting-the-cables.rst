@@ -27,7 +27,13 @@ again can be done by pressing the same power button once.
 Connect the camera
 ~~~~~~~~~~~~~~~~~~
 
-Connect the Pickit camera with the 10 m USB cable (CBL-USB-CAM-10) that
+While the M and L cameras do not require a power supply, the M-HD camera
+does. The connection steps for both types of cameras are indicated below.
+
+M or L camera
+^^^^^^^^^^^^^
+
+Connect the Pickit M or L camera with the 10 m USB cable (CBL-USB-CAM-10) that
 is provided with Pickit and plug it into the **CAMERA** labeled USB
 port at the back side of the Pickit processor.
 
@@ -35,12 +41,20 @@ When the Pickit camera is connected correctly, there will be a
 continuous green light on the front of the Pickit camera. This
 indicates that the Pickit camera is operational.
 
+M-HD camera
+^^^^^^^^^^^
+
+Connect the power and data cables to the M-HD camera, in the corresponding
+connectors. Plug the USB cable to the Pickit processor, in the **CAMERA** port.
+To power the camera, connect the power chord to the power supply, and plug
+the other end to a power outlet. The camera fan should immediately start
+spinning.
 
 .. note::
   **Important**
 
-  -  A separate power supply for the Pickit camera is not required
-  -  A USB hub is not allowed between the Pickit processor and Pickit camera.
+  -  A USB hub is not allowed between the Pickit processor and any of the
+     Pickit cameras.
 
 Connect the robot or machine controller
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -62,7 +76,7 @@ brand specific instruction pages:
 Connect a computer
 ~~~~~~~~~~~~~~~~~~
 
-There are 2 ways to connect your Pickit processor to a computer. You
+There are two ways to connect your Pickit processor to a computer. You
 can connect it directly with an ethernet cable or connect it to your
 network. You can use the provided gray/black 5 m UTP network cable
 (CBL-CAT6-GRAY-5 / CBL-CAT6-BLACK-5).

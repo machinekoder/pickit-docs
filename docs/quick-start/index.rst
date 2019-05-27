@@ -3,7 +3,7 @@
 Quick start
 ===========
 
-Welcome and thank you for choosing for Pickit.
+Welcome and thank you for choosing Pickit.
 
 .. toctree::
     :maxdepth: 2
@@ -16,8 +16,7 @@ Welcome and thank you for choosing for Pickit.
     robot-camera-calibration
     your-first-pick
 
-After all 7 steps of this guide the result should look similar like this
-video:
+The following video shows how to setup Pickit, going through all 7 steps:
 
 .. raw:: html
 

@@ -1,4 +1,4 @@
-.. _check-collision-with:
+.. _check-collisions-with:
 
 Check collisions with
 ---------------------

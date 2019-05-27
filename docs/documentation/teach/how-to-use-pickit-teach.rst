@@ -48,7 +48,7 @@ Before creating a model of the object, we need to isolate the part from
 its surroundings to make sure that only points belonging to the object
 are captured in the model. This is done by using the :ref:`region-of-interest`.
 
-Go to the **Setup** page and, in the **Fine-tune ROI box** section, modify the region of interest
+Go to the **Setup** page and, in the **Fine-tune ROI box** section, modify the Region of Interest (ROI)
 box boundaries until only points that belong to your objects are inside
 the ROI box. When you're done adapting the boundaries, you're ready to
 go to the next step.
@@ -69,7 +69,7 @@ successfully defined, the viewer will open the :ref:`Model view <model-view>` a
 widget.
 
 The :ref:`Model view <model-view>` shows a 3D visual representation of your model, a
-model bounding box as a green dashed line and the Pick frame. Note the
+mgreen odel bounding box and the Pick frame. Note the
 number in round brackets in the :ref:`Model view <model-view>` tab name, this is the model
 ID.
 
@@ -82,6 +82,11 @@ Below 2 models of the same part are shown. The first model is the shape of the t
 The second model is the shape of the bottom of the part.
 
 .. image:: /assets/images/Documentation/teach-models.png
+
+See :ref:`how-to-multiple-models` on how you can use the model id in a robot program.
+
+After teaching a model for the first time, it is possible to alter it in different ways.
+Refer to the article :ref:`How-to-edit-existing-model` for further details.
 
 Detecting object(s)
 ~~~~~~~~~~~~~~~~~~~
