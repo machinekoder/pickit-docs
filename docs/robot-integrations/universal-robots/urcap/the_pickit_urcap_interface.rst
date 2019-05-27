@@ -181,7 +181,7 @@ To insert a new command, navigate to the **Command** tab select an entry from th
 |    .. image:: /assets/images/robot-integrations/ur/urcap-find-1.png      |
 |                                                                          |
 |    .. image:: /assets/images/robot-integrations/ur/urcap-find-2.png      |
-|                                                                          | 
+|                                                                          |
 | Refer to the cycle time optimization section of the                      |
 | :ref:`universal-robots-urcap-example` article for the motivation behind  |
 | performing robot motions while a Pickit detection is.                    |
@@ -261,7 +261,7 @@ To insert a new command, navigate to the **Command** tab select an entry from th
 | **Find calibration plate**                                                                                                                                                            |
 +=======================================================================================================================================================================================+
 | Trigger detection of the robot-camera calibration plate.                                                                                                                              |
-| This command requires the Pickit web interface to be in the Calibration page, hence robot mode should be disabled. When Pickit is not in the calibration page, a pop-up is shown.     |
+| This command requires the Pickit web interface to be in the :guilabel:`Calibration` page, hence robot mode should be disabled. When Pickit is not in the :guilabel:`Calibration` page, a pop-up is shown.     |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. _command-save-snapshot:
@@ -270,7 +270,7 @@ To insert a new command, navigate to the **Command** tab select an entry from th
 | **Save snapshot**                                                                                                                                                                 |
 +===================================================================================================================================================================================+
 | Save a snapshot with the latest detection results.                                                                                                                                |
-| The saved snapshot can then be loaded or downloaded by going to the Files page on the Pickit web interface and searching for a file whose name contains the capture timestamp.    |
+| The saved snapshot can then be loaded or downloaded by going to the :guilabel:`Files` page on the Pickit web interface and searching for a file whose name contains the capture timestamp.    |
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. _urcap-global-helper-functions:

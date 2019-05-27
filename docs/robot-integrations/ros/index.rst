@@ -46,7 +46,7 @@ Set the `ROS_IP <http://wiki.ros.org/ROS EnvironmentVariables#ROS_IP.2BAC8-ROS_
 
     export ROS_IP=<local-pc-ip>
 
-To test communications, you first need to source a ROS workspace containing the ``im_pickit_msgs`` package. The package can be downloaded from the Pickit web interface, in the **Files** page, under the **ros** folder.
+To test communications, you first need to source a ROS workspace containing the ``im_pickit_msgs`` package. The package can be downloaded from the Pickit web interface, in the :guilabel:`Files` page, under the **ros** folder.
 
 .. image:: /assets/images/robot-integrations/ros/ros-messages-download.png
 

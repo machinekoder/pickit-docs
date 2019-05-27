@@ -28,7 +28,7 @@ we'll need throughout the article.
    for picking, which is why the pick frame exists.
 -  The **pick frame** is what gets sent to the robot. It defines how a robot
    can pick or grasp a detected object and is derived from the object
-   frame by changing settings in the Picking tab of the web interface.
+   frame by changing settings in the **Picking** page of the web interface.
 
 .. image:: /assets/images/Documentation/Note-on-frames.png
 

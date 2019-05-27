@@ -38,8 +38,8 @@ If no **IP address** shows up:
    your network. If so:
 
    -  Ask your system administrator to whitelist the ‘LAN’ port’s **MAC
-      address** shown in the Network page. (red arrow in the image
-      above)
+      address** shown in the Network section of the :guilabel:`Settings`
+      page (red arrow in the image above).
    -  Ask your system administrator to open **TCP 443 port.**
 
 .. note:: Pickit uses VPN/TLS over TCP port 443 to establish a

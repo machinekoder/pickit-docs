@@ -44,7 +44,7 @@ Follow the next steps to complete the exercise.
    `here <https://drive.google.com/uc?export=download&id=1mZ4QD34C7VUCEtLU-dcddDdH36P8sRCZ>`__
    on your device.
 #. Connect your device to your Pickit processor.
-#. In the user interface of Pickit, go to the Files tab. 
+#. In the user interface of Pickit, go to the :guilabel:`Files` page. 
 #. Press Upload and select the file.
 #. The file can now be found in snapshots/uploads.
 #. Finish the exercise.

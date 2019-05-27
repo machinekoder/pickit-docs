@@ -65,13 +65,13 @@ No **fusion** or **downsampling** is applied and the **detection speed** is set 
 
 Need help with these settings? See the :ref:`Teach` article for more information.
 
-In the Picking tab the **pick frames are enforced** to XYZ||XYZ alignment.
+In the **Picking** page the **pick frames are enforced** to XYZ||XYZ alignment.
 This setting makes sure that all calculated pick frames have the same orientation.
 So if one of the boxes is tilted it is still picked straight from the top.
 This is possible since the vacuum cup has quite some flexibility.
 Another benefit is that the head of the robot doesn't need to turn so there are no problems with cable entanglement.
 To ensure that the robot will not try to pick boxes that are too tilted the **maximum angle between pick frame Z-axis and surface normal** is set to 30 degrees.
-No other settings in the picking tab are being used for this demo.
+No other settings in the **Picking** page are being used for this demo.
 
 Need help with these settings? See the :ref:`Picking` article for more information.
 

@@ -7,7 +7,7 @@ You can access files located in the Pickit processor by clicking on the :guilabe
 
 .. image:: /assets/images/Documentation/files-button.png
 
-The **Files** page allows you to browse and download the following content:
+The :guilabel:`Files` page allows you to browse and download the following content:
 
 -  **snapshots:** Contains the snapshots that are saved on your
    system. You can also upload snapshots to the Pickit system.

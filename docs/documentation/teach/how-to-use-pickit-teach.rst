@@ -59,7 +59,7 @@ Adding a model
 ^^^^^^^^^^^^^^
 
 In this step, the actual model will be taught and saved. Go to the
-Detection tab and select the Pickit Teach engine. Open the ‘Define your
+**Detection** page and select the Pickit Teach engine. Open the ‘Define your
 model(s)’ section. Here you will see a widget that allows adding models.
 
 To add a new model, click :guilabel:`Add a model`. Before clicking

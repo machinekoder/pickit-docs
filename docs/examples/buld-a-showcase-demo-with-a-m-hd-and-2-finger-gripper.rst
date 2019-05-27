@@ -63,7 +63,7 @@ No **downsampling** is applied and the **detection speed** is set to Fast.
 
 Need help with these settings? See the :ref:`Teach` article for more information.
 
-In the Picking tab no alignments are **enforced**. For this demo **collision prevention** is applied.
+In the **Picking** page no alignments are **enforced**. For this demo **collision prevention** is applied.
 It is checked that the calculated pick frames are not steeper than 30 degrees.
 Also, possible collision with bin and other objects are checked.
 For this check it is important that a good tool model is defined.

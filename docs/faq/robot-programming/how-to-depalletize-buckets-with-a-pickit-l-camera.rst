@@ -93,7 +93,7 @@ elements standing close by, which are not supposed to be detected
 For depalletizing applications like this, we recommend using the 
 :ref:`Dynamic-box-based-roi-filter`,
 which can be activated in the **Region of interest** page, in the
-**Advanced ROI filters** tab. This filter makes sure that all objects in
+**Advanced ROI filters** section. This filter makes sure that all objects in
 the top layer will be detected and picked before any objects in the next
 layer. For this application we set a threshold of 150 mm, i.e. we keep
 the top 150 mm of the point cloud and filter out everything below.

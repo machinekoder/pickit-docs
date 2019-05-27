@@ -20,7 +20,7 @@ Above you can find an example of the different behaviour between network byte or
 
 .. warning::
     The robot client sends requests using the `command message <#command-message>`__, and the Pickit server answers with the `response message <#response-message>`__. These messages **have a static size**, and **don’t have a begin and/or end character**. While the TCP/IP protocol prevents data loss, the robot client implementation is responsible for keeping track of the boundary between messages by counting the number of sent/received bytes and comparing with the expected message size.
-    
+
     There is **no explicit coupling between a command and a response** in the communication. Therefore, the robot client should not send a second command before having confirmed that a response to the first command has been received. It is the responsibility of the client implementation or the robot program to prevent this from happening.
 
 The Pickit server only sends `response messages <#response-message>`__ after having received an explicit request from the robot client in a `command message <#command-message>`__. Apart from this request-response exchange, Pickit also expects to receive periodic **robot flange** pose updates from the client. The rate of these periodic updates depends on the robot brand, but is typically in the range of 10 to 50 messages per second. Note that both command requests and robot flange pose updates use the same message structure, ``robot_to_pickit_data``, described in more detail in the `command message <#command-message>`__ section. The structure of the response messages, ``pickit_to_robot_data``, is described in the `response message <#response-message>`__ section.
@@ -36,7 +36,7 @@ For **position** information Pickit sends and expects to receive values in **met
 Command message from robot to Pickit
 ------------------------------------
 
-The data package communicated to Pickit contains the actual robot pose, an (optional) robot command and the desired configuration. The latter allows to request Pickit to configure according to an existing setup and product type. What number matches to what file, can be derived from the Configuration page of the Pickit web interface.
+The data package communicated to Pickit contains the actual robot pose, an (optional) robot command and the desired configuration. The latter allows to request Pickit to configure according to an existing setup and product type. To find out the number associated to a setup or product file, go to the **Setup** page (for setup file) or **Detection** or **Picking** page (for product file) and press the :guilabel:`Open` button on top of the page. The number appears next to the file name.
 
 In summary, the robot is required to send this structure to the Pickit Socket Interface:
 
@@ -47,7 +47,7 @@ In summary, the robot is required to send this structure to the Pickit Socket In
         int32 command;
         int32 setup;
         int32 product;
-        meta_data meta; 
+        meta_data meta;
     };
 
 Metadata fields are documented in the  `Message metadata <#message-metadata>`__ section of this article. The remaining fields are explained below.
@@ -107,12 +107,12 @@ The robot receives this structure from the Pickit interface:
 
          struct pickit_to_robot_data {
               int32 object_pose[7];
-              int32 object_age; 
-              int32 object_type;     
-              int32 object_dimensions[3]; 
+              int32 object_age;
+              int32 object_type;
+              int32 object_dimensions[3];
               int32 objects_remaining;
               int32 status;
-              meta_data meta;  
+              meta_data meta;
          };
 
 Metadata fields are documented in the `Message metadata <#metadata>`__ section of this article. The remaining fields are explained below.
@@ -208,8 +208,8 @@ Below are the values of the Pickit status constants communicated by Pickit:
          #define PICKIT_IDLE_MODE                   1
          #define PICKIT_CALIBRATION_MODE            2
 
-         #define PICKIT_FIND_CALIB_PLATE_OK        10                   
-         #define PICKIT_FIND_CALIB_PLATE_FAILED    11                   
+         #define PICKIT_FIND_CALIB_PLATE_OK        10
+         #define PICKIT_FIND_CALIB_PLATE_FAILED    11
          #define PICKIT_OBJECT_FOUND               20
          #define PICKIT_NO_OBJECTS                 21
          #define PICKIT_NO_IMAGE_CAPTURED          22

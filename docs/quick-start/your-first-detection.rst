@@ -9,8 +9,7 @@ Follow the steps below to do your first detection with Pickit:
 -  Make sure that the Pickit camera is mounted 700 mm above a flat work
    space. The work space is now seen in the :ref:`2D view <2d-view>`.
 -  In the Pickit user interface press Stop Robot Mode.
--  In the Configuration tab under create a new setup and/or product fill
-   in 'Test\_Pickit' twice and press Create.
+-  Create a new setup and/or product, name both files 'Test\_Pickit' and press :guilabel:`Continue`.
 -  Place the three workspace markers, according the indicated arrows,
    inside the field of view of the camera.
 -  Go to the Region of Interest > ROI Box filter and press Use Markers.
@@ -20,7 +19,7 @@ Follow the steps below to do your first detection with Pickit:
 
 .. image:: /assets/images/First-steps/Empty-roi.png
 
--  In the Detection tab select Pickit Teach. 
+-  In the **Detection** page select Pickit Teach. 
 -  Now place a soda can on his side in the middle of the marks.
 -  Under define your model(s) press Add a model. Now the :ref:`Model view <model-view>` is
    opened and a point cloud of the soda can is shown.

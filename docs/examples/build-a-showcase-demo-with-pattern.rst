@@ -33,8 +33,7 @@ Your first detection (Configure the Pickit files)
 Now that every component is connected to the Pickit system, we are able
 to configure Pickit.
 
-In the Pickit :ref:`web-interface`, go to the configuration tab and create
-new setup files and a product file:
+In the Pickit :ref:`web-interface`, create a new setup and product file:
 
 -  **Setup:** pattern_demo.
 -  **Product:** pattern_demo.

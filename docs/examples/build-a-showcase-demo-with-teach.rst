@@ -39,8 +39,7 @@ Your first detection (configuring the Pickit files)
 Now that every component is connected to the Pickit system, we are able
 to configure Pickit.
 
-In the Pickit :ref:`web-interface`, go to the configuration tab and create
-new setup files and a product file:
+In the Pickit :ref:`web-interface`, create a new setup and product file:
 
 -  **Setup 1:** teach_demo_bin_left
 -  **Setup 2:** teach_demo_bin_right
@@ -67,7 +66,7 @@ bottom are shown. Due to this assumption it is sufficient to teach two
 models of the part. One model will contain all information of the top of
 the part and the second one contains all information of the bottom.
 
-See below for images of both models that are used in the detection tab.
+See below for images of both models that are used in the **Detection** page.
 Below the images all detection parameters are given. See following
 articles on how to use Pickit :ref:`Teach`.
 
