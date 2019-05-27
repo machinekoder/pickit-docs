@@ -35,25 +35,19 @@ See video below for the result of this approach. Further below everything is exp
 
 .. raw:: html
 
-  <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+  <div style="position: relative; padding-bottom: 5%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
     <iframe src="https://drive.google.com/file/d/16-dCquo9aoAMa05FWR7iSi4byzlyHXTZ/preview" frameborder="0" allowfullscreen width="640" height="480"></iframe>
   </div>
-  <br>
 
 Advanced ROI filter: Dynamic Box-based ROI filter
 -------------------------------------------------
 
 The boxes are stacked on a table in different layers.
-It seems logical that the robot should always focus on the top most layer first and afterwards proceed to the next layer.
-This is something that can be forced in the Pickit system by using one of our advanced ROI-filters: :ref:`Dynamic-box-based-roi-filter`.
-
-With this filter additional filtering on the points in the region of interest is done.
-Now the system is forced to only focus on the highest point and the points that lie slightly lower than this highest point.
+It seems logical that the robot should always focus on the top most layer first and afterwards proceed to the next layer. This is achieved by using the :ref:`Dynamic-box-based-roi-filter`, which discards any points below a specified distance from the highest points in the scene.
 Below the effect of this filter is shown.
 
-After all boxes are picked from the top layer.
-The next layer will be the highest point in region of interest and will now be visible for the system.
-For this application the system only keeps the points that are maximum 20 mm lower than the highest point.
+Only when all boxes in the top layer are picked, the next layer becomes visible in the Points view, since it now contains the highest points.
+For this application the system only keeps the points that are at most 20 mm below the highest point.
 
 If you are interested in more information about our advanced ROI filters you can have a look a this article: :ref:`advanced-roi-filters`.
 
@@ -94,7 +88,7 @@ After the first step the part is dropped on an isolated location.
 Then a new detection is triggered to determine the complete orientation of the part.
 For the second step a second setup and product file are created.
 The region of interest now focus on the isolated part.
-The part itself is detected using Pickit Flex by looking for rectangles.
+The part itself is detected using Pickit Flex looking for rectangles.
 
 The image below shows the complete robot program that has been used for this application.
 The second step is done in a second loop in the program.
@@ -112,14 +106,13 @@ It is first checked if there is still something before the system looks again to
 If really nothing is found in the region of interest the program automatically goes back to the first step.
 
 To check if there is something beneath the camera a Flex detection is triggered.
-No clustering is applied, no rejecting of clusters, no fitting (Blob) and only filtering out on the number of points.
-If less than 300 points in total are seen in the region of interest we assume that nothing of importance is beneath the camera, so no new detection for finding the box is triggered.
+No clustering is applied, no cluster rejection is used, and no fitting is done (Blob). Objects are filtered out only based on the number of points: If less than 300 points in total are seen in the region of interest, we assume that nothing of importance is beneath the camera, so no new detection for finding the box is triggered.
 More extensive information about this method is explained in the :ref:`detect-empty-roi`.
 
 Snapshots
 ---------
 
-Below you can download 3 snapshots files to see the settings of all parameters that were used for this program.
+Below you can download three snapshots to see the settings that were used for this application.
 
 .. image:: /assets/images/examples/example-case-boxes-snapshot-1.png
 
