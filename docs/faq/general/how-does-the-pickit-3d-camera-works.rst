@@ -13,8 +13,9 @@ When there is an overlap between the two , 3D data in the form a point cloud can
 In this case, there is 3D data for the upper part of the circle and for the flat surface below it.
 
 .. image:: /assets/images/faq/Pickit-camera-3d-data.png
+   :align: center
 
-All Pickit 3D camera work according to this principle.
+All Pickit 3D cameras work according to this principle.
 The M and L camera work with structured infrared light and the M-HD camera works with structured visible light.
 
 What surface of the object gets detected by the camera?
@@ -24,17 +25,19 @@ From the image above you can see that the camera can't obtain 3D data for the fu
 Only the visible upper part is detected. Both the object shape and location (position and orientation) with respect to the camera determine which surfaces will be detected by the camera.
 In this section, two different examples are discussed.
 
-In the image below three circles are placed beneath the camera.
+In the image below three circles are placed under the camera.
 Here it is shown that the obtained 3D data depends on where objects are located with respect to the camera.
 The detected surfaces are those that have a direct line of sight to both the structured light projector and the sensor (red and green triangles, respectively).
 
 .. image:: /assets/images/faq/Pickit-camera-multiple-objects.png
+   :align: center
 
 An interesting situation arises when a rectangular shape gets placed directly beneath the camera, as in the image below.
 In such a case, only the upper side of the rectangle is detected.
 There is no 3D information for the standing sides as they are not visible to the camera.
 
 .. image:: /assets/images/faq/Pickit-camera-box.png
+   :align: center
 
 What are the limits of the Pickit cameras?
 -------------------------------------------
@@ -48,23 +51,26 @@ Also, 3D data on the flat surface around the edge is missing where there is only
 Conversely, the region next to the right side of the edge is visible to the projector but not to the sensor.
 
 .. image:: /assets/images/faq/Pickit-camera-standing-edge.png
+   :align: center
 
 The second scenario consists of a transparent object.
 In the image below it can be seen that both the structured light and the sensor pass through the object.
 So 3D data of the flat surface below the object is returned, but no information of the object itself is obtained.
 
 .. image:: /assets/images/faq/Pickit-camera-transparent.png
+   :align: center
 
 A third scenario is when the object is reflective.
 The structured light that falls on the object will not be reflected towards the camera but away from it.
 This makes it impossible to obtain 3D information around the object, as shown in the image below.
 
 .. image:: /assets/images/faq/Pickit-camera-reflective.png
+   :align: center
 
 The above scenarios exemplify edge cases.
 Often parts are only partially reflective or semi-transparent.
 When in doubt about a part, it is recommended to test it by placing it under the camera, trigger a detection and inspect the point cloud in the **Points** tab of the :ref:`Viewer`.
-If not enough 3D data is shown, know that this can be further optimized.
-For the Pickit M and L cameras, :ref:`image-fusion` leads to a more stable point cloud.
+If not enough 3D data is captured, know that this can be further optimized.
+For the Pickit M and L cameras, :ref:`image fusion <image-fusion>` leads to a more stable point cloud.
 For the Pickit M-HD camera, a different camera preset can be used.
 If still not enough 3D is obtained the parts are too reflective or transparent.

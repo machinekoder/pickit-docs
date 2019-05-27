@@ -8,14 +8,11 @@ How to chose the correct clustering preset
     :local:
     :depth: 1
 
-The clustering preset is an important parameter when using the detection engines :ref:`Flex` or :ref:`Pattern`.
-In this article an example of different clustering methods is showed and
-discussed. This example should help you chosing the correct setting for your application.
+The clustering preset is an important parameter when using the :ref:`Flex` or :ref:`Pattern` detection engines. In this article an example covering different clustering methods is shown and
+discussed. This example should help you choose the correct setting for your application.
 
 The scene below is used to explain the different clustering
-methods. In the scene there are 3 shampoo bottles next to each other, 4
-boxes randomly on top of each other and 4 electrical plug shieldings
-separated from each other.  A snapshot of this scene can be downloaded 
+methods. In the scene there are three shampoo bottles next to each other, four boxes randomly on top of each other and four electrical plug shieldings separated from each other. A snapshot of this scene can be downloaded 
 `here <https://drive.google.com/uc?export=download&id=1O_N-cxPfPcg-TQpFimSls3jx3sEwM_RW>`__.
 
 .. image:: /assets/images/Documentation/Clustering-2d.png
@@ -44,11 +41,9 @@ is not good.
 Plane Based Clustering
 ~~~~~~~~~~~~~~~~~~~~~~
 
-This method looks for flat surfaces in the scene. If two surfaces have a
-different orientation they are considered as separate clusters. On the
+This method looks for flat surfaces in the scene. If two surfaces have a different orientation they are considered separate clusters. On the
 image below the results of this clustering method is shown. For the
-shampoo bottles multiple clusters are formed, which is not good. For the
-boxes all of the boxes are clustered apart andno points are missing at
+shampoo bottles multiple clusters are formed, which is not good. All boxes are clustered apart and no points are missing at
 the edges of the surfaces, which is good. For the electrical plug
 shieldings multiple clusters per part are formed, which is not good.
 
@@ -71,6 +66,6 @@ positioned separated, one cluster per part is formed, which is good.
 
 **Best results for:**
 
--  (Complex) shapes that are separated
+-  (Complex) non-touching shapes
 
 .. image:: /assets/images/Documentation/Clustering-non-touching.png

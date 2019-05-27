@@ -2,7 +2,7 @@ Can I connect a Pickit processor as a normal PC?
 =================================================
 
 You can **not** access the Pickit processor as a normal PC. You
-can **not** plug an external screen and/or keyboard direct into the
+can **not** plug an external screen and/or keyboard directly into the
 Pickit processor.
 
 **The Pickit processor can only be accessed over network through the
