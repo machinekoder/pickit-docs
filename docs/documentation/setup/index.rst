@@ -61,3 +61,4 @@ in it can be visualized in the :ref:`Points view <points-view>`.
     fine-tune-roi-box
     exclude-3d-information-based-on-color
     advanced-filters
+    bin-box
