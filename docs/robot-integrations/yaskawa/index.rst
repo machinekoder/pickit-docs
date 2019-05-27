@@ -1,7 +1,7 @@
 .. _yaskawa:
 
 Setting up Pickit with a Yaskawa robot
-==================================
+======================================
 
 This setup manual helps you setup Pickit with a Yaskawa robot. The
 setup of Pickit with a Yaskawa robot consists of 4 steps:
@@ -66,7 +66,8 @@ Loading the MotoPlus application
 
 The robot controller should be maintenance mode and the security mode to management mode before making these changes.
 
-Before starting, the MotoPlus application should be placed on a USB dongle. `Download the Pickit MotoPlus application here <https://support.pickit3d.com/article/36-pick-it-robot-programs>`__.
+Before starting, the MotoPlus application should be placed on a USB dongle. 
+:ref:`Download the Pickit Yaskawa files here <downloads:Yaskawa>`.
 
 #. Load the correct USB device under :guilabel:`SYSTEM` → :guilabel:`MotoPlus APL` → :guilabel:`DEVICE`.
 #. Open the correct folder where the MotoPlus application is stored

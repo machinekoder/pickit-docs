@@ -61,7 +61,7 @@ Robot camera calibration
 ------------------------
 
 Once the camera is mounted to the robot flange, robot camera calibration
-should be carried out. Refer to :ref:`robot camera-calibration`
+should be carried out. Refer to :ref:`robot-camera-calibration`
 for further guidance.
 
 Teach the region of interest

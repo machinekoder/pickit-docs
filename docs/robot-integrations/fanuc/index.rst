@@ -1,7 +1,7 @@
 .. _fanuc:
 
 Setting up Pickit with a Fanuc robot
-================================
+====================================
 
 This setup manual helps you setup Pickit with a **Fanuc robot**. The
 setup of **Pickit** with a **Fanuc** **robot** consists of **4 steps**:
@@ -155,8 +155,7 @@ used by the Karel program.
 Download the right files
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-`All program files available for Fanuc robots can be downloaded
-here <https://drive.google.com/uc?export-download&id-0BzZKo0Mfhw0RMDNULWxxY0dvcG8>`__.
+:ref:`Download the Pickit Fanuc files <downloads:fanuc>`
 
 The .zip folder contains the following ASCII files:
 
@@ -166,8 +165,8 @@ The .zip folder contains the following ASCII files:
 
 - For calibration we provide two Teach Pendant programs;
 
-  - ``MP_CALIBRATE.LS`` for :ref:`multi poses calibration <calibration-multi-poses>`  
-  
+  - ``MP_CALIBRATE.LS`` for :ref:`multi poses calibration <calibration-multi-poses>`
+
   - ``CALIBRATE.LS`` for :ref:`single pose calibration <calibration-single-pose>`
 
 - The other ``*.LS`` file define short Teach Pendant program that abstract some of the Pickit logic into more user readable functions. They can also serve as macros that can be called manually. More about that later. 
