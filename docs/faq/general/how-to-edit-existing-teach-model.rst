@@ -17,7 +17,7 @@ Re-teaching the model cloud
 
 If you wish to change the model cloud from scratch, click on the :guilabel:`Re-teach` button of the
 concerned model. This replaces the model cloud by the content of your current
-:ref:`region-of-interest`.
+:ref:`Region of Interest (ROI) <region-of-interest>`.
 
 A common example is when you realize that the model cloud quality could be improved. For
 instance, a model taught with the camera at a far distance might be missing important
@@ -27,11 +27,13 @@ details. In that case, you may want to :guilabel:`Re-teach` it from a closer dis
 
 .. image:: /assets/images/Documentation/Teach-model-taught-far-close.png
 
+.. _crop-and-expand-model:
+
 Cropping and expanding a model cloud
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 When clicking :guilabel:`Add a model` or :guilabel:`Re-teach`, the resulting model
-corresponds to the content of the current :ref:`region-of-interest`. The
+corresponds to the content of the current ROI. The
 model point cloud can be cropped or expanded afterwards, using the arrows in the
 **Model** view.
 
@@ -44,22 +46,22 @@ contains undesired points that are difficult to spot.
 
 .. image:: /assets/images/Documentation/Teach-model-autosnap-on-clean.png
 
-**If the model contains undesired points that are difficult to see, the auto-snapped model box
+If the model contains undesired points that are difficult to see, the auto-snapped model box
 seems larger than the actual model. In the model shown below, undesired points can be found on the
-top right corner of the model bounding box.**
+top right corner of the model bounding box.
 
 .. image:: /assets/images/Documentation/Teach-model-autosnap-on-ghostpoints.png
 
 If the auto-snap option is disabled, the green model box is set to whatever you define
- using the model arrows.
+using the model arrows.
 
 .. image:: /assets/images/Documentation/Teach-model-autosnap-off.png
 
 .. note::
   Cropping and expanding operations do not replace the model with the content of the
-  current region-of-interest. Instead, they work on the point cloud that was captured
+  current ROI. Instead, they work on the point cloud that was captured
   at the moment of teaching. When expanding the model box (making it larger), it is
-  possible to include points that were initially outside the region-of-interest at
+  possible to include points that were initially outside the ROI at
   the time of teaching.
 
 There are several situations where cropping an existing model is extremely convenient, as opposed

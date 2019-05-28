@@ -43,12 +43,15 @@ This model doesn't have specific 3D features and fits in many places in the scen
 Clean (no outlier points)
 -------------------------
 
-When teaching the model it is important that only points that belong to the object are included.
-All other points of the suroundings should be filtered away by the :ref:`region-of-interest` (ROI) box before teaching the model.
-In the example below the ROI box was set to a too low value.
-Now, the ROI markers that are lying next to the object are considered as part of the object.
-Whenever a detection is triggered Pickit will look both for the part and for the markers lying next to it.
-If these markers are missing in a new scene (which is quite likely) it will have a big effect on the matching score.
+When teaching the model it is important that only points that belong to the part
+are included. Avoid surrounding points not belonging to the part.
+When you first teach a model, it will contain all points in the
+:ref:`Region of Interest (ROI) <region-of-interest>`, but it's possible to
+modify its boundaries by :ref:`cropping or expanding the model cloud <crop-and-expand-model>`.
+In the example below, the bounding box around the model is too large, and
+unexpectedly captures the three ROI markers that surround the part.
+When including unexpected regions of the scene in the part model, Pickit will
+also look for them, which will affect negatively detection results.
 
 .. image:: /assets/images/faq/how-to-good-model-unclean.png
 
@@ -62,3 +65,4 @@ In the final example the wrong side of the part was taught. This of course leads
 Before teaching models it is good practice to think about which side is most likely to be shown to the camera in your application. If multiple sides of a part are potentially visible, you should teach more than one model (See article :ref:`Explaining-the-teach-detection-parameters`).
 
 .. image:: /assets/images/faq/how-to-good-model-wrong.png
+
