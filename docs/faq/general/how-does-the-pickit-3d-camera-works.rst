@@ -72,5 +72,5 @@ Often parts are only partially reflective or semi-transparent.
 When in doubt about a part, it is recommended to test it by placing it under the camera, trigger a detection and inspect the point cloud in the **Points** tab of the :ref:`Viewer`.
 If not enough 3D data is shown, know that this can be further optimized.
 For the Pick-it M and L cameras, :ref:`image-fusion` leads to a more stable point cloud.
-For the Pick-it M-HD camera, a different camera preset can be used.
+For the Pick-it M-HD camera, a different camera preset can be used. Learn :ref:`how-to-mhd-preset`.
 If still not enough 3D is obtained the parts are too reflective or transparent.
