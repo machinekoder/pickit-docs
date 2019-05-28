@@ -54,7 +54,7 @@ The effect of modifying the objects shape and orientation can be visualized in t
 - For circles, you can define the diameter, for the other geometrical models you can define length and width.
 - If the parts are aligned, the **expected orientation** indicates whether the long side of the objects (X-axis) is aligned with the reference (Region of Interest) X- or Y-axis. If the parts do not follow any particular alignment, choose an unknown orientation.
 - With the **Remove contour points on ROI boundary** and the **Threshold**, you can remove contour points that are within the
-threshold distance of the Region of Interest. 
+  threshold distance of the Region of Interest. 
 
 Filter objects
 ~~~~~~~~~~~~~~

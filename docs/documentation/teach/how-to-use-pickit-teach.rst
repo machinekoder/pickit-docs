@@ -83,8 +83,6 @@ The second model is the shape of the bottom of the part.
 
 .. image:: /assets/images/Documentation/teach-models.png
 
-See :ref:`how-to-multiple-models` on how you can use the model id in a robot program.
-
 After teaching a model for the first time, it is possible to alter it in different ways.
 Refer to the article :ref:`How-to-edit-existing-model` for further details.
 

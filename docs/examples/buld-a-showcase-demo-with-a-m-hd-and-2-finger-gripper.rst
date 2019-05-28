@@ -1,5 +1,5 @@
 Build a showcase demo with a M-HD-Camera and two-finger gripper
-=============================================================
+===============================================================
 
 This article will guide you in setting up a simple showcase demo with Pickit and a UR that you can show at trade fairs.
 For this demo a Pickit M-HD camera is used to detect cylindrical red parts in a bin.

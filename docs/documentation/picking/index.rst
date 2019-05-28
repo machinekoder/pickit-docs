@@ -37,6 +37,13 @@ Object ordering
 
 The :ref:`object-ordering` section allows the user to specify how the detected objects are sorted, in case more than one object is detected.
 
+.. toctree::
+    :hidden:
+    :maxdepth: 1
+    :glob:
+
+    object-ordering
+
 Pick strategy
 -------------
 

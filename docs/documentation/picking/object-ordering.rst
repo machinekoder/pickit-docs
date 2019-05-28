@@ -1,3 +1,5 @@
+.. _object-ordering:
+
 Object ordering
 ---------------
 
