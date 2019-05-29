@@ -36,6 +36,14 @@ The product number for this module is **91B300-020** and can be purchased throug
 - `Download the Pickit for KUKA KR C4 <https://drive.google.com/uc?export=download&id=1Xi76sHuu_H-iAkkHhYvrXR1gYg2K-OlM>`__
 - `Download the Pickit for KUKA Sunrise <https://drive.google.com/uc?export=download&id=0ByhqgEqwu5R8QTlvZy1YcEk1NDQ>`__
 
+ROS
+---
+
+To communicate with Pickit using the ROS interface, you need to have the
+``im_pickit_msgs`` package in your workspace.
+
+- `Download the Pickit ROS interface files <http://download.pickit3d.com/ros/im_pickit_msgs_v2.1.tar.gz>`__
+
 Stäubli
 -------
 
