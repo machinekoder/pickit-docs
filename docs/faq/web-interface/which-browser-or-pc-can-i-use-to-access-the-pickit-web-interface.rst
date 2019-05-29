@@ -1,12 +1,18 @@
-Which browser or PC can I use to access the Pickit web interface?
-==================================================================
+.. _supported-browsers:
 
-The only supported internet browser for Pickit is `Google
-Chrome <https://www.google.com/chrome/>`__. 
+Which browser can I use to access the Pickit web interface?
+===========================================================
 
-Note also that the Pickit web interface requires **WebGL** to be able
-to show 3D visualizations. In case the 3D views don’t work
-out-of-the-box, check your GPU state by going to the following link: 
+The Pickit web interface works any modern web browser supporting **JavaScript**
+and **WebGL** (for 3D visualizations), like
+`Google Chrome <https://www.google.com/chrome/>`__ or
+`Firefox <https://www.mozilla.org/en-US/firefox/>`__.
+
+
+Troubleshooting: Google Chrome
+------------------------------
+If you're using Google Chrome and the 3D views don't work out-of-the-box, check
+your GPU state by going to the following link: 
 `chrome://gpu <chrome://gpu/>`__. 
 If it doesn’t read "WebGL: Hardware accelerated" in the first list,
 this confirms that the 3D views won’t work. To resolve this issue, you

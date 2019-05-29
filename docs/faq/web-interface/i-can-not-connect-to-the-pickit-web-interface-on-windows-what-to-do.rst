@@ -1,9 +1,9 @@
 I can not connect to the Pickit web interface on Windows. What to do?
 ======================================================================
 
-In case the Pickit web interface cannot be reached when surfing to
-**http://192.168.66.1** using **Google Chrome**, the following actions
-can be taken:
+In case the Pickit web interface cannot be reached when navigating to
+**http://192.168.66.1** using a :ref:`supported browser <supported-browsers>`,
+the following actions can be taken:
 
 -  Click the Windows button on your keyboard + R to open a run dialog
 -  Enter ``cmd`` and you will see a black command line dialog

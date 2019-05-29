@@ -16,7 +16,8 @@ There are two mandatory connections and two optional connections for the
 Pickit system:
 
 -  **Top**\ : The Pickit processor **can be connected** via a network
-   cable to any PC for access to the Pickit web interface via Chrome.
+   cable to any PC for access to the Pickit web interface via any
+   :ref:`supported web browser <supported-browsers>`.
 -  **Bottom**: The Pickit camera **must be connected** to the Pickit
    processor using the provided USB camera cable.
 -  **Right**: The Pickit processor **must be connected** with a network
