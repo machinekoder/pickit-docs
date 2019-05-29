@@ -12,7 +12,7 @@ The red triangle represents the projected pattern, while the green triangle repr
 When there is an overlap between the two, 3D data in the form of a point cloud can be obtained, shown as a thick green line.
 In this case, there is 3D data for the upper part of the circle and for the flat surface below it.
 
-.. image:: /assets/images/faq/Pickit-camera-3d-data.png
+.. image:: /assets/images/faq/Pickit-camera-3d-data_big.png
    :align: center
 
 All Pickit 3D cameras work according to this principle.
@@ -29,14 +29,14 @@ In the image below three circles are placed under the camera.
 Here it is shown that the obtained 3D data depends on where objects are located with respect to the camera.
 The detected surfaces are those that have a direct line of sight to both the structured light projector and the sensor (red and green triangles, respectively).
 
-.. image:: /assets/images/faq/Pickit-camera-multiple-objects.png
+.. image:: /assets/images/faq/Pickit-camera-multiple-objects_big.png
    :align: center
 
 An interesting situation arises when a rectangular shape gets placed directly beneath the camera, as in the image below.
 In such a case, only the upper side of the rectangle is detected.
 There is no 3D information for the standing sides as they are not visible to the camera.
 
-.. image:: /assets/images/faq/Pickit-camera-box.png
+.. image:: /assets/images/faq/Pickit-camera-box_big.png
    :align: center
 
 What are the limits of the Pickit cameras?
@@ -50,21 +50,21 @@ Below, the effect of a thin standing edge is shown. The edge itself is rather th
 Also, 3D data on the flat surface around the edge is missing where there is only visibility to either the structured light projector (red triangle) or the sensor (green triangle), but not both: The region next to the left side of the edge is visible to the sensor but not to the projector.
 Conversely, the region next to the right side of the edge is visible to the projector but not to the sensor.
 
-.. image:: /assets/images/faq/Pickit-camera-standing-edge.png
+.. image:: /assets/images/faq/Pickit-camera-standing-edge_big.png
    :align: center
 
 The second scenario consists of a transparent object.
 In the image below it can be seen that both the structured light and the sensor pass through the object.
 So 3D data of the flat surface below the object is returned, but no information of the object itself is obtained.
 
-.. image:: /assets/images/faq/Pickit-camera-transparent.png
+.. image:: /assets/images/faq/Pickit-camera-transparent_big.png
    :align: center
 
 A third scenario is when the object is reflective.
 The structured light that falls on the object will not be reflected towards the camera but away from it.
 This makes it impossible to obtain 3D information around the object, as shown in the image below.
 
-.. image:: /assets/images/faq/Pickit-camera-reflective.png
+.. image:: /assets/images/faq/Pickit-camera-reflective_big.png
    :align: center
 
 The above scenarios exemplify edge cases.
