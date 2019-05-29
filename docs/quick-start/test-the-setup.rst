@@ -4,8 +4,8 @@ Test the setup
 Now that every component is connected to the Pickit processor, we are
 able to see Pickit's web interface:   
 
--  Open a Google Chrome web browser on your external PC and
-   enter \ http://192.168.66.1 in the address bar.
+-  Open a :ref:`supported web browser <supported-browsers>` on your external PC
+   and enter \ http://192.168.66.1 in the address bar.
 -  Now the Pickit web interface is visible inside your web browser. 
 
 .. image:: /assets/images/First-steps/pickit-webinterface-20.png

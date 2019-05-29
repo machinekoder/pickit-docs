@@ -3,12 +3,13 @@
 Web interface
 =============
 
-When a Pickit system is connected to an additional device and in a
-Google chrome web browser following address is typed in 
+When a Pickit system is connected to an external computer and a
+:ref:`supported web browser <supported-browsers>` is pointed to 
 `http://192.168.66.1 <http://192.168.66.1/>`__, the web interface of
-Pickit shown. The web interface looks like the image below. In this
+Pickit is shown. The web interface looks like the image below. In this
 article a general overview of what you can see in this interface is
-discussed. The interface is divided into 3 part: top, left and right.
+discussed. The interface is divided into 3 part: top bar, left side and right
+side.
 
 .. image:: /assets/images/Documentation/pickit-webinterface-21.png
 
@@ -65,7 +66,7 @@ settings and parameters are divided over several tabs. See article of
 each tab to have an extensive overview:
 
 -  :ref:`setup`
+-  :ref:`Teach`
 -  :ref:`Flex`
 -  :ref:`Pattern`
--  :ref:`Teach`
 -  :ref:`Picking`
