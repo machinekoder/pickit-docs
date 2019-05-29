@@ -39,7 +39,7 @@ How to attach the ROI box to the robot base frame?
 
 For Pickit to define where the ROI box is with to the robot base
 Pickit needs to know where the camera is with respect to the robot. To
-define this you should first perform :ref:`calibration-multi-pose-robot`.
+define this you should first perform :ref:`multi-poses-calibration`.
 If calibration was already done, there is no need to do this again.
 
 2. Enable attachment to the robot base
