@@ -20,7 +20,7 @@ discussed. The interface is divided into 3 part: top, left and right.
 Top bar
 -------
 
-Starting from left to right. First the logo of Pickit shown. 
+Starting from left to right. First the logo of Pickit shown.
 Next to the logo the current software version of your system is shown.
 
 Next to the current software version the current **Setup** and **Product** file are shown.
@@ -34,9 +34,9 @@ Then the **Settings** button is shown. Here amongst other the Network and user s
 can be defined. More information about these settings can be found in
 the article :ref:`Settings`.
 
-Next the **Files** button is shown. More information about this can be found in the article :ref:`File`.
+Next the **Files** button is shown. More information about this can be found in the :ref:`Files` article.
 
-Then the **Calibration** button is shown. More information about this can be found in the article :ref:`calibration`.
+Then the **Calibration** button is shown. More information about this can be found in the :ref:`robot-camera-calibration` article.
 
 At last the **Robot mode** button is shown. Here you can change from
 **Robot mode** to **Idle**. 

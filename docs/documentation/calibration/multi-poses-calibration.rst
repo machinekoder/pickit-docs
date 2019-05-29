@@ -13,8 +13,8 @@ This article goes through the main steps in the multi poses calibration process:
 Fixing the calibration plate
 ----------------------------
 
-Camera fixed to an independent structure
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Fixed camera
+~~~~~~~~~~~~
 
 If the camera is fixed to a static structure, the calibration plate must be mounted on the robot
 flange. For multi poses calibration it does not matter how the plate is mounted, as long as it's
@@ -25,8 +25,8 @@ Refer to :ref:`installing-calibration-plate` for the standard way to mount the p
 .. image:: /assets/images/Documentation/Calibration-plate-robot.jpg
    :scale: 30 %
 
-Camera mounted on the robot flange
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Robot mounted camera
+~~~~~~~~~~~~~~~~~~~~
 
 If the camera is mounted on the robot flange, place the calibration plate on a surface, at a
 comfortable distance from the robot. The location of the plate should correspond to the picking
@@ -50,16 +50,16 @@ find the calibration plate. Each of the five waypoints should be defined such th
 .. image:: /assets/images/Documentation/Calibration-plate-visible-viewer.png
 .. image:: /assets/images/Documentation/Calibration-plate-visible.png
 
-Camera fixed to an independent structure
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program for fixed camera
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 Move the robot such that the plate is in the middle of the field of view of the camera. Move the
 flange to five different angle combinations around the X, Y and Z axes.
 
 .. image:: /assets/images/Documentation/Calibration-stationary-mounted.jpg
 
-Camera mounted on the robot flange
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program for robot mounted camera
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Teach the five waypoints such that the plate always appears approximately in the center of the
 image, but tilted in different directions.

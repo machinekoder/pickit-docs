@@ -287,14 +287,14 @@ Doing a robot camera calibration is not (yet) straightforward with the ROS inter
 Single pose calibration
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-#. Go to the web interface and setup the calibration for :ref:`single pose <calibration-single-pose>` .
+#. Go to the web interface and setup the calibration for :ref:`single pose <single-pose-calibration>` .
 #. Publish the string command ``e_calibration_requested`` on the ``/pickit/external_cmds`` topic.
 #. Save the calibration in the setup file (through web interface or ``/save_setup`` service).
 
 Multi poses calibration
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-#. Go to the web interface and setup the calibration for :ref:`multi poses <calibration-multi-poses>` .
+#. Go to the web interface and setup the calibration for :ref:`multi poses <multi-poses-calibration>` .
 #. Move your robot to at least 5 different poses and for every pose publish the string command ``e_calibration_requested`` on the ``/pickit/external_cmds`` topic. Make sure to wait a couple of seconds (~10s) before moving to the next pose. Alternatively you can listen to the ``/pickit/status_calib`` topic to get notified when Pickit has processed the new calibration pose.
 #. Publish the string command ``e_do_calculate_calibration`` on the ``/pickit/external_cmds`` topic.
 #. Save the calibration in the setup file (through web interface or ``/save_setup`` service).

@@ -12,7 +12,9 @@ arm**. Just be mindful that your calibration program uses a tool frame
 **attached to the arm holding the calibration plate**. 
 
 **YuMi does not have a standard robot flange**, as most traditional
-robots do for mounting equipment. Therefore only :ref:`calibration-multi-pose-fixed` can be used.
+robots do for mounting equipment. Therefore only
+:ref:`multi poses calibration with a fixed camera <multi-poses-calibration>` can
+be used.
 
 .. attention::
   The YuMi robot has a limited workspace for moving the calibration plate
@@ -30,7 +32,7 @@ YuMi gripper.
   You are free to make holes in the calibration plate as long as they are
   not touching the three QR markers.
 
-If this is done, you can perform a :ref:`calibration-multi-pose-fixed`
+If this is done, you can perform a :ref:`multi-poses-calibration`
 like with any other robot.
 
 Example of attaching a grasping part to the L-shaped plate
