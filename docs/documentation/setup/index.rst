@@ -59,6 +59,7 @@ in it can be visualized in the :ref:`Points view <points-view>`.
     fix-roi-box
     build-roi-box
     fine-tune-roi-box
+    detecting-an-empty-roi
     exclude-3d-information-based-on-color
     advanced-filters
     bin-box

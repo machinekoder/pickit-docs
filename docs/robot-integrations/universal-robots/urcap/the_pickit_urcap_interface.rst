@@ -300,6 +300,27 @@ As opposed to commands, that don't have a return value; the Pickit plugin also e
 
 .. image:: /assets/images/robot-integrations/ur/urcap-helper-functions-dropdown.png
 
+.. _helper-function-empty-roi:
+
++--------------------------------------------------------------------------+
+| **pickit_empty_roi()**                                                   |
++==========================================================================+
+| Check if the last call to :ref:`Get result <command-get-result>`         |
+| detected an empty Region of Interest (ROI).                              |
+|                                                                          |
+| **Return**                                                               |
+|    ``true`` if Pickit detected an empty ROI.                             |
+|                                                                          |
+|    When ``pickit_object_found()`` returns ``false``, it can be due to:   |
+|                                                                          |
+|    #. The ROI is not empty, but Pickit doesn't detect the active         |
+|       product.                                                           |
+|    #. The ROI is empty.                                                  |
+|                                                                          |
+|    Use this function if you need to discriminate between these two       |
+|    situations.                                                           |
++--------------------------------------------------------------------------+
+
 .. _helper-function-object-found:
 
 +--------------------------------------------------------------------------+
