@@ -12,7 +12,7 @@ Multi poses calibration
 
 .. image:: /assets/images/robot-integrations/ur/urcap-calibration-1.png
 
-The program starts by opening a pop-up message, informing that multi-poses calibration will be carried out. Before running the program, the user must have the **Calibration** page of the Pickit web interface open. If this is not the case, it is notified by a pop-up message. Otherwise, the following sequence is repeated five times:
+The program starts by opening a pop-up message, informing that multi-poses calibration will be carried out. Before running the program, the user must have the :guilabel:`Calibration` page of the Pickit web interface open. If this is not the case, it is notified by a pop-up message. Otherwise, the following sequence is repeated five times:
 
 #. Moves the robot to a waypoint.
 
@@ -21,7 +21,7 @@ The program starts by opening a pop-up message, informing that multi-poses calib
 
    All ``MoveJ`` commands are specified with respect to the **tool flange** (as opposed to the TCP).
 
-   While teaching the waypoints, it is recommended to have the **Calibration** page opened in the Pickit interface, where the user can verify whether the calibration plate is visible.
+   While teaching the waypoints, it is recommended to have the :guilabel:`Calibration` page opened in the Pickit interface, where the user can verify whether the calibration plate is visible.
 
    The provided program serves as a template only, and the waypoints are not set. They must be taught by the user since they depend on the physical environment and location of the calibration plate. Guidance on how the five waypoints should be taught can be found in the article referenced above.
 
@@ -30,7 +30,8 @@ The program starts by opening a pop-up message, informing that multi-poses calib
    .. image:: /assets/images/robot-integrations/ur/urcap-calibration-3.png
       :scale: 50 %
 
-In the Calibration page, the user can follow the progress of calibration. 
+
+In the :guilabel:`Calibration` page, the user can follow the progress of calibration. 
 
 Single pose calibration
 -----------------------

@@ -26,7 +26,7 @@ Follow the steps below to do a robot camera calibration:
 
 -  Run the multi-poses calibration program on the robot. Once all five poses are
    collected, the calibration process is finished.
--  Check in the 3D view if the position and orientation of the robot model match
+-  Check in the :ref:`3D view <3d-view>` if the position and orientation of the robot model match
    the actual robot. If that is the case, the calibration plate can be dismounted from
    the robot, and Pickit is ready for picking.
 

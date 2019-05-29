@@ -30,4 +30,3 @@ connections. Follow the steps below to connect the processor:
 
 .. tip:: More information about connecting all the hardware components can be
    found in :ref:`connecting-the-cables`.
-

@@ -14,22 +14,21 @@ User settings
 Units
 ~~~~~
 
-.. image:: /assets/images/Documentation/Settings-units.png
+.. image:: /assets/images/Documentation/settings-units.png
 
 This setting allows you to select the length unit of choice
-(meters, inches, ...) after which all length values in the interface
+(meters, inches, ...) after which length values in the interface
 will be converted to the newly selected unit.
 
-Automatic detection
-~~~~~~~~~~~~~~~~~~~
+Automatic detections
+~~~~~~~~~~~~~~~~~~~~
 
-Here you can choose to automatically trigger a new detection if a
-parameter is changed.
+.. image:: /assets/images/Documentation/settings-automatic-detections.png
 
 Share usage statistics
 ~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: /assets/images/Documentation/Settings-share-usage-statistics.png
+.. image:: /assets/images/Documentation/settings-usage-statistics.png
 
 This aggregated data can be used to help create features that
 can give you a better understanding of what’s happening across your
@@ -50,7 +49,7 @@ Pickit port labeled ROBOT
 This port has the purpose of connecting your Pickit processor to the
 robot controller or PLC.
 
-.. image:: /assets/images/Documentation/Settings-port-labeled-robot.png
+.. image:: /assets/images/Documentation/settings-port-your-robot.png
 
 By default, this port is set to  Static, which means it's using a
 fixed IP configuration.
@@ -71,9 +70,9 @@ Pickit port labeled LAN
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 This port has the purpose of connecting your Pickit processor to a
-network. 
+network, to bring the system online for remote support (see article :ref:`support-remote-service`). 
 
-.. image:: /assets/images/Documentation/Settings-port-labeled-lan.png
+.. image:: /assets/images/Documentation/settings-port-lan.png
 
 By default, this port is set to Dynamic, which means it's
 requesting an IP address from the DHCP server in your network.
@@ -90,7 +89,16 @@ Test connectivity to the internet by pressing the Check button.
 Upgrade Pickit version
 ~~~~~~~~~~~~~~~~~~~~~~
 
+.. image:: /assets/images/Documentation/settings-upgrade.png
+
 Here you can upgrade your Pickit system to latest software version.
 Refer to the :ref:`Pickit-system-software-upgrade`
 for a step-by-step explanation how to upgrade the software on your
 system.
+
+System commands
+~~~~~~~~~~~~~~~
+
+.. image:: /assets/images/Documentation/settings-system-commands.png
+
+Here you can **reboot** or **power off** the Pickit processor.

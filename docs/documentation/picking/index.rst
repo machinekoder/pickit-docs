@@ -4,8 +4,8 @@ Picking
 =======
 
 Pickit comes with a set of options that allows configuring how detected
-objects should be picked by a robot. These options, that can be found in
-the Picking tab of the Pickit web interface.
+objects should be picked by a robot. These options can be found in
+the **Picking** page of the Pickit web interface.
 
 This article explains how to use all settings to get the most out of
 your application. You will learn how to align object frames for picking,
@@ -18,28 +18,27 @@ Note on frames
 Before we start, let's first define three frame types in Pickit that
 we'll need throughout the article.
 
--  Reference frame: The reference frame defines the location of your
+-  The **reference frame** defines the location of your
    work space in which to find objects. It usually has a Z axis (blue)
-   that points up.
--  The object frame is the default frame that Pickit associates to a
+   that points up. It is created when you build the :ref:`region-of-interest`.
+-  The **object frame** is the default frame that Pickit associates to a
    shape. It indicates where a detected object is located and how it is
    oriented. It is chosen by the Pickit detection algorithms and cannot
    be modified. This frame might not always be the best choice to use
    for picking, which is why the pick frame exists.
--  The pick frame is what gets sent to the robot. It defines how a robot
+-  The **pick frame** is what gets sent to the robot. It defines how a robot
    can pick or grasp a detected object and is derived from the object
-   frame by changing settings in the Picking tab of the web interface.
+   frame by changing settings in the **Picking** page of the web interface.
 
 .. image:: /assets/images/Documentation/Note-on-frames.png
 
 Object ordering
 ---------------
 
-Under object ordering, the order in which objects will be picked when
-more than one object is detected is defined. See following article to
-have more detailed information about the different options.
+The :ref:`object-ordering` section allows the user to specify how the detected objects are sorted, in case more than one object is detected.
 
 .. toctree::
+    :hidden:
     :maxdepth: 1
     :glob:
 
@@ -49,8 +48,7 @@ Pick strategy
 -------------
 
 Under Pick strategy, it is defined if and how the pick frames should be
-aligned. This is often used to optimize cycle time or to prevent bin
-collision. Following settings can be applied:
+aligned. This is often used to optimize cycle time, by orienting pick frames such that rotations of the robot's wrist joint are minimized. It is also possible to reduce the chance of bin collisions, for instance by keeping pick frames vertical, and thus preventing the robot from approaching the bin at an angle. The following settings can be applied:
 
 .. toctree::
     :maxdepth: 1
@@ -63,11 +61,9 @@ collision. Following settings can be applied:
 Collision prevention
 --------------------
 
-This section explains how to prevent collisions when picking objects
-with a robot. Objects that will not be picked because of collision
-constraints will be labeled as unpickable and not sent to the robot. In
-the Pickit web interface, unpickable objects are displayed orange in
-the Objects view and the :ref:`detection-grid`.
+This section allows you to discard detected objects that would result in a collision between the robot tool and the bin or other objects in the scene. Such objects are labeled as unpickable and are not sent to the robot. In
+the Pickit web interface, unpickable objects are displayed in orange in
+the :ref:`Objects view <objects-view>` and the :ref:`detection-grid`.
 
 Maximum angles
 ~~~~~~~~~~~~~~

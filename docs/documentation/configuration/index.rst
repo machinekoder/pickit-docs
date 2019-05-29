@@ -3,33 +3,35 @@
 Configuration
 =============
 
-On the configuration page, you can manage the setup and product files on
-your Pickit system.
+The communication between a robot and the Pickit system is based on question and answer.
+The robot asks a question to the Pickit system and then the Pickit system answers this question.
+The **setup** and **product** files are used to define the question that is asked to Pickit.
 
--  **Setup** file: contains the Region of Interest (ROI) configuration and
-   the camera selection.
--  **Product** file: contains the detection and picking parameters for a
-   specific product.
+-  **Setup** file: defines where Pickit needs to look. It contains all the parameters set in the **Setup** page.
+-  **Product** file: defines what Pickit needs to look for. It contains all the parameters set in the **Detection** and **Picking** pages.
 
 The current loaded setup and product file are always shown in the top
 bar as shown in the screenshot below.
 
-.. image:: /assets/images/Documentation/Active-files.png
+.. image:: /assets/images/Documentation/active-files-header.png
+
+The name of the currently loaded setup file is also indicated on top of the **Setup** page, and the product file on top of the **Detection** and **Picking** pages.
+
+.. image:: /assets/images/Documentation/active-file-name.png
+   :scale: 70%
 
 Loading a setup or product file
 -------------------------------
 
-To load a new setup or product file just select them from the list. 
+To load a new configuration file press the :guilabel:`Open` button on top of the **Setup** page, to load a setup file, or on top of the **Detection** or **Picking** pages, to load a product file. You can also load a file by clicking on the file name at the top status bar instead. A separate view will show all setup or product files on this system.
+From this list you can select the file that you want to open.
 
 Setup and product files can also be loaded from within your robot
 program using the correct Pickit command.
 
-You can rename, download or delete a specific setup or product by pressing :guilabel:`Rename` 
-:guilabel:`Download` or :guilabel:`Delete` once the setup or product files are
-selected. Note that a setup or product file cannot be renamed or deleted while
-being active.
+You can :guilabel:`Rename`, :guilabel:`Download` or :guilabel:`Delete` selected setup or product files. Active files cannot be renamed or deleted.
 
-.. image:: /assets/images/Documentation/Configuration-files.png
+.. image:: /assets/images/Documentation/product-files-window.png
 
 .. warning::
   Deleted setup and product files cannot be recovered.
@@ -37,22 +39,17 @@ being active.
 Creating a new setup or product file
 ------------------------------------
 
-To create a new setup or product file, first press the :guilabel:`New` button and fill in the corresponding text
-fields and click the :guilabel:`Continue`. Pickit will make a new file with all settings set to the basic default settings.
-After creation, the new setup and product file will automatically be
-loaded.
+To create a new setup or product file, first press :guilabel:`New`, name the file and press :guilabel:`Continue`. The new file will contain default settings.
+After creation, the new file will automatically be loaded and set to active.
 
-.. image:: /assets/images/Documentation/Create-new-setup-file.png
+.. image:: /assets/images/Documentation/create-new-product-file.png
+   :scale: 80%
 
 Saving a setup or product file
 ------------------------------
 
-Once settings are changed in Pickit they can be saved in the correct file. 
-The :guilabel:`Save` button for the setup file can be found at the bottom of the Region of Interest tab. 
-For the product file the button can be found both at the bottom of the Detection and the Picking tab.
+Pressing :guilabel:`Save` updates the active file with the new data.
+The :guilabel:`Save as` button saves the data to a file with a different name.
+Pressing :guilabel:`Reset` restores the last saved settings, and all unsaved data is lost.
 
-Pressing the :guilabel:`Save` updates the active file with the new data. 
-The :guilabel:`Save as` creates a new file with the new data. A name has to be given to this file. 
-Pressing :guilabel:`Reset` restores the settings of the last time saved.
-
-.. image:: /assets/images/Documentation/Save-saveas-reset.png
+.. image:: /assets/images/Documentation/save-saveas-reset.png

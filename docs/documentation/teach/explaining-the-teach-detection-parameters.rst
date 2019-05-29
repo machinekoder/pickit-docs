@@ -3,7 +3,7 @@
 Explaining the Teach detection parameters
 -----------------------------------------
 
-The Pickit Teach vision engine is designed to detect complex
+The Pickit Teach detection engine is designed to detect complex
 3D shapes. This article explains its detection parameters.
 
 .. contents::
@@ -11,19 +11,15 @@ The Pickit Teach vision engine is designed to detect complex
     :local:
     :depth: 1
 
-M-HD preset(M-HD camera only)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+M-HD preset (M-HD camera only)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: /assets/images/Documentation/m-hd-preset.png
-
-In this tab the preset for the M-HD camera is chosen. This preset determines the settings of the camera and how a point cloud is captured.
-
-This guide helps you chosing a good preset for your application, :ref:`how-to-mhd-preset`.
+The M-HD preset settings are explained in :ref:`M-HD-preset`.
 
 Define your model(s)
 ~~~~~~~~~~~~~~~~~~~~
 
-.. image:: /assets/images/Documentation/Teach-model-grid.png
+.. image:: /assets/images/Documentation/teach-model-grid-21.png
 
 A list of thaught models is shown accompanied by their ID and
 the number of points. By default, there are no models defined.
@@ -31,19 +27,19 @@ the number of points. By default, there are no models defined.
 Add a model
 ^^^^^^^^^^^
 
-Press :guilabel:`Add a model` to add your first model, the points
+Press :guilabel:`Add a model` to teach your first model, the points
 currently visible within the ROI are now saved into a model. When the
 model is successfully created, the model will automatically be shown in
-the **Model** view.
+the :ref:`Model view <model-view>`.
 
-In one product file up to 8 different models can be taught. 
-This means that Pickit Teach is capable of looking for 8 different shapes in one detection. 
-See :ref:`how-to-multiple-models` on how you can use the model id in a robot program.
+In one product file up to 8 different models can be taught.
+This means that Pickit Teach is capable of looking for 8 different shapes in one detection.
+See :ref:`how-to-multiple-models` on how you can use the model ID in a robot program.
 
 Re-teach a model
 ^^^^^^^^^^^^^^^^
 
-You can always reteach a model by pressing :guilabel:`Re-teach` for
+You can always re-teach a model by pressing :guilabel:`Re-teach` for
 a specific model.
 By pressing this button, the points currently visible within the ROI
 are saved into the model.
@@ -60,10 +56,9 @@ Delete a model
 ^^^^^^^^^^^^^^
 
 To delete a model, press :guilabel:`Delete` for the specific model.
-The action needs to be confirmed in deletion popup.
+The action needs to be confirmed in a popup.
 
-.. warning:: Model ID's will be reassigned after deleting a certain
-   model. Always check your robot program after deleting models.
+.. warning:: Model ID's will be reassigned after deleting a model. If you use model ID's in your robot program, make sure they're up to date after deleting models.
 
 .. warning:: Model data will be lost after deletion confirmation and
    cannot be restored.
@@ -71,28 +66,25 @@ The action needs to be confirmed in deletion popup.
 Select and visualize a model
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-A model can be selected by clicking on the row. When the model is
-loaded, the model will automatically be shown in the Model view.
+A model can be selected by clicking on the respective table row. When the model is
+loaded, it will automatically be shown in the :ref:`Model view <model-view>`.
 
 Enable or disable a model
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Each model can be included or excluded from the detections, this can
-be done by check (Enable model - Default) or uncheck (Disable model).
-When disabling a model, the detection algorithm will completely ignore
-that specific model.
+A model is enabled by default, and can be disabled through the toggle switch at the left of the respective table row. If a model is disabled, it will be ignored in subsequent detection runs. Disabling models is a quick and useful way to check the effect of different combinations of models, or to test distinct models in isolation (by disabling all others).
 
 .. _pick-frame-teach:
 
 Pick frame
 ^^^^^^^^^^
 
-The pick frame is the location where the TCP of the robot will be guided to. 
-The location of the pick frame can be visualized from the **Model** view.
+The pick frame is the location where the Tool Center Point (TCP) of the robot will be guided to.
+The location of the pick frame can be visualized from the :ref:`Model view <model-view>`.
 By default, Pickit Teach provides an initial pick frame,
 but this will in general not be the best choice. It's possible to
 specify the desired  **pick frame** as a positional and rotational
-offset with respect to the object model. 
+offset with respect to the object model.
 
 .. image:: /assets/images/Documentation/Teach-pick-frame.png
 
@@ -119,32 +111,10 @@ Optimize detections
 
 .. _image-fusion:
 
-Image fusion(M/L camera only)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Image fusion and scene downsampling resolution
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Image fusion is the combination of multiple camera captures into a
-single image. Enabling image fusion can provide **more detail** in
-regions that show flickering in the 2D or 3D live streams. Flickering
-typically occurs when working with **reflective materials**. There are
-three possible fusion configurations: **None**, **Light fusion** and **Heavy fusion**.
-
-Image fusion can increase total detection time by up to half a second.
-The recommended practice is to use None in the absence of flickering,
-and try first Light fusion over Heavy fusion when flickering is
-present. 
-
-Scene downsampling resolution
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-The downsampling resolution allows reducing the density of the point
-cloud. This parameter has a big impact on detection time and accuracy.
-More points lead to higher detection times and higher accuracy, fewer
-points to lower detection times and lower accuracy.
-
-In the illustration, you can see an example of setting the scene
-downsampling parameter to 1 mm, 4 mm and 10 mm.
-
-.. image:: /assets/images/Documentation/downsampling.png
+Image fusion (applicable for the M and L cameras only) and scene downsampling resolution are explained in :ref:`Optimize-detections`.
 
 Detection speed
 ^^^^^^^^^^^^^^^

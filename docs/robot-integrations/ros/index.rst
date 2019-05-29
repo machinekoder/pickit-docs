@@ -10,7 +10,7 @@ Connecting to Pickit using ROS
 
 The Pickit system is running a ROS Master, which allows another system to connect to it using the ROS interfaces. Pickit exposes its ROS parameters, nodes and topics using standard ROS messages and a limited set of Pickit specific ROS messages.
 
-.. note:: 
+.. note::
     Since Pickit’s ROS master is always running on, it is recommended that the client system uses Pickit’s ROS master and does not start its own.
 
 Connecting to Pickit ROS nodes requires you to define the Pickit hostname on the client system. Likewise, the client system’s name must be resolvable on the Pickit system. Preferably, the DNS Server of the client network resolves all hostnames to the LAN IP address of each host. If this is not possible, the host to IP mapping must be added to both Pickit’s and the client’s /etc/hosts.
@@ -46,7 +46,7 @@ Set the `ROS_IP <http://wiki.ros.org/ROS EnvironmentVariables#ROS_IP.2BAC8-ROS_
 
     export ROS_IP=<local-pc-ip>
 
-To test communications, you first need to source a ROS workspace containing the ``im_pickit_msgs`` package. The package can be downloaded from the Pickit web interface, in the **Files** page, under the **ros** folder.
+To test communications, you first need to source a ROS workspace containing the ``im_pickit_msgs`` package. The package can be downloaded from the Pickit web interface, in the :guilabel:`Files` page, under the **ros** folder.
 
 .. image:: /assets/images/robot-integrations/ros/ros-messages-download.png
 
@@ -88,21 +88,21 @@ The Pickit ROS interface is based on using topics. Any connected robot or machin
 
 .. code-block:: bash
 
-        /pickit/external_cmds   
+        /pickit/external_cmds
         (type: std_msgs/String)
 
 These commands will trigger Pickit to go into states responsible executing a specific task. The current state can at all times be monitored by subscribing to the following topic:
 
 .. code-block:: bash
 
-        /pickit/status  
+        /pickit/status
         (im_pickit_msgs/PickitStatus)
 
 Object detections are published on a topic with a Pickit specific message type:
 
 .. code-block:: bash
 
-        /pickit/objects_wrt_robot_frame  
+        /pickit/objects_wrt_robot_frame
         (type: im_pickit_msgs/ObjectArray)
 
 Available commands
@@ -244,7 +244,7 @@ Camera on robot
 
 This is similar to the camera fixed case with the addition that you also have to publish an identity transform between your robot’s end-effector frame (without attached tool) and ``pickit/robot_ee``.
 
-.. note:: 
+.. note::
     It is currently not possible to disable the broadcasting of the tf transform between ``pickit/robot_base`` and ``pickit/robot_ee``. This will cause tf loops if you connect both frames with your corresponding robot frames. Disabling the tf broadcasting will be possible in future releases, contact us if this is a requirement for you and we will see what we can do.
 
 A possible workaround for the tf loop issue would be to run a ROS node that filters the ``/tf`` topic by removing the above mentioned transform. The filtered result could then be published to another topic e.g. ``/tf_filtered``. You would then have to remap from ``/tf`` to ``/tf_filtered`` for all your nodes (that listen to tf) e.g. like this:

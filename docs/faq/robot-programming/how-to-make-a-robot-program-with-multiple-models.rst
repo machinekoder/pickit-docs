@@ -3,14 +3,14 @@
 How to make a robot program with multiple models
 ================================================
 
-When using the :ref:`Teach` detection engine, Pickit can look for multiple models at the same time. 
+When using the :ref:`Teach` detection engine, Pickit can look for multiple models at the same time.
 When doing this often it's desired to do a different action with a robot depending on which model is found.
 Typical actions that are model exclusive are:
 
 -  Define how to grip the found model.
 -  Define how to drop off the found model.
 
-In this article two example programs with multiple models are shown. One for Universal robots and another for ABB. 
+In this article two example programs with multiple models are shown. One for Universal robots and another for ABB.
 
 Universal Robots
 ----------------
@@ -36,15 +36,15 @@ In the example program this id is used to define a different picking and droppin
         CONST robtarget detect_pose:=[[0,0,0],[1,0,0,0],[0,0,0,0],[9e9,9e9,9e9,9e9,9e9,9e9]];
         VAR robtarget pick_pose:=[[0,0,0],[1,0,0,0],[0,0,0,0],[9e9,9e9,9e9,9e9,9e9,9e9]];
         VAR robtarget pick_pre_pose:=[[0,0,0],[1,0,0,0],[0,0,0,0],[9e9,9e9,9e9,9e9,9e9,9e9]];
-        
+
         ! Fill in the correct setup file/product file/offsets.
         CONST num desired_setup:=2;
         CONST num desired_product:=2;
         CONST num pre_pick_Z_offset:=-100;
         CONST num pre_drop_Z_offset:=-100;
-        
+
         IF NOT pickit_is_running() THEN
-            ErrLog 4800, "Pick-it NOT in Robot Mode", "Pick-it is not in Robot Mode.", "In the Pick-it web interface, click on 'Enable Robot Mode',", "and restart the program to start picking.", " ";
+            ErrLog 4800, "Pickit NOT in Robot Mode", "Pickit is not in Robot Mode.", "In the Pickit web interface, click on 'Enable Robot Mode',", "and restart the program to start picking.", " ";
             Stop;
         ENDIF
 
@@ -91,7 +91,7 @@ In the example program this id is used to define a different picking and droppin
                         MoveJ detect_pose,v500,z0,tool0;
                         WaitUntil pickit_has_response();
                     ENDIF
-                ELSE 
+                ELSE
                     pickit_next_object;
                     TPWrite "Asking for next object";
                     WaitUntil pickit_has_response();
@@ -101,7 +101,7 @@ In the example program this id is used to define a different picking and droppin
                 MoveJ detect_pose,v500,z0,tool0;
                 pickit_look_for_object;
                 TPWrite "Looking for new object(s)";
-                WaitUntil pickit_has_response(); 
+                WaitUntil pickit_has_response();
             ENDIF
 
          ENDWHILE

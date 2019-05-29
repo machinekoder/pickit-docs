@@ -19,11 +19,11 @@ optimize detection parameters. These detection parameters are explained
 in the article :ref:`Explaining-the-pattern-detection-parameters`.
 
 In the image below an example of a good defined scene is shown. First,
-in the 3D view all points within the field of view of the camera are
-shown. Second, in the Points view only the points of the parts  are
+in the :ref:`3D view <3d-view>` all points within the field of view of the camera are
+shown. Second, in the :ref:`Points view <points-view>` only the points of the parts  are
 shown. The table is filtered out. 
 
-The information shown in the Points view is what will be transferred to
+The information shown in the :ref:`Points view <points-view>` is what will be transferred to
 the next step. All other information is not taken into account for the
 detection with Pickit Pattern.
 
@@ -33,33 +33,26 @@ Divide the scene into clusters & reject (some) clusters
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The next step in the Pickit Pattern detection is to divide the scene
-into smaller different parts(clusters). Each cluster contains all points
+into smaller different parts (clusters). Each cluster contains all points
 of one layer in the scene. All clusters are shown in a different color.
 
 In the image below the effect of clustering is visualized. The 3D scene
-is now divided into 2 different clusters(shown in different colors). In
+is now divided into 2 different clusters (shown in different colors). In
 this step also the rejecting of clusters can be applied. For instance
 one of the two planes could be rejected based on the size or dimensions
 of the plane. But in this example this is not necessary so no rejecting
 is done.
 
-As you can see in the image of the clusters view, there are now thick
-points on the side of the clusters. These are contour points and these
-need to be well defined for a proper Pattern detection. Parameters that
-have an influence on these contour points are explained in following
-article :ref:`Explaining-the-pattern-detection-parameters`.
+The boundary of a planar cluster is known as its contour. In the :ref:`Clusters view <clusters-view>`, contour points can be distinguished from inner cluster points by its thickness. The 2D shape model is fit to this contour, and therefore the quality of the match depends on the quality of the contour. Parameters that
+have an influence on contour points are explained in :ref:`Fit-objects-to-clusters`.
+
+.. image:: /assets/images/Documentation/Pattern-points-clusters.gif
 
 Difference of clustering between Pattern and Flex
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-In the detection engine Flex it is important that each cluster
-represents a different object, see :ref:`Flex`
-for more information about the Flex engine. For the Pattern engine one
-cluster can contain multiple objects, but the sides of the cluster needs
-to be well defined. Because the Pattern engine will use these sides to
-start fitting the objects from the sides on.  
-
-.. image:: /assets/images/Documentation/Pattern-points-clusters.gif
+When using Pickit :ref:`Flex`, it is important that each cluster
+represents a different object. Pattern, on the other hand, allows that one cluster contains mutliple objects, hence being the preferred choice when objects are aligned and touching.
 
 Define dimension and orientation of objects
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -72,8 +65,7 @@ Fit & filter objects
 ~~~~~~~~~~~~~~~~~~~~
 
 The final step of Pickit Pattern is to fit the defined fixed size shape
-from the previous step. This fixed size shape is fitted from the sides
-of the cluster on. Good fits can be send back to the robot one by one.
+from the previous step. This fixed size shape is fitted to the cluster contour. Good fits can be sent to the robot one by one.
 
 In the image below we see four good fits. In the top layer a single
 object is fitted. In the bottom layer a shape is fitted in all four

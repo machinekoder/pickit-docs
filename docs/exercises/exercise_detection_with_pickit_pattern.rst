@@ -34,9 +34,9 @@ This exercise consist of three different parts. To get feedback on all
 different parts of the exercise in total three different snapshots need
 to be created.
 
--  Detect the cardboard boxes with dimensions 114mm x 64mm.
--  Detect the coils with outer diameter 55mm.
--  Detect the coils with inner diameter 23mm.
+-  Detect the cardboard boxes with dimensions 114 mm x 64 mm.
+-  Detect the coils with outer diameter 55 mm.
+-  Detect the coils with inner diameter 23 mm.
 
 **Hint:** When using Pickit Pattern, it is important that the contours
 of the clusters are well defined. This means that the clustering method,
@@ -51,7 +51,7 @@ Follow the next steps to complete the exercise.
    `here <https://drive.google.com/uc?export=download&id=1In5l7xo8DNSEFPpwvqtQj7LtCUlUJw9p>`__
    on your device.
 #. Connect your device to your Pickit processor.
-#. In the web interface of Pickit, go to the Files tab. 
+#. In the user interface of Pickit, go to the :guilabel:`Files` page. 
 #. Press Upload and select the file.
 #. The file can now be found in snapshots/uploads.
 #. Finish the exercise.

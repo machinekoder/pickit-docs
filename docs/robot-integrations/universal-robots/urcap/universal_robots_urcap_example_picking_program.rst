@@ -59,7 +59,7 @@ No object detected
 
 The detection loop first calls \ ``pickit_object_found()`` to check if Pickit has a detection result available. The first time the loop is entered there are no detection results, as Pickit has not yet been triggered to detect objects; so the ``Else`` statement is evaluated.
 
-In the ``Else`` statement, the robot first moves to ``detect_pose``, from which detections are triggered using the ``Find object(s)`` command. We then wait for Pickit to reply with detection results using \ ``Get results``. When object detection is successful, this command sets the values of \ ``pickit_pose`` and ``pickit_pre_pose``: While ``pickit_pose`` is the actual pose for picking the object, ``pickit_pre_pose`` is the ``pickit_pose`` translated by an offset. In this case, this offset is 100mm above the object.
+In the ``Else`` statement, the robot first moves to ``detect_pose``, from which detections are triggered using the ``Find object(s)`` command. We then wait for Pickit to reply with detection results using \ ``Get results``. When object detection is successful, this command sets the values of \ ``pickit_pose`` and ``pickit_pre_pose``: While ``pickit_pose`` is the actual pose for picking the object, ``pickit_pre_pose`` is the ``pickit_pose`` translated by an offset. In this case, this offset is 100 mm above the object.
 
 As long as there are no detection results, the robot remains in ``detect_pose`` continuously looking for objects.
 
@@ -125,7 +125,7 @@ The program execution can be stopped or paused by clicking on the stop and pause
 Monitoring Pickit from Polyscope
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The Pickit URCap plugin exposes the view of the Pickit camera highlighted with the region of interest and detected object markers (the same as the 2D view in the Pickit web interface). This is very convenient, as it allows to perform basic Pickit monitoring without having to connect a separate computer to the Pickit processor for opening the web interface.
+The Pickit URCap plugin exposes the view of the Pickit camera highlighted with the region of interest and detected object markers (the same as the :ref:`2D view <2d-view>` in the Pickit web interface). This is very convenient, as it allows to perform basic Pickit monitoring without having to connect a separate computer to the Pickit processor for opening the web interface.
 
 To access the camera view, select any Pickit URCap command on the robot program, and navigate to the ``Command`` tab on the right hand panel.
 

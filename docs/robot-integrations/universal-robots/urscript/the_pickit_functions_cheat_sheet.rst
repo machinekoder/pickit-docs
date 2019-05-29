@@ -66,7 +66,7 @@ Request Pickit if Pickit is in Running state.
 pickit\_can\_calibrate()
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-Request Pickit if Pickit is in Calibration state. (the Robot setup
+Request Pickit if Pickit is in Calibration state. (the :guilabel:`Calibration`
 page is active in the Pickit web interface)
 
 +-----------------+------------------------+-----------+

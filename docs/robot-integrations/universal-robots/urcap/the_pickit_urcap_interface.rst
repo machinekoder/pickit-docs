@@ -257,21 +257,26 @@ To insert a new command, navigate to the **Command** tab select an entry from th
 
 .. _command-find-calibration-plate:
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Find calibration plate**                                                                                                                                                            |
-+=======================================================================================================================================================================================+
-| Trigger detection of the robot camera calibration plate.                                                                                                                              |
-| This command requires the Pickit web interface to be in the Calibration page, hence robot mode should be disabled. When Pickit is not in the calibration page, a pop-up is shown.     |
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------+
+| **Find calibration plate**                                               |
++==========================================================================+
+| Trigger detection of the robot-camera calibration plate.                 |
+| This command requires the Pickit web interface to be in the              |
+| :guilabel:`Calibration` page, hence robot mode should be disabled.       |
+| When Pickit is not in the :guilabel:`Calibration` page, a pop-up is      |
+| shown.                                                                   |
++--------------------------------------------------------------------------+
 
 .. _command-save-snapshot:
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Save snapshot**                                                                                                                                                                 |
-+===================================================================================================================================================================================+
-| Save a snapshot with the latest detection results.                                                                                                                                |
-| The saved snapshot can then be loaded or downloaded by going to the Files page on the Pickit web interface and searching for a file whose name contains the capture timestamp.    |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------+
+| **Save snapshot**                                                        |
++==========================================================================+
+| Save a snapshot with the latest detection results.                       |
+| The saved snapshot can then be loaded or downloaded by going to the      |
+| :guilabel:`Files` page on the Pickit web interface and searching for a   |
+| file whose name contains the capture timestamp.                          |
++--------------------------------------------------------------------------+
 
 .. _command-build-background:
 

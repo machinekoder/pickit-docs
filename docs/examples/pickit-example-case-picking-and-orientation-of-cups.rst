@@ -377,8 +377,8 @@ equals the pose where Pickit told us the object can be picked.
 
 On line 33 we the variable **pre_pick_pose** as a new pose that equals
 the **pick_pose** added with the predefined **pre_pick_offset** (in
-this case -10cm in the Z direction). Like this the **pre_pick_pose**
-will always be 10cm above the **pick_pose** of a detected object.
+this case -10 cm in the Z direction). Like this the **pre_pick_pose**
+will always be 10 cm above the **pick_pose** of a detected object.
 
 On line 34 the robot is commanded to start moving ( **MoveL**) the
 robot, but only if the **pre_pick_pose** is within the safety limits

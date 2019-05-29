@@ -24,27 +24,22 @@ The hardware requirements to set up this demo are:
    (contact support@pickit3d.com to get the parts)
 -  Two similar bins, approximate dimensions 400 x 300 x 150 mm
 
-.. note:: The length of the fingers of the gripper should be larger than
-   the depth of the bin. The main reason is that the head of the robot
-   stays out of the bin.
+.. note:: 
+  The length of the fingers of the gripper should be larger than
+  the depth of the bin. The main reason is that the head of the robot
+  stays out of the bin.
 
 It is assumed that the Pickit system is mounted around 700 mm above the
 table and is running correctly. If you are not sure, please follow step
 1-4 from our :ref:`quick-start` guide. 
 
-Your first detection(configuring the Pickit files)
---------------------------------------------------
+Your first detection (configuring the Pickit files)
+---------------------------------------------------
 
 Now that every component is connected to the Pickit system, we are able
-to configure Pickit. Open a chrome web browser on your external PC and
-enter the following IP address to access the Pickit system.
+to configure Pickit.
 
-::
-
-    http://192.168.66.1
-
-In the Pickit web interface, go to the configuration tab and create
-new setup files and a product file:
+In the Pickit :ref:`web-interface`, create a new setup and product file:
 
 -  **Setup 1:** teach_demo_bin_left
 -  **Setup 2:** teach_demo_bin_right
@@ -52,9 +47,9 @@ new setup files and a product file:
 
 Configuring Pickit comes down to three simple steps:
 
-#. Teaching a model of the part you want to pick
-#. Create a scene where you want to pick these parts
-#. define a picking strategy
+#. Teaching a model of the part you want to pick.
+#. Create a scene where you want to pick these parts.
+#. Define a picking strategy.
 
 The information of the model and picking strategy is stored in the
 product file and the information of the scene(s) is stored in the
@@ -63,15 +58,15 @@ different setup files.
 Teaching the model(s)
 ~~~~~~~~~~~~~~~~~~~~~
 
-Here it is assumed that the parts in this demo only have two ways they
-can be presented to the camera: either the top is shown or the bottom is
+Here it is assumed that the parts in this demo only have two ways in which they
+can be presented to the camera: either the top or the bottom is
 shown. It is assumed that in a random bin, even if a side is shown, that
 after a while the part will fall down in the bin and either top or
 bottom are shown. Due to this assumption it is sufficient to teach two
 models of the part. One model will contain all information of the top of
 the part and the second one contains all information of the bottom.
 
-See below for images of both models that are used in the detection tab.
+See below for images of both models that are used in the **Detection** page.
 Below the images all detection parameters are given. See following
 articles on how to use Pickit :ref:`Teach`.
 
@@ -79,9 +74,9 @@ articles on how to use Pickit :ref:`Teach`.
 
 .. image:: /assets/images/examples/teach-demo-model-2.png
 
-For both models following parameters are used:
+The following parameters are used in both models:
 
--  **Matching tolerance:** 4mm
+-  **Matching tolerance:** 4 mm
 -  **Minimum matching score:** 75%
 -  **Fusion:** None
 -  **Downsampling:** 4
@@ -98,11 +93,10 @@ Create the scene(s)
 ~~~~~~~~~~~~~~~~~~~
 
 The second step defines where Pickit has to look for objects. This is
-done by defining the region of interest (ROI). See the article :ref:`region-of-interest`
-on how to define a ROI. 
+done by defining the :ref:`region-of-interest` (ROI).
 
-Below you can see a pictures of a good defined ROI for this application.
-All useless information is filtered out(the bin and the table) only
+Below you can see a picture of a well-defined ROI for this application.
+All useless information is filtered out (the bin and the table), and only
 information of the parts in the bin is kept. Also make sure that the ROI
 is slightly higher than the real bin.
 
@@ -116,12 +110,11 @@ forget to save the settings in the corresponding Setup files.
 Define the picking strategy
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Finally the picking strategy is defined. For this application only bin
-collision is checked. This means that Pickit checks if the gripper can
+Finally, the picking strategy is defined. For this application, only collisions between tool and bin are checked. This means that Pickit checks if the gripper can
 pick the parts without hitting the bin. More information about the
 picking strategies can be found in the :ref:`Picking` article.
 
-For this demo following parameters are used:
+For this demo, the following parameters are used:
 
 -  **Enforce alignment:** No alignment
 -  **Check collision with:** Bin
@@ -138,8 +131,8 @@ is used to transform the object pick-frames into robot coordinates. A
 detailed description in robot camera calibration can be found in the article :ref:`robot-camera-calibration`. 
 Do not forget to save after the calibration is finished.
 
-Your first pick(Program the robot)
-----------------------------------
+Your first pick (Program the robot)
+-----------------------------------
 
 Now Pickit is configured, the only thing left to do is programming the
 robot. The robot used in the demo video is a UR5, but a similar program
@@ -147,9 +140,9 @@ can be created on any other robot.
 
 The idea of this program is to start looking for the parts in one bin.
 If one is found the robot moves towards the calculated position, opens
-his gripper according which side is found(bottom or top), grasps the
-part, get out of the bin and drops it off in the other bin. The parts
-are dropped with using the pallet function. This function drops the
+its gripper according to which side is found (bottom or top), grasps the
+part, gets out of the bin and drops it off in the other bin. The parts
+are dropped using the pallet function. This function drops the
 parts in different locations of the bin so no stack of parts is
 created. The robot starts picking from the other bin either after 8
 successful picks or after two unsuccessful detections. 
@@ -159,7 +152,7 @@ successful picks or after two unsuccessful detections. 
 
 .. image:: /assets/images/examples/teach-demo-ur-program.png
 
-.. note:: When performing random bin picking, **lways** trigger a new
+.. note:: When performing random bin picking, **always** trigger a new
    detection before picking the next object. The main reason lies in the
    fact that the environment can change when an objects are picked and this
    could lead to undesired miss-picks.

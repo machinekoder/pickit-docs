@@ -1,3 +1,5 @@
+.. _support-remote-service:
+
 Getting ready for remote service
 ================================
 
@@ -25,12 +27,12 @@ Connecting via Ethernet cable
 #. Navigate to the **Network settings**, by clicking on the Settings
    button at the top-right of the web interface.
 
-.. image:: /assets/images/Documentation/Settings-button-2.png
+   .. image:: /assets/images/Documentation/settings-button-21.png
 
 #. In the **Pickit port labeled 'LAN’** section, make sure that the
    **IP address** field has a valid value (blue arrow in image below).
 
-.. image:: /assets/images/Documentation/Network-settings.png
+   .. image:: /assets/images/Documentation/network-settings-21.png
 
 If an **IP address** shows up, you are good to go. A Pickit engineer
 can now connect to your system.
@@ -43,8 +45,8 @@ If no **IP address** shows up:
    your network. If so:
 
    -  Ask your system administrator to whitelist the ‘LAN’ port’s **MAC
-      address** shown in the Network page. (red arrow in the image
-      above)
+      address** shown in the Network section of the :guilabel:`Settings`
+      page (red arrow in the image above).
    -  Ask your system administrator to open **TCP 443 port.**
 
 .. note:: Pickit uses VPN/TLS over TCP port 443 to establish
@@ -61,7 +63,7 @@ inside so this works out of the box. 
 .. note:: Since this is a wireless device, it's important that it is
    positioned **outside a metal enclosure** (cage of Faraday). In case your
    Pickit system is in such an enclosure, you may use an extension cable
-   up to 2m to install the remote service modem outside this enclosure.
+   up to 2 m to install the remote service modem outside this enclosure.
 
 .. note:: Depending on **3G reception on site**, a Pickit support
    engineer could view and manipulate the Pickit web interface, install
@@ -136,7 +138,7 @@ connect your PC/laptop to the Pickit processor:
 #. **Connect your PC/laptop to the Pickit processor** with an Ethernet
    cable to the network port labelled ‘Interface’ on your Pickit
    processor and surf to the Pickit web
-   interface.(\ http://192.168.66.1/)
+   interface. (\ http://192.168.66.1/)
 #. Make sure your **PC/laptop has connection to the internet**, while
    being able to see the Pickit web interface.
 

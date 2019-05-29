@@ -3,7 +3,7 @@
 Connecting the cables
 =====================
 
-.. contents::     
+.. contents::
     :backlinks: top
     :local:
     :depth: 1

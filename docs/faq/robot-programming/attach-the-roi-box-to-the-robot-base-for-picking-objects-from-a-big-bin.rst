@@ -45,8 +45,8 @@ If calibration was already done, there is no need to do this again.
 2. Enable attachment to the robot base
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Enable attachment to robot base by enabling this setting on the Region
-of interest page.
+Enable attachment to robot base by enabling this setting on the **Setup** page,
+in section **Fix ROI box**.
 
 3. Define the ROI box
 ~~~~~~~~~~~~~~~~~~~~~

@@ -3,7 +3,7 @@
 Explaining the Flex detection parameters
 ----------------------------------------
 
-The process of detecting objects with the Flex vision engine is all
+The process of detecting objects with the Flex detection engine is all
 about step by step testing and fine-tuning parameters until you get a
 good result. The parameters for Flex detection are split into five
 categories.
@@ -13,14 +13,18 @@ categories.
     :local:
     :depth: 1
 
-M-HD preset(M-HD camera only)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. _M-HD-preset:
 
-.. image:: /assets/images/Documentation/m-hd-preset.png
+M-HD preset (M-HD camera only)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In this tab the preset for the M-HD camera is chosen. This preset determines the settings of the camera and how a point cloud is captured.
+.. image:: /assets/images/Documentation/m-hd-preset-21.png
 
-This guide helps you chosing a good preset for your application, :ref:`how-to-mhd-preset`.
+The M-HD camera presets are a set of predefined configurations that optimize point cloud capture to specific materials.
+
+This guide helps you chosing a good preset for your application: :ref:`how-to-mhd-preset`.
+
+.. _Group-points-into-clusters:
 
 Group points into clusters
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -29,7 +33,7 @@ These parameters affect the clustering (grouping) of points. Clustering
 points is a way of grouping points belonging to individual objects. A
 good way to detect multiple objects is to try and group points that
 belong to the same object. The effect of modifying these parameters can
-be visualized in the  **Clusters** view.
+be visualized in the :ref:`Clusters view <clusters-view>`.
 
 There are multiple clustering strategies available, and the choice
 initially depends on how the parts are presented in the scene. 
@@ -40,8 +44,8 @@ initially depends on how the parts are presented in the scene. 
    cylinders or spheres. In the system a few preset configurations exist, and you
    should experiment with them to determine which works best with your
    parts.
--  For **plane-based clustering**, the system looks for flat surfaces. 
-   If two surfaces are touching but the orientation of the surface is different they are considered as separate clusters. 
+-  For **plane-based clustering**, the system looks for flat surfaces.
+   If two flat surfaces are touching but their orientation is different, they are considered as separate clusters.
    A typical example where this is used is random boxes in a bin.
 -  For **non-touching parts**, you specify the **clustering distance
    threshold**, which represents the minimum distance to consider
@@ -68,7 +72,7 @@ size** (length, width and height). Clusters can also be rejected if they
 touch the **Region of Interest (ROI) box limits** (top, bottom, and/or
 sides).
 
-Rejected clusters are not shown in the  **Clusters** tab of the viewer,
+Rejected clusters are not shown in the  :ref:`Clusters view <clusters-view>`,
 and their count is listed in the detection summary.
 
 .. image:: /assets/images/Documentation/Reject-clusters.png
@@ -80,15 +84,15 @@ Fit objects to clusters
 
 These parameters determine the kind of object you want to find. The
 effect of modifying them can be visualized in the 
-**Objects** view. Below there is a list of all models and a typical
+:ref:`Objects view <objects-view>`. Below there is a list of all models and a typical
 applications where they are used:
 
 -  **Square** and **rectangle**: cardboard packaging, plastic bags,
-   industrial objects
+   industrial objects.
 -  **Circle** and **ellipse**: industrial rings, pipe ends, top of
-   soda cans 
--  **Cylinder**: coke cans, tubes, bottles
--  **Sphere**: oranges, footballs
+   soda cans.
+-  **Cylinder**: coke cans, tubes, bottles.
+-  **Sphere**: oranges, footballs.
 -  **Blob** is perfect for detecting objects that can be very well
    clustered but don't have a geometrical shape. Examples for these are
    vegetables and fruit (bananas, peppers ...) and special shaped boxes
@@ -109,7 +113,7 @@ For **3D object models** like cylinders and spheres, one can specify:
 .. image:: /assets/images/Documentation/3d-matching-tolerance.png
 
 For **2D object models**, Pickit first finds a flat regions and then
-looks for the selected model within this surface(square, rectangle, circle or
+looks for the selected model within this surface (square, rectangle, circle or
 ellipse). One can specify:
 
 -  Whether the shape is solid or has an internal **hole**, like a ring.
@@ -137,6 +141,8 @@ their **physical size** (length, width, diameter). Additionally,
 objects can be rejected depending on the value of the different matching
 scores, explained below.
 
+.. _Contour-score:
+
 2D contour score
 ^^^^^^^^^^^^^^^^
 
@@ -145,6 +151,8 @@ of the **2D model contour** that is covered with points within the
 **2D matching tolerance**.
 
 .. image:: /assets/images/Documentation/2d-contour-score.png
+
+.. _Surface-score:
 
 2D surface score
 ^^^^^^^^^^^^^^^^
@@ -173,10 +181,10 @@ Optimize detections
 
 These parameters affect the number of points of the captured point cloud
 used for object detection. The effect of modifying these parameters can
-be visualized in the **Points** view.
+be visualized in the :ref:`Points view <points-view>`.
 
-Image fusion(M/L camera only)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Image fusion (M/L camera only)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Image fusion is the combination of multiple camera captures into a
 single image. Enabling image fusion can provide  **more detail** in
@@ -185,7 +193,7 @@ typically occurs when working with **reflective materials**. There are
 three possible fusion configurations: **None**, **Light fusion** and
 **Heavy fusion**.
 
-Image fusion can increase total detection time by up to half a second.
+Image fusion can increase total detection time by up to a second.
 The recommended practice is to use None in the absence of flickering,
 and try first Light fusion over Heavy fusion when flickering is
 present. 

@@ -1,3 +1,5 @@
+.. _object-ordering:
+
 Object ordering
 ---------------
 
@@ -18,7 +20,7 @@ robot.
    position. From small to large Y value.
 -  **Highest Y value first:** Reverse ordering from 'Lowest Y value
    first'.
--  **Biggest product:** Objects are ordered from big to small volume or
+-  **Largest product:** Objects are ordered from big to small volume or
    surface.
 -  **Pattern along the positive X-axis:** See image below.
 -  **Pattern along the negative X-axis:** See image below.
@@ -27,7 +29,7 @@ robot.
 -  **Highest matching score (Teach only):** Sort objects with the
    highest model matching score first. This only works for the Teach
    detection
--  **Top box first:** Sort objects with the highest product center
+-  **Top box first (Flex only):** Sort objects with the highest product center
    first, but if multiple sides of a box are recognized, the bigger side
    is prefered instead of the smaller.
 
