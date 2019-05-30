@@ -1,3 +1,5 @@
+.. _m-hd-camera:
+
 Pickit M-HD camera
 ==================
 
@@ -8,16 +10,16 @@ On this page, you can find all information on the Pickit M-HD camera.
 What is Pickit M-HD?
 ---------------------
 
-Pickit M-HD is a 3D camera that is compatible with the 2.0 version of the :ref:`hardware/pickit-processor:Pickit processor`.
+Pickit M-HD is a 3D camera that is compatible with the 2.0 version of the
+:ref:`hardware/pickit-processor:Pickit processor`.
 It's called M-HD because it is a high definition camera with a field of
 view to detect medium-sized objects. The 3D camera is manufactured
 by `Zivid AS <https://zividlabs.com/>`__ in Norway. The camera
 produces a high-resolution point cloud to detect and pick smaller
 objects with higher accuracy compared to the existing Pickit M camera. 
 
--  `CAD file (STEP
-   file) <https://drive.google.com/uc?export=download&id=18jplQTtCCeuYXxpn4azPNVmTp-NmLwni>`__
--  `Camera manual <https://pickit.page.link/camera-m-hd-manual>`__
+-  `Technical specifications (PDF) <https://pickit.page.link/camera-m-hd-manual>`__
+-  :ref:`CAD file <cad-resources>`
 
 Field of View
 ~~~~~~~~~~~~~

@@ -6,26 +6,21 @@ Exercise detection with Pickit Pattern
 This exercise involves using the Pickit flex detection engine.
 Different objects needs to be detected using fixed sized shapes.
 
-+--------------+------------+
-| **Level**    | Basic      |
-+--------------+------------+
-| **Duration** | < 15 min   |
-+--------------+------------+
++--------------+------------------+
+| **Level**    | Basic            |
++--------------+------------------+
+| **Duration** | < 15 min         |
++--------------+------------------+
 
 .. image:: /assets/images/getting-started/detection-pattern.png
 
 Requirements
 ------------
 
-Before starting on the exercise we advice you to read following
-articles:
+Before starting on this exercise we advise you to read the following articles:
 
--  `Region of
-   Interest <https://support.pickit3d.com/article/159-region-of-interest>`__
--  `Detection: Pickit
-   Pattern <https://support.pickit3d.com/article/161-detection-pick-it-pattern>`__
--  `Explaining the Pattern detection
-   parameters <https://support.pickit3d.com/article/175-explaining-the-pattern-detection-parameters>`__
+-  :ref:`Region of Interest <region-of-interest>`
+-  :ref:`Detection: Pickit Pattern <Pattern>`
 
 Task
 ----
@@ -49,14 +44,13 @@ Follow the next steps to complete the exercise.
 
 #. Download the snapshot file
    `here <https://drive.google.com/uc?export=download&id=1In5l7xo8DNSEFPpwvqtQj7LtCUlUJw9p>`__
-   on your device.
-#. Connect your device to your Pickit processor.
-#. In the user interface of Pickit, go to the :guilabel:`Files` page. 
-#. Press Upload and select the file.
-#. The file can now be found in snapshots/uploads.
+   to your computer.
+#. Connect your computer to the Pickit :ref:`web-interface`.
+#. In the user interface of Pickit, go to the :guilabel:`Snapshots` page. 
+#. Press :guilabel:`Upload snapshot` and select the file.
+#. The file can now be found under ``snapshots/uploads``.
 #. Finish the exercise.
-#. Press the snapshot button on the lower left corner of the view.
-#. Name your snapshot
-   'Solution\_Pattern\_boxes/coilsinner/coilsouter\_1\_CompanyName'.
-#. Download the file from the snapshots folder.
+#. :ref:`Save a snapshot <Saving-a-snapshot>` with your current detection results.
+#. Name your snapshot ``Solution_Pattern_boxes/coilsinner/coilsouter_1_CompanyName``.
+#. :guilabel:`Download` the file from the ``snapshots`` folder.
 #. Send your solution to support@pickit3d.com to receive feedback.

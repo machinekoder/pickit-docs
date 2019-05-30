@@ -60,7 +60,7 @@ Trigger Pickit to detect objects and enter the actual program loop. 
         WAIT FOR Pickit_has_response()
 
         IF Pickit_object_found() THEN
-             
+
           F_Pick=Pickit_get_pose():F_PickCorrection
           F_PrePick=F_Pick:{X 0.0,Y 0.0,Z 100.0,A 0.0,B 0.0,C 0.0}
 
@@ -77,7 +77,7 @@ pre-pick pose is stored in **``F_PrePick``**.
 
           ; Check if position is reachable
           BAS(#TOOL,10) ; Suction cup / Tool for picking
-          BAS(#BASE,0) 
+          BAS(#BASE,0)
           PickitAxistest=INVERSE(F_Pick,XHOME, Pickit_ErrStatusCheckPos)
 
 Use inverse kinematics to compute the robot joint values that reach the
@@ -106,7 +106,7 @@ reachable.
             GrpCupIdle()
 
             Pickit_look_for_object()
-                
+
             M_DropToBin()
 
 If the object pose is reachable, lines 62-73 perform the object picking
@@ -129,7 +129,7 @@ outside the actual program loop. 
             ELSE
               Pickit_look_for_object()
             ENDIF
-                
+
     :      ENDIF
 
 When the object pose is unreachable (line 60 evaluates to false) a new
@@ -151,9 +151,9 @@ object pose is required. There are two alternatives:
           ToHome()
 
          Pickit_look_for_object()
-             
+
        ENDIF
-          
+
       ENDLOOP
 
 If the last call to **``Pickit_look_for_object()``** found no objects
@@ -168,8 +168,8 @@ Running the example program
 | Before running the program, it should be verified that **robot camera
   calibration** has been done correctly and that the **tool frame** has
   been defined correctly.
-| Please refer to the  `How to execute robot camera
-  calibration <http://support.pickit3d.com/article/35-how-to-execute-robot-camera-calibration>`__
+| Please refer to the
+  :ref:`How to execute robot camera calibration <robot-camera-calibration>`
   article for more details on how to perform robot camera calibration.
 | Example programs for multi-pose and single-pose calibration can be
   found in **``R1> Program> PickIt``**: **``PickitMultiPoseCal.src``**
