@@ -41,7 +41,7 @@ Next the :guilabel:`Snapshots` button is shown. More information about this can 
 
 Then the :guilabel:`Calibration` button is shown. More information about this can be found in the :ref:`robot-camera-calibration` article.
 
-At last the :guilabel:`Robot` mode button is shown. Here you can change from
+At last the :guilabel:`Enable Robot Mode` mode button is shown. Here you can change from
 **Robot mode** to **Idle**. 
 
 .. note:: Only when Pickit is in **Idle** mode parameters can be changed and

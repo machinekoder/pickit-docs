@@ -1,3 +1,5 @@
+.. _cad-resources:
+
 Do you have CAD/STEP drawings of the Pickit camera and processor?
 ==================================================================
 

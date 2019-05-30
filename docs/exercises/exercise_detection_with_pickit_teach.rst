@@ -17,7 +17,7 @@ will be taught to the system to find similar parts in the bin.
 Requirement
 -----------
 
-Before starting on this exercise we advise you to read following articles:
+Before starting on this exercise we advise you to read the following articles:
 
 -  :ref:`Region of Interest <region-of-interest>`
 -  :ref:`Detection: Pickit Teach <Teach>`

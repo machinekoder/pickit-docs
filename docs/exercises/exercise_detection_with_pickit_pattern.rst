@@ -17,7 +17,7 @@ Different objects needs to be detected using fixed sized shapes.
 Requirements
 ------------
 
-Before starting on this exercise we advise you to read following articles:
+Before starting on this exercise we advise you to read the following articles:
 
 -  :ref:`Region of Interest <region-of-interest>`
 -  :ref:`Detection: Pickit Pattern <Pattern>`

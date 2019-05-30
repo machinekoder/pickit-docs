@@ -1,12 +1,10 @@
 The Pickit functions cheat sheet
 =================================
 
-| **Note** This article describes the legacy way of using Pickit with a
-  Universal Robot.
-| For new systems, please refer to the  `Getting started with the
-  Pickit
-  URCap <https://support.pickit3d.com/article/75-getting-started-with-the-pick-it-urcap>`__
-  article.
+.. note::
+  This article describes the legacy way of using Pickit with a
+  Universal Robot. For new systems, please refer to the
+  :ref:`universal-robots-urcap-installation` article.
 
 Pickit provides many functions to script your Pickit application to a
 success. Underneath we provide an overview of the provided functions:

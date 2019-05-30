@@ -6,9 +6,8 @@ software is installed. It is responsible for doing all calculations to
 detect your objects in a 3D point cloud and send the coordinates to the
 robot for picking.
 
-Read \ `this
-article <https://support.pickit3d.com/article/74-setting-up-your-pick-it-system>`__
-to learn how to set up the processor in your picking application.
+Read \ :ref:`this article <installation>` to learn how to set up the processor
+in your picking application.
 
 Processor version
 -----------------
@@ -42,8 +41,7 @@ and 2.0:
 
 -  From a **hardware** perspective, Pickit processor 2.0 has a GTX
    graphics card, more powerful CPU and power supply to work with
-   the \ `Pickit M-HD
-   camera <https://support.pickit3d.com/article/201-pick-it-m-hd>`__.
+   the \ :ref:`Pickit M-HD camera <m-hd-camera>`.
    The Pickit processor 1.0 has no graphics card.
 -  From a **software** perspective, Pickit processor 1.0 runs Pickit
    software versions 1.x. Pickit processor 2.0 runs Pickit software

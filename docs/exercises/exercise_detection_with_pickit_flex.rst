@@ -17,7 +17,7 @@ detected using simple shapes. 
 Requirements
 ------------
 
-Before starting on this exercise we advise you to the articles describing the
+Before starting on this exercise we advise you to read the articles describing the
 :ref:`Flex` detection engine.
 
 Task

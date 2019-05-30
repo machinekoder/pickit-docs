@@ -17,7 +17,7 @@ different detection parameters will be shown in this scene.
 Requirements
 ------------
 
-Before starting on this exercise we advise you to the articles describing the
+Before starting on this exercise we advise you to read the articles describing the
 :ref:`Flex` detection engine.
 
 .. attention:: For this exercise you need Pickit version 1.10.x

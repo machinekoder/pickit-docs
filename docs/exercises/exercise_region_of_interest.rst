@@ -16,7 +16,7 @@ This exercise is focused on setting up the Region of Interest box (ROI box). 
 Requirements
 ------------
 
-Before starting on this exercise we advise you to read following articles:
+Before starting on this exercise we advise you to read the following articles:
 
 -  :ref:`Region of Interest <region-of-interest>`
 -  :ref:`Detection: Pickit Flex <Flex>`\  (only to complete the bonus exercise)

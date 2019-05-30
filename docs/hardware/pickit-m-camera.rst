@@ -1,10 +1,10 @@
+.. _m-camera:
+
 Pickit M camera
 ===============
 
--  `Technical specifications
-   (PDF) <https://pickit.page.link/camera-m-manual>`__
--  `CAD
-   file <http://support.pickit3d.com/article/31-pick-it-cad-step-files-camera-processor>`__
+-  `Technical specifications (PDF) <https://pickit.page.link/camera-m-manual>`__
+-  :ref:`CAD file <cad-resources>`
 
 Environmental and operating conditions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
