@@ -13,7 +13,7 @@ assembly tasks with a robot or machine.
   quick-start/index
   installation/index
   Downloads <downloads>
-  
+
 .. toctree::
   :caption: Documentation
   :maxdepth: 1
@@ -26,7 +26,7 @@ assembly tasks with a robot or machine.
   Pattern <documentation/pattern/index>
   Picking <documentation/picking/index>
   Settings <documentation/settings/index>
-  Files <documentation/files/index>
+  Snapshots <documentation/snapshots/index>
   Calibration <documentation/calibration/index>
 
   faq/index

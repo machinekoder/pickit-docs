@@ -18,6 +18,8 @@ side.
     :local:
     :depth: 1
 
+.. _web-interface-top-bar:
+
 Top bar
 -------
 
@@ -31,15 +33,15 @@ the :ref:`Configuration` article.
 Next is the Pickit connection status with the robot.
 An active robot communication is indicated by **✓**, otherwise **∅**.
 
-Then the **Settings** button is shown. Here amongst other the Network and user settings
+Then the :guilabel:`Settings` button is shown. Here amongst other the Network and user settings
 can be defined. More information about these settings can be found in
 the article :ref:`Settings`.
 
-Next the **Files** button is shown. More information about this can be found in the :ref:`Files` article.
+Next the :guilabel:`Snapshots` button is shown. More information about this can be found in the :ref:`Snapshots` article.
 
-Then the **Calibration** button is shown. More information about this can be found in the :ref:`robot-camera-calibration` article.
+Then the :guilabel:`Calibration` button is shown. More information about this can be found in the :ref:`robot-camera-calibration` article.
 
-At last the **Robot mode** button is shown. Here you can change from
+At last the :guilabel:`Robot` mode button is shown. Here you can change from
 **Robot mode** to **Idle**. 
 
 .. note:: Only when Pickit is in **Idle** mode parameters can be changed and

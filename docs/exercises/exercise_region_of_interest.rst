@@ -5,25 +5,21 @@ Exercise Region of Interest
 
 This exercise is focused on setting up the Region of Interest box (ROI box). 
 
-+--------------+------------+
-| **Level**    | Basic      |
-+--------------+------------+
-| **Duration** | < 15 min   |
-+--------------+------------+
++--------------+------------------+
+| **Level**    | Basic            |
++--------------+------------------+
+| **Duration** | < 15 min         |
++--------------+------------------+
 
 .. image:: /assets/images/getting-started/roi.png
 
 Requirements
 ------------
 
-Before starting on this exercise we advice you to read following
-articles:
+Before starting on this exercise we advise you to read following articles:
 
--  `Region of
-   Interest <https://support.pickit3d.com/article/159-region-of-interest>`__
--  `Detection: Pickit
-   Flex <https://support.pickit3d.com/article/160-detection-pick-it-flex>`__\ (only
-   to complete the bonus exercise)
+-  :ref:`Region of Interest <region-of-interest>`
+-  :ref:`Detection: Pickit Flex <Flex>`\  (only to complete the bonus exercise)
 
 Task
 ----
@@ -42,13 +38,13 @@ Follow the next steps to complete the exercise.
 
 #. Download the snapshot file
    `here <https://drive.google.com/uc?export=download&id=1mZ4QD34C7VUCEtLU-dcddDdH36P8sRCZ>`__
-   on your device.
-#. Connect your device to your Pickit processor.
-#. In the user interface of Pickit, go to the :guilabel:`Files` page. 
-#. Press Upload and select the file.
-#. The file can now be found in snapshots/uploads.
+   to your computer.
+#. Connect your computer to the Pickit :ref:`web-interface`.
+#. In the user interface of Pickit, go to the :guilabel:`Snapshots` page. 
+#. Press :guilabel:`Upload snapshot` and select the file.
+#. The file can now be found under ``snapshots/uploads``.
 #. Finish the exercise.
-#. Press the snapshot button on the lower left corner of the view.
-#. Name your snapshot 'Solution\_RegionOfInterest\_1\_NameCompany'.
-#. Download the file from the snapshots folder.
+#. :ref:`Save a snapshot <Saving-a-snapshot>` with your current detection results.
+#. Name your snapshot ``Solution_RegionOfInterest_1_NameCompany``.
+#. :guilabel:`Download` the file from the ``snapshots`` folder.
 #. Send your solution to support@pickit3d.com to receive feedback.
