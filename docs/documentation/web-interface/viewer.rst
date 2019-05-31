@@ -21,7 +21,7 @@ The following overlays are shown in all views:
 -  Top-left: Camera ID and indicator that a correct camera calibration
    was loaded.
 -  Lower-left: :ref:`Snapshot <Saving-a-snapshot>`
-   button 
+   button
 -  Top-right: reset viewpoint button (not available
    in 2D view) and change viewer size button.
 -  Lower right: View settings for
@@ -84,8 +84,8 @@ Displays the 3D point clouds of all clusters found in the last Pickit
 detection. Each cluster is shown in a different color. It also renders
 the same additional elements listed for the the 3D view.
 
-This view is only available for the Pickit Flex and Pattern detection
-engines.
+This view is only available for the Pickit :ref:`Flex <Flex>` and
+:ref:`Pattern <Pattern>` detection engines.
 
 .. image:: /assets/images/Documentation/viewer-21-clusters.png
 
@@ -100,10 +100,10 @@ detection. Each object cloud is shown in a different color. 
 For all engines, it overlays the Pick frame of each object with
 the picking order identifiers.
 
-For the Pickit Flex and Pattern engines, it overlays a 2D or 3D model
-of the geometric shape (e.g. cylinder, rectangle). For the Teach engine,
-it overlays the 3D model cloud. They are colored according to the
-following criteria:
+For the Pickit :ref:`Flex <Flex>` and :ref:`Pattern <Pattern>`  engines, it
+overlays a 2D or 3D model of the geometric shape (e.g. cylinder, rectangle).
+For the :ref:`Teach <Teach>`  engine, it overlays the 3D model cloud.
+They are colored according to the following criteria:
 
 -  Green: Valid object
 -  Red: Invalid object
@@ -125,6 +125,6 @@ Visualizes the taught model together with its Reference frame and Pick
 frame. The model bounding box is shown in dashed green lines to indicate
 the extent of the model and help detect undesired outliers in models.
 
-This view is only available for the Pickit Teach detection engine.
+This view is only available for the Pickit :ref:`Teach <Teach>` detection engine.
 
 .. image:: /assets/images/Documentation/viewer-21-model.png
