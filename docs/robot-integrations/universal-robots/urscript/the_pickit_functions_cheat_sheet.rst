@@ -1,5 +1,5 @@
 The Pickit functions cheat sheet
-=================================
+================================
 
 .. note::
   This article describes the legacy way of using Pickit with a
