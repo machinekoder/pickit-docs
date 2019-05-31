@@ -23,3 +23,9 @@ the following actions can be taken:
    to `support@pickit3d.com <mailto:mailto:support@pickit3d.com>`__
 
 .. image:: /assets/images/faq/ipconfig.png
+
+If your computer is not :ref:`directly connected <connect-computer-directly>`
+to the Pickit processor, but instead
+:ref:`connects through a network <connect-computer-network>`, replace the
+**http://192.168.66.1** IP address above with the one assigned to the Pickit
+processor.

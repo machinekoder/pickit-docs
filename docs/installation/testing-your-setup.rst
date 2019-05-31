@@ -3,29 +3,18 @@
 Testing your setup
 ==================
 
-Connecting to the Pickit web interface
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+To verify that you have correctly set up your Pickit system, there are two
+things you can check for:
 
-If you connected your computer directly to the Pickit processor you can now connect to the Pickit interface by surfing to  http://192.168.66.1 to configure your Pickit setup.
+#. You can successfully :ref:`connect to the Pickit web interface <connecting-to-the-web-interface>`
+   from an external computer.
+#. Pickit can successfully reach the IP address of the robot:
 
-If you connected the Pickit processor to your network you can now connect to the Pickit interface by surfing to the IP address that was assigned by the DHCP server of your network.
+   - From the :ref:`top bar <web-interface-top-bar>` of the web interface,
+     navigate to the :guilabel:`Settings` page, under **Pickit port labeled 'ROBOT'**.
+   - :ref:`Test the robot to Pickit connection <test-robot-connection>`.
 
-If you still have questions regarding the connection to the Pickit web interface you can always contact  `support@pickit3d.com <mailto:mailto:support@pickit3d.com>`__.
-
-.. _test-robot-connection:
-
-Testing the Robot to Pickit connection
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-To test if Pickit can connect to the robot through the Ethernet cable you can perform the following test:
-
-#. Press the :guilabel:`Settings` button on the top of the Pickit interface.
-#. In the left menu, under the **Network settings**, select **Pickit port labeled 'ROBOT'**.
-#. Insert the IP address of your robot in the **Robot IP** field.
-#. Push :guilabel:`Check`.
-
-A pop-up message indicating failure or success appears on the lower right corner of the screen. 
-
-.. image:: /assets/images/First-steps/Network-settings.png
-
-.. note:: In case of failure, check if the cables are properly connected and whether the IP assigned to the robot during the IP configuration step matches the tested one.
+If the above steps work as expected, you're ready to go, happy picking!
+Else, if one of the steps did not work as expected, please contact us at
+`support@pickit3d.com <mailto:mailto:support@pickit3d.com>`__ and we'll help you
+figure out what's going on.
