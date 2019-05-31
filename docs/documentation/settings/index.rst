@@ -51,20 +51,37 @@ robot controller or PLC.
 
 .. image:: /assets/images/Documentation/settings-port-your-robot.png
 
-By default, this port is set to  Static, which means it's using a
-fixed IP configuration.
+By default, this port is set to Static, which means it's using a fixed IP
+configuration.
 You can set the following IP Configuration options:
 
 -  IP Address (Default value: 169.254.5.180)
 -  Subnet mask (Default value: 255.255.0.0)
 -  Gateway
 
-If you prefer to get an IP Address from a DHCP server you set this port
+If you prefer to get an IP Address from a DHCP server, you set this port
 to Dynamic. 
 
-Test the connection to your robot by entering the IP of your robot
-controller or PLC and check if it can be reached by the Pickit
-processor.
+.. _test-robot-connection:
+
+Testing the Robot to Pickit connection
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+You can check if the IP address of the robot or PLC is reachable from the
+Pickit processor by entering its IP address in the **Robot IP** field and
+pressing :guilabel:`Check`.
+
+A pop-up message indicating failure or success appears on the lower right corner
+of the screen.
+
+.. image:: /assets/images/Documentation/pickit-robot-connection.png
+   :scale: 70%
+
+.. note:: In case of failure, check if the cables are
+  :ref:`properly connected <connecting-the-cables>` and whether the IP assigned
+  to the robot during its IP configuration step matches the tested one.
+
+.. _pickit-port-lan:
 
 Pickit port labeled LAN
 ~~~~~~~~~~~~~~~~~~~~~~~~
