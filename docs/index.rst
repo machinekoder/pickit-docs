@@ -21,9 +21,7 @@ assembly tasks with a robot or machine.
   Web interface <documentation/web-interface/index>
   Configuration <documentation/configuration/index>
   Setup <documentation/setup/index>
-  Teach <documentation/teach/index>
-  Flex <documentation/flex/index>
-  Pattern <documentation/pattern/index>
+  Detection <documentation/detection/index>
   Picking <documentation/picking/index>
   Settings <documentation/settings/index>
   Snapshots <documentation/snapshots/index>
