@@ -10,7 +10,7 @@ with a certain color. Several use cases for the color filter are:
 -  Detection of thin parts on a flat surface
 
 .. note:: The color filter is a **light dependent solution**. This
-   requires very stable light conditions for reproducible results. 
+   requires very stable light conditions (same illumination, no changing shadows) for reproducible results. 
 
 Example of detecting thin parts on a flat surface
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
