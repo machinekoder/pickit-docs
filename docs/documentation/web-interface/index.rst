@@ -3,15 +3,31 @@
 Web interface
 =============
 
-When a Pickit system is connected to an external computer and a
-:ref:`supported web browser <supported-browsers>` is pointed to 
-`http://192.168.66.1 <http://192.168.66.1/>`__, the web interface of
-Pickit is shown. The web interface looks like the image below. In this
-article a general overview of what you can see in this interface is
-discussed. The interface is divided into 3 part: top bar, left side and right
-side.
+Interaction with Pickit is done through its web interface.
+Its simple and intuitive user experience lets you configure the system and
+monitor detections interactively.
+This article presents an overview of the Pickit web interface.
+
+.. _connecting-to-the-web-interface:
+
+Connecting to the web interface
+-------------------------------
+
+Follow :ref:`these instructions <connect-computer>` on how to connect an
+external computer to your Pickit system.
+When successfully connected to the Pickit web interface, you should expect to
+see something similar to the below image:
 
 .. image:: /assets/images/Documentation/pickit-webinterface-21.png
+
+If you cannot manage to successfully visualize the Pickit web interface, contact
+us at `support@pickit3d.com <mailto:mailto:support@pickit3d.com>`__.
+
+
+Components
+----------
+
+The interface consists of three main components:
 
 .. contents::
     :backlinks: top
@@ -21,54 +37,67 @@ side.
 .. _web-interface-top-bar:
 
 Top bar
--------
+~~~~~~~
 
-Starting from left to right. First the logo of Pickit shown.
-Next to the logo the current software version of your system is shown.
+The top bar of the Pickit web interface contains relevant status information and
+buttons that remain visible at all times.
 
-Next to the current software version the current **Setup** and **Product** file are shown.
-More information on these can be found in
-the :ref:`Configuration` article.
+The left part of the bar displays the following contents:
 
-Next is the Pickit connection status with the robot.
-An active robot communication is indicated by **✓**, otherwise **∅**.
+.. image:: /assets/images/Documentation/pickit-webinterface-top-bar-left.png
+   :scale: 70%
 
-Then the :guilabel:`Settings` button is shown. Here amongst other the Network and user settings
-can be defined. More information about these settings can be found in
-the article :ref:`Settings`.
+- The Pickit logo.
+- The Pickit version. By clicking on it, you can access the changelog of what's
+  new in each Pickit release.
+- The currently active **Setup** and **Product** files. By clicking on either
+  file name, a separate window will pop up that allows you to change the active
+  file or manage available files. See the :ref:`Configuration` article for more
+  details.
 
-Next the :guilabel:`Snapshots` button is shown. More information about this can be found in the :ref:`Snapshots` article.
+The right part of the bar displays the following contents:
 
-Then the :guilabel:`Calibration` button is shown. More information about this can be found in the :ref:`robot-camera-calibration` article.
+.. image:: /assets/images/Documentation/pickit-webinterface-top-bar-right.png
+   :scale: 70%
 
-At last the :guilabel:`Enable Robot Mode` mode button is shown. Here you can change from
-**Robot mode** to **Idle**. 
+- The status of the Pickit connection with the robot.
+  An active robot communication is indicated by **✓**, otherwise **∅**.
+- The :guilabel:`Settings` button, which opens a page with user :ref:`Settings`.
+- The :guilabel:`Snapshots` button, which opens a page for
+  :ref:`snapshot management <Snapshots>`.
+- The :guilabel:`Calibration` button, which opens the page for performing
+  :ref:`robot camera calibration <robot-camera-calibration>`.
+- The :guilabel:`Enable Robot Mode` button. When enabled, Pickit starts
+  listening for incoming robot commands and prevents the user from modifying
+  the Pickit configuration.
 
-.. note:: Only when Pickit is in **Idle** mode parameters can be changed and
-   saved.
+Right panel
+~~~~~~~~~~~
 
-Left side
----------
+This part of the web interface is where you specify your object detection
+configuration. There are different pages where you can define:
 
-Here the Pickit viewer and detection grid
-are shown. See the corresponding articles to have an in depth
-explanation.
+- :ref:`Setup: <setup>` Where to look for objects.
+- :ref:`Detection: <detection>` What type of object to look for.
+- :ref:`Picking: <Picking>` How to pick the detected objects.
+
+.. image:: /assets/images/Documentation/pickit-webinterface-right-side.png
+
+Left panel
+~~~~~~~~~~
+
+This part of the web interface displays the results of an object detection
+run both graphically (:ref:`viewer <Viewer>`, top) and numerically
+(:ref:`detection grid <detection-grid>`, bottom).
+These allow you to have both qualitative and quantitative feedback on the
+performance of object detection, and are powerful tools for inspecting and
+optimizing your application.
+
+.. image:: /assets/images/Documentation/pickit-webinterface-left-side.png
 
 .. toctree::
     :maxdepth: 1
+    :hidden:
 
     viewer
     detection-grid
-
-Right side
-----------
-
-Here the parameters of the Pickit system can be changed and saved. All
-settings and parameters are divided over several tabs. See article of
-each tab to have an extensive overview:
-
--  :ref:`setup`
--  :ref:`Teach`
--  :ref:`Flex`
--  :ref:`Pattern`
--  :ref:`Picking`

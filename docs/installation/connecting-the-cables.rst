@@ -50,11 +50,54 @@ To power the camera, connect the power chord to the power supply, and plug
 the other end to a power outlet. The camera fan should immediately start
 spinning.
 
-.. note::
-  **Important**
+.. important::
+   A USB hub is not allowed between the Pickit processor and any of the Pickit
+   cameras.
 
-  -  A USB hub is not allowed between the Pickit processor and any of the
-     Pickit cameras.
+.. _connect-computer:
+
+Connect a computer
+~~~~~~~~~~~~~~~~~~
+
+Interaction with Pickit is done by accessing its
+:ref:`web interface <web-interface>` from an external computer.
+This is required only during the setup and configuration of your application.
+Once Pickit is in :Ref:`Robot Mode <web-interface-top-bar>`, the connection
+with an external computer is no longer required.
+
+There are two ways to connect your Pickit processor to a computer and access the
+web interface:
+You can connect the two systems directly with an Ethernet cable, or connect them
+through your network. You can use the provided gray/black 5 m UTP network cable
+(CBL-CAT6-GRAY-5 / CBL-CAT6-BLACK-5) for this.
+The following describes each alternative in detail.
+
+.. _connect-computer-directly:
+
+Connecting a computer directly
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This is the most common way to connect to Pickit.
+Connect a computer to the **YOUR PC** labeled RJ45 port on the Pickit
+processor. Your computer will be assigned an IP address by the Pickit
+processor. Once connected you can access the Pickit web interface by pointing
+a :ref:`supported web browser <supported-browsers>` to the following URL:
+
+`http://192.168.66.1 <http://192.168.66.1/>`__
+
+.. _connect-computer-network:
+
+Connecting a computer using a network
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Connect the Pickit processor to a network with the **LAN** labeled RJ45
+port and connect it to your router or switch. An IP address will be
+assigned using the DHCP server of your network. You can now connect to
+the Pickit web interface by navigating to this IP address.
+
+Alternatively, you can assign a fixed IP to the Pickit processor. For this, you
+first need to :ref:`connect a computer directly <connect-computer-directly>` to
+configure the fixed IP (see :ref:`here <pickit-port-lan>` for more details).
 
 Connect the robot or machine controller
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -73,37 +116,4 @@ brand specific instruction pages:
 -  :ref:`universal-robots`
 -  :ref:`yaskawa`
 
-Connect a computer
-~~~~~~~~~~~~~~~~~~
-
-There are two ways to connect your Pickit processor to a computer. You
-can connect it directly with an ethernet cable or connect it to your
-network. You can use the provided gray/black 5 m UTP network cable
-(CBL-CAT6-GRAY-5 / CBL-CAT6-BLACK-5).
-
-A connection with a computer is only required during setup and
-configuration. When Pickit is in robot mode a connection with a
-computer is not required.
-
-Both connections can be active at the same time and work independently
-from each other. It's very common to have Pickit set up this way.
-
-Connecting a computer directly
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Connect a computer to the **YOUR PC** labeled RJ45 port on the Pickit
-processor. Your computer will be assigned an IP address by the Pickit
-processor. Once connected you can access the Pickit web interface by
-browsing to http://192.168.66.1.
-
-Connecting a computer using a network
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Connect the Pickit processor to a network with the **LAN** labeled RJ45
-port and connect it to your router or switch. An IP address will be
-assigned using the DHCP server of your network. You can now connect to
-the Pickit web interface by surfing to the IP address that was assigned
-by the DHCP server of your network.
-
-If you want to assign a fixed IP to the Pickit processor you first need
-to connect a computer directly to configure a fixed IP.
+.. tip:: This step is not necessary to already start testing the Pickit system.

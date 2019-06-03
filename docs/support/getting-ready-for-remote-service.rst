@@ -132,14 +132,13 @@ through one of the following options:
 -  TeamViewer
 -  Video conferencing
 
-To receive remote service through one of these option you should always
+To receive remote service through one of these options, you should always
 connect your PC/laptop to the Pickit processor:
 
-#. **Connect your PC/laptop to the Pickit processor** with an Ethernet
-   cable to the network port labelled ‘Interface’ on your Pickit
-   processor and surf to the Pickit web
-   interface. (\ http://192.168.66.1/)
-#. Make sure your **PC/laptop has connection to the internet**, while
+#. **Connect your PC/laptop to the Pickit processor**, as explained
+   :ref:`here <connect-computer>`, and navigate to the Pickit
+   :ref:`web interface <web-interface>`.
+#. Make sure your **PC/laptop has connection to the Internet**, while
    being able to see the Pickit web interface.
 
 TeamViewer

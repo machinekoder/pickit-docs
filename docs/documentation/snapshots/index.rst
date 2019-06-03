@@ -3,12 +3,12 @@
 Snapshots
 =========
 
-The :guilabel:`Snapshots` button near the top-right corner of the
-:ref:`web interface <web-interface-top-bar>` takes you to the snapshots page.
+Pickit snapshots are a powerful tool for saving the results of a detection run.
+Please refer to the :ref:`Saving-a-snapshot` article to learn more about them
+and how they can be captured.
 
-.. image:: /assets/images/Documentation/top-right-buttons.png
-
-Here you can browse, download and upload the :ref:`snapshots <Saving-a-snapshot>`
-of your Pickit system.
+Pressing the :guilabel:`Snapshots` button of the Pickit web interface
+:ref:`top bar <web-interface-top-bar>` takes you to a page where you can browse,
+download and upload the snapshots of your Pickit system.
 
 .. image:: /assets/images/Documentation/snapshots-page.png
