@@ -19,8 +19,7 @@ The following guidelines will help you to find the camera mounting distance that
 
    -  Moving the camera away from the objects allows capturing a bigger the field of view.
 
-   -  When the application requires a field of view greater than what the camera can provide, as can happen with very wide bins, it is recommended to mount the camera on the robot.
-      The idea is to cover the entire surface using a multiple detection poses.
+   -  When the application requires a field of view greater than what the camera can provide, as can happen with very wide bins, it is recommended to either use multiple cameras, or mount the camera on the robot and cover the entire surface with multiple detection poses.
 
 -  For cameras fixed to an independent structure, make sure that the expected **robot motions don't collide with the camera**.
    In some cases, it's necessary to reposition the camera to avoid potential collisions.
