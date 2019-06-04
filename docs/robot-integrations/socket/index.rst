@@ -101,7 +101,7 @@ All command messages (not just periodic pose updates) should contain a valid ``
 Response message from Pickit to robot
 -------------------------------------
 
-Except for the ``RC_PICKIT_CALIBRATE`` command, each robot command sent to Pickit will result in one response message from Pickit. These messages contain a Pickit status value as well as the actual object data for one object.
+Except for the ``RC_PICKIT_NO_COMMAND`` command, each robot command sent to Pickit will result in one response message from Pickit. These messages contain a Pickit status value as well as the actual object data for one object.
 
 The robot receives this structure from the Pickit interface:
 
