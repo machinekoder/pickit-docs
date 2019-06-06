@@ -120,6 +120,7 @@ ellipse). One can specify:
 -  Whether to look for the shape in the **outer-most contour only** or
    in the **inner and outer contours**. This is mostly relevant for ring-like shapes, which have
    an internal and external circle.
+-  Whether additional clustering based on the contours is needed. See following article for more information on :ref:`how-to-cluster-contours`.  
 -  The \ **3D matching tolerance**, used to determine the points that
    confirm the flat region.
 -  The **2D matching tolerance**, used to determine the points that
