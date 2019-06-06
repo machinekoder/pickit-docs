@@ -13,3 +13,5 @@ various robot program scripts as well as download the saved scenes.
 -  **saved scenes:** Contains the snapshots that are saved on your
    system.
 -  **user_changelog.md:** The Pickit version changelog
+
+Following articles explain you how to create and how to upload a snapshot, :ref:`Saving-a-snapshot` and :ref:`how-to-upload-a-snapshot`.
