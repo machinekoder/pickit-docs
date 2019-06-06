@@ -84,7 +84,7 @@ The location of the pick frame can be visualized from the :ref:`Model view <mode
 By default, Pickit Teach provides an initial pick frame,
 but this will in general not be the best choice. It's possible to
 specify the desired  **pick frame** as a positional and rotational
-offset with respect to the object model.
+offset with respect to the object model. Following article goes more into depth on :ref:`how-to-pick-frame`.
 
 .. image:: /assets/images/Documentation/Teach-pick-frame.png
 
