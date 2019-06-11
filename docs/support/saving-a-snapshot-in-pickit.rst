@@ -40,3 +40,5 @@ you send multiple snapshots of different situations:
 -  Scene with a few objects
 -  Scene in a starting situation
 -  The object you want to pick on its own (only when using TEACH)
+
+.. note:: If you're instead interested in uploading a snapshot, take a look at the :ref:`how-to-upload-a-snapshot` article.
