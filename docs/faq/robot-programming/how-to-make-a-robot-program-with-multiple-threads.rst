@@ -4,15 +4,16 @@ How to make a robot program with multiple threads
 =================================================
 
 When programming a robot with Pickit, a separate thread can be devoted to purely communicate with the Pickit system. 
-Benefits for using a separate thread to communicate with the Pickit system are following:
+The benefits for using a separate thread to communicate with the Pickit system are the following:
 
--  Clear distinction in the robot program between robot commands and Pickit commands
--  Multiple detections can be triggered without having to wait for the robot to move first
+-  Robot program becomes cleaner, as all Pickit commands are in a separate thread
+-  If the Pickit camera is mounted stationary more than one detection can be triggered while the robot is busy, for instance dropping off a part. 
+   This saves cycle when Pickit needs more than one attempt to find a valid detection. 
 
 In this article an example program with multiple threads is shown and elaborated. 
-The example program is for Universal robots, similar programs can be created for other robot brands.
+The example program is for Universal Robots, similar logic can be implemented for other robot brands.
 
-Example program Universal robots
+Example program Universal Robots
 --------------------------------
 
 The logic behind this example program is similar as :ref:`universal-robots-urcap-example`. 
