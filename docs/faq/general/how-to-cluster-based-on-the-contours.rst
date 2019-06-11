@@ -3,7 +3,7 @@
 How to cluster based on the contours
 ====================================
 
-Cluster contours is an option mostly used in Pickit :ref:`Flex`. 
+Contour clustering is an option mostly used when detecting 2D shapes with Pickit :ref:`Flex`. 
 This option is used when the standard :ref:`Group-points-into-clusters` methods are not sufficient.
 This additional clustering method is based on the contour points. 
 In this article multiple examples are shown where this option is used.
