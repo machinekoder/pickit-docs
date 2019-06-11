@@ -11,7 +11,5 @@ various robot program scripts as well as download the saved scenes.
 -  **ros:** Contains the files that are needed for using the Pickit ROS
    interface.
 -  **saved scenes:** Contains the snapshots that are saved on your
-   system.
+   system. Refer to these articles if you want to learn more about :ref:`creating and downloading snapshots <Saving-a-snapshot>` or :ref:`uploading snapshots <how-to-upload-a-snapshot>`.
 -  **user_changelog.md:** The Pickit version changelog
-
-Following articles explain you how to create and how to upload a snapshot, :ref:`Saving-a-snapshot` and :ref:`how-to-upload-a-snapshot`.
