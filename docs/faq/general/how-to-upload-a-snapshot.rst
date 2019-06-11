@@ -14,5 +14,4 @@ The following steps explain how you upload a snapshot from your PC to the Pickit
 .. note:: The above steps are the only way to upload snapshots to the Pickit system. 
    Connecting a USB drive directly to the Pickit processor will not work.
 
-<<<<<<< HEAD
 .. note:: If you're instead interested in creating snapshot, take a look at the :ref:`Saving-a-snapshot` article.
