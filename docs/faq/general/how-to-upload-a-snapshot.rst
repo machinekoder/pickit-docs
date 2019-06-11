@@ -16,6 +16,3 @@ The following steps explain how you upload a snapshot from your PC to the Pickit
 
 <<<<<<< HEAD
 .. note:: If you're instead interested in creating snapshot, take a look at the :ref:`Saving-a-snapshot` article.
-=======
-.. note:: If you're instead creating a snapshot, take a look at the :ref:`Saving-a-snapshot` article.
->>>>>>> dbaad3f527b239318d2d74ef7ad5d9fa50ea791f
