@@ -4,38 +4,41 @@ How to cluster based on the contours
 ====================================
 
 Contour clustering is an option mostly used when detecting 2D shapes with Pickit :ref:`Flex`. 
-This option is used when the standard :ref:`Group-points-into-clusters` methods are not sufficient.
-This additional clustering method is based on the contour points. 
-In this article multiple examples are shown where this option is used.
+Flex expects there to be one cluster per part, but this is not always the case, in particular for 2D shapes.
+This additional clustering step divides the contour of a cluster into several segments, allowing Flex to fit ab object on each individual segment. 
+The remainder of this article presents examples where contour clustering helps to discriminate touching parts.
 
-Touching boxes
---------------
+Boxes touching at a corner
+--------------------------
 
-The first example is of 2 boxes that are touching in one corner. 
-Because the surfaces of the boxes are on the same level, it is not possible to cluster the 2 boxes apart from each other.
-In this case Pickit tries to fit one big rectangle on both rectangles at the same time. This leads to a strange and bad fit.
+In the image below two boxes that are touching in one corner are shown. 
+Because the surfaces of the boxes are at the same level, it is not possible to cluster the two boxes apart from each other.
+Consequently, Pickit :ref:`Flex` fits one big rectangle on both parts, leading to a wrong fit.
 
 .. image:: /assets/images/faq/touching-rectangles-bad.png
 
-Now if we look closely at the contour points of the cluster we can distinguish 7 convex angles and 2 concave angles.
-If we are looking for a rectangular shape only convex angles make sense. 
-So the concave angles in this case can be used to split up this cluster in 2 smaller clusters, this is done by cluster contours.
-In the image below you can see that the contour points are now shown in 2 different colours. 
-Now for every contour cluster a rectangle is calculated and good results are obtained.
+Since we are looking for rectangular shapes, and we look closely at the contour points as shown in the image below.
+It can be noted that two corners in the contour don't make a lot of sense. 
+These corners can help to split the contour in smaller segments.
+
+.. image:: /assets/images/faq/cluster-contours-touching-boxes.png
+
+Once the contour clustering option is enabled, the contour is split at these corners, resulting in two smaller contours.
+Now, a rectangle can be correctly fit on each contour cluster.
 
 .. image:: /assets/images/faq/touching-rectangles-good.png
 
-Not perfectly aligned boxes
----------------------------
+Boxes touching at an edge
+-------------------------
 
-A similar example is when 2 boxes are aligned but not perfectly aligned, like in the image below.
-Again the surfaces are on the same level, so they can't be clustered apart.
-And also the result of fitting one rectangle on this cluster will not give a good result.
+A similar example is when two boxes are touching by an edge but not perfectly aligned, like in the image below.
+Again the surfaces are at the same level, so they can't be clustered apart.
+Also here, fitting a rectangle on this cluster will not give a good result.
 
 .. image:: /assets/images/faq/aligned-rectangles-bad.png
 
-Also here there are 2 concave angles that can help us split up the contour points in 2 smaller clusters.
-In the image below you can see that the contour points are now shown in 2 different colours. 
+Here we also have two corners that can help us split up the contour points in two smaller clusters.
+In the image below you can see that the contour points are now shown in two different colors. 
 Now for every contour cluster a rectangle is calculated and good results are obtained.
 
 .. image:: /assets/images/faq/aligned-rectangles-good.png
@@ -44,17 +47,16 @@ Now for every contour cluster a rectangle is calculated and good results are obt
 Touching circles
 ----------------
 
-An other example is when 2 circular object are touching, shown in the image below.
-Also here the surfaces are on the same level, so they can't be clustered apart.
+Another example is when two circular object are touching, shown in the image below.
+Also here the surfaces are at the same level, so they can't be clustered apart.
 Fitting one circle on the whole cluster doesn't make sense and leads to bad results.
 
 .. image:: /assets/images/faq/circles-bad.png
 
-If cluster contours is applied on this case, actually 4 smaller clusters are obtained. 
-The contours of the 2 holes are clustered apart. 
-And also the outer contours are clustered apart by using the concave angles present in this contour. 
-In the image below 2 circles are calculated on the 2 outer contours. 
+If contour clustering is applied on this case, four smaller clusters are obtained. 
+The contours of the two holes are clustered apart, and also the outer contour is split in two. 
+In the image below, two circles are fit on the two outer contours. 
 Note that similar results can be obtained by fitting circles on the holes.
-In this case they are filtered out by using the filtering settings of Pickit Flex.
+In this case they are filtered out by using the filtering settings of Pickit :ref:`Flex`.
 
 .. image:: /assets/images/faq/circles-good.png
