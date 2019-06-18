@@ -63,6 +63,8 @@ Metadata fields are documented in the  `Message metadata <#message-metadata>`__
 +--------------------+----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |                    | RC\_PICKIT\_NO\_COMMAND          | Use when sending a periodic pose update. Pickit does not reply to these requests.                                                                                                                                                |
 +--------------------+----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                    | RC\_PICKIT\_CHECK\_MODE          | Check the current mode of Pickit (RUNNING, IDLE or CALIBRATION)                                                                                                                                                                  |
++--------------------+----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |                    | RC\_PICKIT\_FIND\_CALIB\_PLATE   | Trigger the localisation of the Pickit camera-to-robot calibration plate.                                                                                                                                                        |
 +--------------------+----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |                    | RC\_PICKIT\_LOOK\_FOR\_OBJECTS   | Trigger camera to look for new objects in its current workspace. Pickit will respond with the amount of objects currently found in the workspace, which may be zero.                                                             |
@@ -99,7 +101,7 @@ All command messages (not just periodic pose updates) should contain a valid ``
 Response message from Pickit to robot
 -------------------------------------
 
-Except for the ``RC_PICKIT_CALIBRATE`` command, each robot command sent to Pickit will result in one response message from Pickit. These messages contain a Pickit status value as well as the actual object data for one object.
+Except for the ``RC_PICKIT_NO_COMMAND`` command, each robot command sent to Pickit will result in one response message from Pickit. These messages contain a Pickit status value as well as the actual object data for one object.
 
 The robot receives this structure from the Pickit interface:
 
