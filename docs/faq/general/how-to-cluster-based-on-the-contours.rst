@@ -21,7 +21,7 @@ Since we are looking for rectangular shapes, the two corners highlighted in gree
 
 .. image:: /assets/images/faq/cluster-contours-touching-boxes.png
 
-Now, a rectangle can be correctly fit on each contour cluster.
+If we go back to the example, a rectangle will be correctly fitted on each box.
 
 .. image:: /assets/images/faq/touching-rectangles-good.png
 
@@ -36,7 +36,7 @@ Also here, fitting a rectangle on this cluster will not give a good result.
 
 Here we also have two corners that can help us split up the contour points in two smaller clusters.
 In the image below you can see that the contour points are now shown in two different colors. 
-Now for every contour cluster a rectangle is calculated and good results are obtained.
+Now, for every contour cluster, a rectangle is fit and good results are obtained.
 
 .. image:: /assets/images/faq/aligned-rectangles-good.png
 
@@ -44,15 +44,15 @@ Now for every contour cluster a rectangle is calculated and good results are obt
 Touching circles
 ----------------
 
-Another example is when two circular object are touching, shown in the image below.
+Another example is when two circular objects are touching, as shown in the image below.
 Also here the surfaces are at the same level, so they can't be clustered apart.
 Fitting one circle on the whole cluster doesn't make sense and leads to bad results.
 
 .. image:: /assets/images/faq/circles-bad.png
 
-If contour clustering is applied on this case, four smaller clusters are obtained. 
+If contour clustering is applied to this case, four smaller clusters are obtained. 
 The contours of the two holes are clustered apart, and also the outer contour is split in two. 
-In the image below, two circles are fit on the two outer contours. 
+In the image below, two circles are fit to the outer contours. 
 Note that similar results can be obtained by fitting circles on the holes.
 In this case they are filtered out by using the filtering settings of Pickit :ref:`Flex`.
 
