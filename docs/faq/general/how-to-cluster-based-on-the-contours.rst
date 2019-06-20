@@ -17,13 +17,10 @@ Consequently, Pickit :ref:`Flex` fits one big rectangle on both parts, leading t
 
 .. image:: /assets/images/faq/touching-rectangles-bad.png
 
-Since we are looking for rectangular shapes, and we look closely at the contour points as shown in the image below.
-It can be noted that two corners in the contour don't make a lot of sense. 
-These corners can help to split the contour in smaller segments.
+Since we are looking for rectangular shapes, the two corners highlighted in green below can be used to identify the boundary between the shapes and split the contour into two smaller segments, one for each rectangle.
 
 .. image:: /assets/images/faq/cluster-contours-touching-boxes.png
 
-Once the contour clustering option is enabled, the contour is split at these corners, resulting in two smaller contours.
 Now, a rectangle can be correctly fit on each contour cluster.
 
 .. image:: /assets/images/faq/touching-rectangles-good.png
