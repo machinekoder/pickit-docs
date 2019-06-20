@@ -1,14 +1,14 @@
 Build a showcase demo with a M-camera and two bins
 ==================================================
 
-This article will guide you in setting up a simple showcase demo with Pickit and a UR that you can show at trade fairs.
+This article will guide you in setting up a simple showcase demo with Pickit and a UR robot.
 For this demo a Pickit M camera is used to detect bottles in a bin.
 The parts are picked from the bin with a UR5 robot and a vacuum cup.
 A video of the end result can be seen below.
 
 .. raw:: html
 
-  <iframe src="https://drive.google.com/file/d/1vNjDmVY_XQT_40sZ2ACFpNRChnClE7rb/preview" frameborder="0" allowfullscreen width="640" height="480"> </iframe>
+  <iframe src="https://drive.google.com/file/d/1E4oO89VM-VIaAffyaiCnZt0mBtuPVEGJ/preview" frameborder="0" allowfullscreen width="640" height="480"> </iframe>
   <br>
 
 .. contents::
@@ -23,7 +23,7 @@ The list below shows the different hardware that has been used to set up this de
 
 -  Pickit system with M camera
 -  Mounting plate to mount camera on to the robot
--  UR5 robot
+-  UR5e robot
 -  Stand to mount the robot on
 -  Schmalz Vacuum gripper ECBPi 12 24V-DC M12-8, 15 cm extended with vacuum cup SPB4f 40
 -  Two bins with size 400 x 300 x 120 mm
@@ -34,42 +34,52 @@ Mounting instructions
 
 -  The robot is mounted on the stand.
 -  The camera is mounted on the robot flange of the robot with the help of a mounting plate.
--  The vacuum gripper is mounted on the robot flange beneath the camera. The distance between the end effector of the vacuum and the mounted camera should be bigger than the depth of the bin. In the example the bin is 120 mm deep and the distance between the end effector and camera is 150 mm.
+-  The vacuum gripper is mounted on the robot flange beneath the camera. The distance between the end effector of the vacuum and the mounted camera should be bigger than the depth of the bin.
+   In the example the bin is 120 mm deep and the distance between the end effector and camera is 150 mm.
 -  Both bins are placed at a distance of 550 mm (center of robot base to center of bin) next to each other.
 
-.. image:: /assets/images/examples/teach-m-demo-cheese-general.png
+.. image:: /assets/images/examples/demo_2_bins_setup.png
 
 Setting up the Pickit files
 ----------------------------
 
-`Here <https://drive.google.com/uc?export=download&id=1ZxINM11VzqtcqRFUwdHqHHLTfkFbek9k>`__ you can download a snapshot of the demo.
-In the snapshot you can see that the boxes are detected by using the Teach detection engine with a single model.
+`Here <https://drive.google.com/uc?export=download&id=1B1BqZYRuM9Ny5DLZPQ5Lx3l6DZm7lrBs>`__ you can download a snapshot of the demo.
+In the snapshot you can see that the bottles are detected by using the Teach detection engine with a single model.
 
 Setup file
 ~~~~~~~~~~
 
-For this demo the :ref:`region-of-interest` (ROI) has similar dimensions as the real bin, the set ROI is slightly smaller and slightly higher.
-Last, the ROI box is attached to the Robot base frame. No other settings are used for this demo.
+For this demo two :ref:`setup` files are defined, one for each bin.
+For both files the :ref:`region-of-interest` (ROI) has similar dimensions as the real bin.
+The height is set to be higher than the real bin, so if the parts are stacked they can still be detected.
+A separate :ref:`bin-box <bin-box>` height is defined to still be able to check for collisions.
+Also a :ref:`empty ROI box <detecting-an-empty-roi>` value is defined, so we are able to determin if a bin is empty.
+Last, the ROI boxes are attached to the Robot base frame. No other settings are used for this demo.
 
-Need help with these settings? See the :ref:`region-of-interest` article for more information.
+Need help with these settings? See the :ref:`setup` article for more information.
 
 Product file
 ~~~~~~~~~~~~
 
-The model that is being used is the shape from the top, which is a circle.
-The **pick frame** of this model is located in the center of the circle.
-The **matching score** and **tolerance** is set to 90% and 1.5 mm.
-No **fusion** or **downsampling** is applied and the **detection speed** is set to Fast.
+For this demo one product file is defined with one model.
+The model that is being used is the shape from the side.
+The **pick frame** of this model is located in the center of the cylinder.
+Here it is important that the X-axis of the pick frame is in the center and is pointing in the length direction of the bottle.
+This allows for pick frame alignment (see further).
+The **matching score** and **tolerance** is set to 80% and 2.4 mm.
+No **fusion** or **downsampling** is applied and the **detection speed** is set to Normal.
+
+.. image:: /assets/images/examples/demo_2_bins_pick_frame.png
 
 Need help with these settings? See the :ref:`Teach` article for more information.
 
-In the **Picking** page the **pick frames are enforced** to XYZ||XYZ alignment.
-This setting makes sure that all calculated pick frames have the same orientation.
-So if one of the boxes is tilted it is still picked straight from the top.
-This is possible since the vacuum cup has quite some flexibility.
-Another benefit is that the head of the robot doesn't need to turn so there are no problems with cable entanglement.
-To ensure that the robot will not try to pick boxes that are too tilted the **maximum angle between pick frame Z-axis and surface normal** is set to 30 degrees.
-No other settings in the **Picking** page are being used for this demo.
+In the **Picking** page the :ref:`pick frames are enforced <enforce-alignment-of-pick-frame-orientation>` to Y ⊥ Z alignment.
+This setting gives Pickit the freedom to rotate around the X-axis of the pick frame.
+If a bottle is found in the middle of the bin the pick frame will point as much as possible upwards.
+Since we are also using **box avoidance**, if a bottle is close to the side of the bin, the pick frame will not be pointing upwards but will be slightly tilted away from the side of the bin.
+
+Also :ref:`check-collisions-with` is used. A simple cylinder shaped tool is used here.
+Note that since the pick frame is in the center an pick offset in tool is used to compensate for this.
 
 Need help with these settings? See the :ref:`Picking` article for more information.
 
@@ -84,32 +94,53 @@ detailed description in robot-camera calibration can be found in the article :r
 Setting up the robot program
 ----------------------------
 
-`Here <https://drive.google.com/uc?export=download&id=1iojIvKlzVU4k9-xQhrb27jCTgzo68WUa>`__ you can download the UR robot program.
-The idea of the program is to pick 3 boxes from the bin and drop these in a line.
-Once three boxes are picked they are pushed back in the bin. Then these steps are repeated.
+`Here <https://drive.google.com/uc?export=download&id=1BT2TlxE-7Wqv8ZgmaNPdOIzdqtvJ5u6f>`__ you can download the UR robot program.
+The idea of the program is to pick bottles from one bin and drop them in the other bin.
+The robot will change bin if the bin is empty or if no valid objects are found for a few times in a row.
 
-.. image:: /assets/images/examples/teach-m-demo-cheese-ur-program.png
+.. image:: /assets/images/examples/ur-2-bin-demo.png
 
 The following still needs to be defined in this robot program:
 
--  Pickit select command, the correct setup and product file need to be filled in.
--  Above_bin is a fixed waypoint on the center top of the bin. This intermediate waypoint is used to get in to and to get out of the bin.
--  In the picking sequence the vacuum needs to be set to active.
--  The dropping sequence uses a pallet function. Here the StartPos_1 and Endpos_1 are defined 280 mm apart from each other. The Approach_1 and Exit_1 are the same and are defined 100 mm above the PatternPoint_1. In this dropping sequence the vacuum is also turned off.
--  The pushing sequence pushes the boxes back into the bin. Here the StartPos_2 and Endpos_2 are also defined 280 mm apart from each other. The Approach_2, PatternPoint_2 and Exit_2 waypoints are defined as shown below.
+-  Pickit **select** command, the correct setup and product file need to be filled in.
+   First the setup file for the first bin is selected.
+-  The **home_pose** is a start position of the robot.
+-  For the picking sequence if an object in bin 1 is found following needs to be added. 
+   A **grasping logic** to pick the part.
+   **Detect_pose_1** is a waypoint 650 mm above bin 1.
+   **Pre_drop_1** and **drop_1** are waypoints to drop off the parts in the other bin.
+   A **release logic** to drop off the parts.
+-  Similar settings need to be defined for the picking sequence if an object is found in bin 2.
+-  In the Else clause for object found the **select** commands for Pickit need to be filled in correctly.
+   If bin 1 is active the setup file is changed to bin 2 and vice versa.
 
-.. image:: /assets/images/examples/teach-m-demo-cheese-pushing-sequence.png
+In the robot program a script file function is defined and used. 
+The idea here is to not rotate around the 6-th axis of the robot when picking objects.
+This is done to make cable managment easier for the camera that is mounted on the head of the robot.
 
--  The detect_pose is a waypoint defined 700 mm above the bin, this is also the starting position of the program.
+::
+
+    def final_joint_correction():
+
+    pickit_pre_joint = get_inverse_kin(pickit_pre_pose)
+    actual_joint = get_actual_joint_positions()
+    joint_cor = actual_joint[5] - pickit_pre_joint[5]
+    pickit_pose = pose_trans(pickit_pose, p[0,0,0,0,0,joint_cor])
+    pickit_pre_pose = pose_trans(pickit_pre_pose,p[0,0,0,0,0,joint_cor])
+
+    end
+
+To get rid of movement around the 6-th joint. 
+The current joint position is compared with the calculated waypoints by Pickit.
+Then the variable waypoints are altered to have the same joint position for the 6-th axis as the current one.
+This function is executed before the program moves to these positions.
 
 Interaction with the running demo
 ---------------------------------
 
 This demo is robust and will keep on working continuously.
-After a while it could be that always the same 3 boxes are picked and pushed back in.
+Interaction with the scene is possible.
+Parts can be placed under angles, taken away and so on.
 
-Interaction with the scene is possible when the robot just picked a box and is dropping it off.
-If the robot moves to the top of the bin to look for new objects the scene can't be changed anymore.
-
-Parts can be placed under angles. If the surface is tilted less than 30 degrees the robot will still pick them.
-If they are steeper than 30 degrees the parts can still be detected but will be labeled unpickable, due to the angle.
+.. note::
+   It is adviced to only alter the bin where the robot is not picking from.
