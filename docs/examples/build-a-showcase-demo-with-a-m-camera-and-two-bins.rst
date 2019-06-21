@@ -38,7 +38,8 @@ Mounting instructions
    In the example, the bin is 120 mm deep and the distance between the gripper and the camera is 150 mm.
 -  The bins are placed next to each other, and their center is 550 mm in front of the robot base.
 
-.. image:: /assets/images/examples/demo_2_bins_setup.png
+.. image:: /assets/images/examples/demo_2_bins_setup.jpg
+  :scale: 50%
 
 Setting up the Pickit files
 ----------------------------
