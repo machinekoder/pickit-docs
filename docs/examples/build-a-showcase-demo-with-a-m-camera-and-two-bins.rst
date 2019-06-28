@@ -95,11 +95,11 @@ detailed description in robot-camera calibration can be found in the article :r
 Setting up the robot program
 ----------------------------
 
-`Here <https://drive.google.com/uc?export=download&id=1BT2TlxE-7Wqv8ZgmaNPdOIzdqtvJ5u6f>`__ you can download the UR robot program.
+`Here <https://drive.google.com/uc?export=download&id=1d3j-aft9h9ZQnYvExBG3TypTUdfmBmRf>`__ you can download the UR robot program.
 The idea of the program is to pick bottles from one bin and drop them in the other bin.
 The robot will change bin if the bin is empty or if no valid objects are found for a few times in a row.
 
-.. image:: /assets/images/examples/ur-2-bin-demo.png
+.. image:: /assets/images/examples/demo-ur-multiple-bins.png
 
 The following still needs to be defined in this robot program:
 
@@ -115,8 +115,8 @@ The following still needs to be defined in this robot program:
 -  In the Else clause for object found the **Select** commands for Pickit need to be filled in correctly.
    If bin 1 is active the setup file is changed to bin 2 and vice versa.
 
-In the robot program, a script file function is defined and used. 
-The idea here is to not rotate around the 6-th axis of the robot when picking objects.
+In the robot program, two script file function are defined and used. 
+The idea of function **final_joint_correction()** is to not rotate around the 6-th axis of the robot when picking objects.
 This is done to make cable managment easier for the camera that is mounted on the head of the robot.
 Also for the demo we don't need to have the correct orientation, it is sufficient to pick the part and drop it off in the other bin.
 
@@ -136,6 +136,31 @@ To get rid of movement around the 6-th joint.
 The current joint position is compared with the calculated waypoints by Pickit.
 Then the variable waypoints are altered to have the same joint position for the 6-th axis as the current one.
 This function is executed before the program moves to these positions.
+
+The second defined function, **configuration_check()**, is an additional check to be sure that the robot stays in his current configuration.
+Before picking the object it is checked that the robot does not have to rotate more than 45 degrees around his base joint. 
+When the robot would need to rotate more to pick the part, this location is then labeled as unreachable and will not be picked by the robot.
+This will limit the robot to pick parts in all possible directions, but it will ensure that during the demo no strange moves are encountered.
+
+::
+
+    def final_joint_correction():
+
+    if is_within_safety_limits(pickit_pre_pose):
+    current_joint = get_actual_joint_positions()
+    pre_joint = get_inverse_kin(pickit_pre_pose)
+    if norm(current_joint[0] - pre_joint[0]) < d2r(45):
+    pick_config = True
+    else:
+    pick_config = False
+    end
+    end
+
+    end
+
+.. note::
+   Both script files can be immediately used as there are shown in the provided robot program. 
+   No need to set a parameter here.
 
 Interaction with the running demo
 ---------------------------------
