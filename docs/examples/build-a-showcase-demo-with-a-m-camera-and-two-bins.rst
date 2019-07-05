@@ -42,7 +42,7 @@ Mounting instructions
   :scale: 50%
 
 Setting up the Pickit files
-----------------------------
+---------------------------
 
 `Here <https://drive.google.com/uc?export=download&id=1B1BqZYRuM9Ny5DLZPQ5Lx3l6DZm7lrBs>`__ you can download a snapshot of the demo.
 In the snapshot, you can see that the bottles are detected by using the :ref:`Teach` detection engine with a single model.
@@ -87,10 +87,10 @@ Need help with these settings? See the :ref:`Picking` article for more informati
 Calibration
 -----------
 
-The next step is the robot-camera calibration. This process teaches Pickit
-where the robot base is located w.r.t. to the camera. This information
-is used to transform the object pick-frames into robot coordinates. A
-detailed description in robot-camera calibration can be found in the article :ref:`robot-camera-calibration`. 
+The next step is the robot-camera calibration.
+This process teaches Pickit where the robot base is located w.r.t. to the camera.
+This information is used to transform the object pick-frames into robot coordinates.
+A detailed description in robot-camera calibration can be found in the article :ref:`robot-camera-calibration`.
 
 Setting up the robot program
 ----------------------------
@@ -106,7 +106,7 @@ The following still needs to be defined in this robot program:
 -  Pickit **Select** command, the correct setup and product file need to be filled in.
    First the setup file for the first bin is selected.
 -  The **home_pose** is a start position of the robot.
--  For the picking sequence if an object in bin 1 is found following needs to be added. 
+-  For the picking sequence if an object in bin 1 is found following needs to be added.
    A **grasping logic** to pick the part.
    **Detect_pose_1** is a waypoint 650 mm above bin 1.
    **Pre_drop_1** and **drop_1** are waypoints to drop off the parts in the other bin.
@@ -115,10 +115,15 @@ The following still needs to be defined in this robot program:
 -  In the Else clause for object found the **Select** commands for Pickit need to be filled in correctly.
    If bin 1 is active the setup file is changed to bin 2 and vice versa.
 
-In the robot program, two script file function are defined and used. 
+In the robot program, two script file function are defined and used.
 The idea of function **final_joint_correction()** is to not rotate around the 6-th axis of the robot when picking objects.
-This is done to make cable managment easier for the camera that is mounted on the head of the robot.
-Also for the demo we don't need to have the correct orientation, it is sufficient to pick the part and drop it off in the other bin.
+This is done to make cable management easier for the camera that is mounted on the head of the robot.
+Note that this is possible because the bin drop-off doesn't require knowing the exact part orientation.
+
+To get rid of movement around the 6-th joint.
+The current joint position is compared with the calculated waypoints by Pickit.
+Then the variable waypoints are altered to have the same joint position for the 6-th axis as the current one.
+This function is executed before the program moves to these positions.
 
 ::
 
@@ -132,19 +137,14 @@ Also for the demo we don't need to have the correct orientation, it is sufficien
 
     end
 
-To get rid of movement around the 6-th joint. 
-The current joint position is compared with the calculated waypoints by Pickit.
-Then the variable waypoints are altered to have the same joint position for the 6-th axis as the current one.
-This function is executed before the program moves to these positions.
-
-The second defined function, **configuration_check()**, is an additional check to be sure that the robot stays in his current configuration.
-Before picking the object it is checked that the robot does not have to rotate more than 45 degrees around his base joint. 
+The second function, **configuration_check()**, is an additional check to be sure that the robot stays in his current configuration.
+Before picking the object it is checked that the robot does not have to rotate more than 45 degrees around his base joint.
 When the robot would need to rotate more to pick the part, this location is then labeled as unreachable and will not be picked by the robot.
 This will limit the robot to pick parts in all possible directions, but it will ensure that during the demo no strange moves are encountered.
 
 ::
 
-    def final_joint_correction():
+    def configuration_check():
 
     if is_within_safety_limits(pickit_pre_pose):
     current_joint = get_actual_joint_positions()
@@ -159,8 +159,8 @@ This will limit the robot to pick parts in all possible directions, but it will 
     end
 
 .. note::
-   Both script files can be immediately used as there are shown in the provided robot program. 
-   No need to set a parameter here.
+   Both script files can be immediately used as there are shown in the provided robot program.
+   No need to change any parameter.
 
 Interaction with the running demo
 ---------------------------------
