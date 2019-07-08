@@ -24,8 +24,9 @@ needing to know how the calibration plate is mounted with respect to the robot f
 the plate should be mounted to the flange in a specific way. :ref:`installing-calibration-plate`
 describes the correct way to mount the plate to the flange.
 
-.. image:: /assets/images/Documentation/Calibration-plate-robot.jpg
-   :scale: 30 %
+.. image:: /assets/images/Documentation/calibration_single_pose_fixed_camera_plate_attachment.png
+   :scale: 50 %
+   :align: center
 
 Determining the helper transformation
 -------------------------------------
@@ -36,6 +37,7 @@ defined calibration plate frame.
 
 .. image:: /assets/images/Documentation/Helper-transformation.jpg
    :scale: 50%
+   :align: center
 
 If the screw holes of plate and flange are aligned, this transformation consists of:
 
@@ -43,6 +45,7 @@ If the screw holes of plate and flange are aligned, this transformation consists
 - a rotation around the Z-axis.
 
 .. image:: /assets/images/Documentation/Calibration-plate-offset.png
+   :align: center
 
 If the calibration plate is screwed directly to the flange, and oriented according to
 :ref:`installing-calibration-plate`, the helper transformations in the table below apply, for the
@@ -76,7 +79,9 @@ area. Make sure the plate is visible in the 2D viewer. Afterwards the program sh
 to find the calibration plate.
 
 .. image:: /assets/images/Documentation/Calibration-plate-visible-viewer.png
+   :align: center
 .. image:: /assets/images/Documentation/Calibration-plate-visible.png
+   :align: center
 
 Calibrating
 -----------

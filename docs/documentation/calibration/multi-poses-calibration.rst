@@ -22,8 +22,9 @@ fixed rigidly to the flange.
 
 Refer to :ref:`installing-calibration-plate` for the standard way to mount the plate.
 
-.. image:: /assets/images/Documentation/Calibration-plate-robot.jpg
-   :scale: 30 %
+.. image:: /assets/images/Documentation/calibration_multi_pose_fixed_camera_plate_attachment.png
+   :scale: 50 %
+   :align: center
 
 Robot mounted camera
 ~~~~~~~~~~~~~~~~~~~~
@@ -32,8 +33,9 @@ If the camera is mounted on the robot flange, place the calibration plate on a s
 comfortable distance from the robot. The location of the plate should correspond to the picking
 area.
 
-.. image:: /assets/images/Documentation/Calibration-plate-stationary.jpg
-   :scale: 20 %
+.. image:: /assets/images/Documentation/calibration_multi_pose_plate_in_view.png
+   :scale: 50 %
+   :align: center
 
 Building the robot program
 --------------------------
@@ -48,7 +50,9 @@ find the calibration plate. Each of the five waypoints should be defined such th
   sure that the plate is clearly visible in the Pickit 2D viewer.
 
 .. image:: /assets/images/Documentation/Calibration-plate-visible-viewer.png
+   :align: center
 .. image:: /assets/images/Documentation/Calibration-plate-visible.png
+   :align: center
 
 Program for fixed camera
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -56,7 +60,7 @@ Program for fixed camera
 Move the robot such that the plate is in the middle of the field of view of the camera. Move the
 flange to five different angle combinations around the X, Y and Z axes.
 
-.. image:: /assets/images/Documentation/Calibration-stationary-mounted.jpg
+.. image:: /assets/images/Documentation/calibration_multi_pose_fixed_camera.png
 
 Program for robot mounted camera
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -64,7 +68,7 @@ Program for robot mounted camera
 Teach the five waypoints such that the plate always appears approximately in the center of the
 image, but tilted in different directions.
 
-.. image:: /assets/images/Documentation/Calibration-robot-mounted.jpg
+.. image:: /assets/images/Documentation/calibration_multi_pose_camera_on_robot.png
 
 Calibrating
 -----------
