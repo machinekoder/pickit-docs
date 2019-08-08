@@ -11,7 +11,19 @@ procedure.
 Overview
 --------
 
+.. warning:: We noticed that in some cases the web interface can show the error
+   message **ERROR: Something went wrong during upgrading** although the upgrade
+   process is still running fine. We are working hard on resolving this confusion.
+   **DO NOT REBOOT THE PICKIT SYSTEM YOURSELF AND WAIT FOR IT TO REBOOT
+   AUTOMATICALLY.** Once the Pickit system rebooted, the web interface will also
+   automatically refresh and show the newest version. In the exceptional case that
+   the Pickit system does not reboot itself within 15 minutes after starting the
+   upgrade, please contact support@pickit3d.com if you can't confirm that the
+   upgrade succeeded.
+
 To upgrade your system follow these steps:
+
+.. note:: User of version 2.1.2 or above should go in :ref:`upgrade-since-2-1-2`.
 
 -  Press the **Settings** button in the top bar of Pickit's web
    interface.
@@ -64,3 +76,30 @@ it on the computer on which the Pickit web interface is open, and under
 the same section for version upgrades, press the **Upload and Install
 Upgrades** to upload it and proceed with the same procedure as described
 above.
+
+.. _upgrade-since-2-1-2:
+
+Upgrade Pickit since 2.1.2
+--------------------------
+
+Since this version, we disabled the direct upgrade.
+
+- Download the latest version of Pickit here_.
+- Press the **Settings** button in the top bar of Pickit's web interface.
+
+     .. image:: /assets/images/Documentation/settings-button-21.png
+
+- Under the **Upgrade Pickit version** drawer in the **Network
+  settings** section of the screen, you should see the following
+  content :
+
+    .. image:: /assets/images/Documentation/upgrade_pickit_2.1.2.png
+
+- Press the **Upload and Install Upgrades** to upload and select the downloaded
+  file.
+
+- When the upgrading is in progress you should see the following:
+
+   .. image:: /assets/images/Documentation/pickit-upgrading.png
+
+.. _here: https://client.pickit3d.com/upgrade/v2/
