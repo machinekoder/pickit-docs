@@ -11,16 +11,6 @@ procedure.
 Overview
 --------
 
-.. warning:: We noticed that in some cases the web interface can show the error
-   message **ERROR: Something went wrong during upgrading** although the upgrade
-   process is still running fine. We are working hard on resolving this confusion.
-   **DO NOT REBOOT THE PICKIT SYSTEM YOURSELF AND WAIT FOR IT TO REBOOT
-   AUTOMATICALLY.** Once the Pickit system rebooted, the web interface will also
-   automatically refresh and show the newest version. In the exceptional case that
-   the Pickit system does not reboot itself within 15 minutes after starting the
-   upgrade, please contact support@pickit3d.com if you can't confirm that the
-   upgrade succeeded.
-
 To upgrade your system follow these steps:
 
 .. note:: Before proceeding with the upgrade, make sure your
@@ -42,3 +32,13 @@ To upgrade your system follow these steps:
    .. image:: /assets/images/Documentation/pickit-upgrading.png
 
 .. _here: https://client.pickit3d.com/upgrade/v2/
+
+.. warning:: We noticed that in some cases the web interface can show the error
+   message **ERROR: Something went wrong during upgrading** although the upgrade
+   process is still running fine. We are working hard on resolving this confusion.
+   **DO NOT REBOOT THE PICKIT SYSTEM YOURSELF AND WAIT FOR IT TO REBOOT
+   AUTOMATICALLY.** Once the Pickit system rebooted, the web interface will also
+   automatically refresh and show the newest version. In the exceptional case that
+   the Pickit system does not reboot itself within 15 minutes after starting the
+   upgrade, please contact support@pickit3d.com if you can't confirm that the
+   upgrade succeeded.
