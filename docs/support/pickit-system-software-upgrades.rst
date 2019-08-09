@@ -13,8 +13,7 @@ Overview
 
 To upgrade your system follow these steps:
 
-.. note:: Before proceeding with the upgrade, make sure your
-   setup and product files are saved.
+- Before proceeding with the upgrade, make sure your setup and product files are saved.
 
 - Download the latest version of Pickit here_.
 - Press the **Settings** button in the top bar of Pickit's web interface.
