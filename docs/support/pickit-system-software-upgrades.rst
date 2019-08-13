@@ -4,8 +4,7 @@ Pickit system software upgrades
 ================================
 
 Upgrading the Pickit software can be done by the user, without Pickit
-support engineers’ intervention. This feature is available starting from
-software version 1.10. This guide will take you through the upgrade
+support engineers’ intervention. This guide will take you through the upgrade
 procedure.
 
 Overview
