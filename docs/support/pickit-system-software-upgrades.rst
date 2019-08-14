@@ -19,19 +19,18 @@ To upgrade your system follow these steps:
 
      .. image:: /assets/images/Documentation/settings-button-21.png
 
-- Under the **Upgrade Pickit version** drawer in the **Network settings** section of the screen,
-  press the **Upload and
+- In the **Network settings** section of the left menu, select the **Upgrade
+  Pickit version** drawer, and press the **Upload and
   Install Upgrades** button to upload and select the downloaded
   file.
 
   .. note:: **For version < 2.1.2** :
 
-    You first need to check the case **I prefer downloading and
+    You first need to enable the option **I prefer downloading and
     uploading the new version myself** before pressing the **Upload and
-    Install Upgrades** button to upload and select the downloaded
-    file.
+    Install Upgrades** button.
 
-- When the upgrade is in progress you should see the following:
+- While the upgrade is in progress you should see the following:
 
    .. image:: /assets/images/Documentation/pickit-upgrading.png
 
@@ -39,11 +38,11 @@ To upgrade your system follow these steps:
 
 .. warning:: Note that for Pickit versions < 2.1.2, the web interface can show
   the error message **ERROR: Something went wrong during upgrading** although the
-  upgrade process is still running fine.
+  upgrade process is still running without problems.
 
-  If you see this message, **DO NOT REBOOT THE PICKIT SYSTEM YOURSELF AND WAIT
-  FOR IT TO REBOOT AUTOMATICALLY**. Once the Pickit system rebooted, the web
-  interface will also automatically refresh and show the newest version.
+  If you see this message, **DO NOT REBOOT THE PICKIT SYSTEM YOURSELF**. Instead
+  **WAIT FOR IT TO REBOOT AUTOMATICALLY**. After the reboot, the web
+  interface will refresh automatically and show the newest version.
 
-  In the exceptional case that the Pickit system does not reboot itself within
-  15 minutes after starting the upgrade, please contact support@pickit3d.com
+  In the exceptional case where the Pickit system does not reboot within
+  15 minutes after starting the upgrade, please contact **support@pickit3d.com**.
