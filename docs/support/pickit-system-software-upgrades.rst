@@ -37,7 +37,7 @@ To upgrade your system follow these steps:
 .. _here: https://client.pickit3d.com/upgrade/v2/
 
 .. warning:: Note that for Pickit versions < 2.1.2, the web interface can show
-  the error message **ERROR: Something went wrong during upgrading** although the
+  the error message **ERROR: Something went wrong during upgrading**, even though the
   upgrade process is still running without problems.
 
   If you see this message, **DO NOT REBOOT THE PICKIT SYSTEM YOURSELF**. Instead
