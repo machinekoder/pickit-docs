@@ -3,26 +3,26 @@
 Pickit example case: Picking of washers
 =======================================
 
-This article covers an extensive overview of an actual Pickit application, picking washers out of a bin.
-Once picked the washers are dropped on top of each other, for this high accuracy is necessary.
-In this article the basics as well as the robot program used in this application are covered.
+This article covers an extensive overview of an actual Pickit application, namely picking randomly overlapping washers out of a bin.
+The goal is to drop the washers on a peg, aligned, hence high accuracy is required.
+This article covers the basic concepts required for solving this application, as well as the robot program.
 
 Motivation
 ----------
 
 For this application high accuracy is necessary to drop off the washers.
-When picking them straight from the bin it is not always easy or even possible to have this high accuracy.
-One of the reasons for this is that in a random bin all parts can be partially covered by each other.
-Also, specific for this application a magnetic gripper is used to pick the parts.
-When picking parts with a magnetic gripper they tend to realign a bit when they are grasped.
+Such accuracy is not always easy or even possible to achieve when picking the parts straight from the bin.
+One of the reasons for this is that, in a random bin, the parts are usually partially occluding by each other.
+Also, specifically for this application, a magnetic gripper is used to pick the parts.
+Influenced by the magnetic field, the washers tend to move slightly while grasped, and consequently the detection accuracy is lost.
 
-To solve this a robot program with two steps is introduced.
-In the first step the focus is to pick one part from the bin.
-Once the part is picked it is shown again to the Pickit camera to determine the exact position of the part.
-This information is then used to compensate while dropping the part.
+To solve this, a robot program with two steps is introduced.
+In the first step, the focus is to pick one part from the bin.
+Once the part is picked, it is shown again to the Pickit camera to determine its exact position.
+This information is then used to correct the drop off position the part.
 
-See video below for the results of this approach. 
-Here you can clearly see that the robot compensates when dropping of the part so that all parts are all nicely stacked on top of each other.
+See the video below to see the results of this approach.
+The video clearly shows the robot correcting its position when dropping off the part, such that the washers fall accurately on the peg, nicely aligned.
 
 .. raw:: html
 
@@ -33,16 +33,16 @@ Here you can clearly see that the robot compensates when dropping of the part so
 Robot program
 -------------
 
-To set up this application the in hand check template is being used.
-The idea of this template is to first pick a part from the bin.
-Then in a second step the part is presented again to the camera.
-Now a second in hand detection is triggered to determine the exact position of the part in the gripper.
-If this detection is succesful the part is dropped off neately on the stack.
-If the detection is not succesful the part is dropped back in the bin.
-For this application accuracy is important, so when we are not entirely sure of how the part is presented it is better to drop the parts back in the bin and try again with a different part.
+To set up this application, we provide the **in hand check** template program, presented below.
+The template starts by first picking a part from the bin.
+Then, in a second step, the part is presented again to the camera while grasped (hence the name "in hand"),
+and a new detection is triggered, to determine the exact position of the part in the gripper.
+If this detection is successful, the part is dropped off neatly on the peg.
+Otherwise, the part is dropped back in the bin:
+since accuracy is important, if we are not entirely sure of how the part is presented, it is better to simply try again with a different part.
 
-Below the image all variables that needs to be filled in the template are explained.
-This example program can be downloaded 
+Below the image, all variables that need to be filled in the template are explained.
+The example program can be downloaded 
 `here <https://drive.google.com/uc?export=download&id=1oXJ0EtJxgWAZcB56fw66XmzmfrEaoj0e>`__.
 
 .. image:: /assets/images/examples/ur-program-in-hand-check.png
@@ -52,10 +52,10 @@ This example program can be downloaded
 Drop_off_pose
 ~~~~~~~~~~~~~
 
-The waypoint **drop_off_pose** is defined where the part needs to be dropped off.
-In this template the robot will never move to this waypoint but it is used to calculate the waypoints **corr_drop** and **corr_pre_drop**.
+The waypoint **drop_off_pose** is defined where the part needs to be dropped off, in case no correction is necessary.
+In the template, the robot will never move to this waypoint, but it is used to calculate the corrected waypoints **corr_drop** and **corr_pre_drop**.
 
-For this application the **drop_off_pose** is defined by bringing the TCP of the robot just above the center of the stack.
+For this application, the **drop_off_pose** is defined by bringing the TCP of the robot just above the center of the peg.
 This position will then be approached by the calculated pick frame of the in hand check.
 This means if the calculated pick frame is in the center of the washer the washer will be dropped over the middle, shown in the top part of the image below.
 If the calculated pick frame is somewhere at the sides of the washer the washer will be dropped with an offset, shown in the bottom part of the image below.
@@ -63,35 +63,37 @@ If the calculated pick frame is somewhere at the sides of the washer the washer 
 .. image:: /assets/images/examples/pick-frame-tcp-drop-off.png
 
 .. note::
-  It is important that the **drop_off_pose** waypoint is correctly defined.
-  That is why a popup message is implemented in the template.
+  The **drop_off_pose** waypoint is important for the application to work as expected, and is closely tied to the pick frame of the Teach model used during the in hand check.
+  The **drop_off_pose** and the pick frame should be such that, if the gripper was grasping the part perfectly aligned with the pick frame, the robot could go to the **drop_off_pose** and accurately drop the part on the peg, without any correction. 
+  For this reason, there is an alerting popup message in the template.
+
 
 Fixed waypoints
 ~~~~~~~~~~~~~~~
 
 **Home_pose** is the starting position of the robot program.
-**Present_pose** is a waypoint where the part is presented for the in hand check.
 **Detect_pose** is a waypoint where the robot does not block the field of view of the Pickit camera to look into the bin.
+**Present_pose** is a waypoint where the part is presented to the camera for the in hand check.
 **Drop_off_bin** is a waypoint to drop back parts into the bin.
 
 Bin picking setup/product file
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-For this application a simple :ref:`setup` file with a ROI box with similar dimensions as the actual bin is created.
+For this application, a simple :ref:`setup` file with a ROI box with similar dimensions as the actual bin is created.
 
-In the product file the :ref:`teach` detection engine is used to find the washers.
-Here half a model of the washers is taught and the pick frame is positioned at the sides.
+In the product file, the :ref:`teach` detection engine is used to find the washers.
+To maximize the number of detections, the model consists of a half of the washer, and the pick frame is positioned on the surface.
 
-These files need to be filled in twice in the robot program.
-Once at the beginning and once after the second step, somewhere at the middle.
+These files need to be filled in twice in the robot program, in a `Select` command, 
+once at the beginning and once after the second step.
 
 In hand check setup/product file
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This :ref:`setup` file containes a ROI box that isolates the washer in the hand of the robot.
+The ROI in this :ref:`setup` should include the isolated washer while it is being grasped by the robot gripper.
 
 The product file is again a :ref:`teach` detection.
-But now a full model of the washer is taught and the pick frame is positioned in the center.
+This time, a full model of the washer is taught. In this tutorial, we place the pick frame in the center of the model.
 
 .. note::
-  Here the position of the pick frame is important, as discussed in the section :ref:`drop-off-pose`.
+  Keep in mind that the Teach model pick frame must be defined such that, when dropping off the washer with the robot on **drop_off_pose**, it falls on the peg.
