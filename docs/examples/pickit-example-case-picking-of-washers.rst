@@ -33,9 +33,9 @@ The video clearly shows the robot correcting its position when dropping off the 
 Robot program
 -------------
 
-To set up this application, we provide the **in hand check** template program, presented below.
+To set up this application, we provide the **in-hand check** template program, presented below.
 The template starts by first picking a part from the bin.
-Then, in a second step, the part is presented again to the camera while grasped (hence the name "in hand"),
+Then, in a second step, the part is presented again to the camera while grasped (hence the name "in-hand"),
 and a new detection is triggered, to determine the exact position of the part in the gripper.
 If this detection is successful, the part is dropped off neatly on the peg.
 Otherwise, the part is dropped back in the bin:
@@ -60,7 +60,7 @@ This position will then be approached by the calculated pick frame of the in han
 This means if the calculated pick frame is in the center of the washer the washer will be dropped over the middle, shown in the top part of the image below.
 If the calculated pick frame is somewhere at the sides of the washer the washer will be dropped with an offset, shown in the bottom part of the image below.
 
-.. image:: /assets/images/examples/tcp-pick-frame-correction.png
+.. image:: /assets/images/examples/in-hand-check-tcp-pick-frame-correction.png
 
 .. note::
   The **drop** waypoint is important for the application to work as expected, and is closely tied to the pick frame of the Teach model used during the in hand check.
@@ -73,7 +73,7 @@ Fixed waypoints
 
 **Home_pose** is the starting position of the robot program.
 **Detect_pose** is a waypoint where the robot does not block the field of view of the Pickit camera to look into the bin.
-**Present_pose** is a waypoint where the part is presented to the camera for the in hand check.
+**Present_pose** is a waypoint where the part is presented to the camera for the in-hand check.
 **Drop_off_bin** is a waypoint to drop back parts into the bin.
 
 Bin picking setup/product file
