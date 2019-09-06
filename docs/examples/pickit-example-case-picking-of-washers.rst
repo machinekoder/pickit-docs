@@ -27,7 +27,7 @@ The video clearly shows the robot correcting its position when dropping off the 
 .. raw:: html
 
   <div style="position: relative; padding-bottom: 5%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-    <iframe src="https://drive.google.com/file/d/1uwuIwv8K6r884uZ1oQ9yn6nlXUCPYlxO/preview" width="640" height="480"></iframe>
+    <iframe src="https://drive.google.com/file/d/1f8dmwQY8ocMS4MMxY50g8AKyPUzbCGMZ/preview" width="640" height="480"></iframe>
   </div>
 
 Robot program
