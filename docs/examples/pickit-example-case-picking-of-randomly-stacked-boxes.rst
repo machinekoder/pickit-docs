@@ -101,7 +101,7 @@ The second step is done in a second loop in the program.
 Right before the loop the setup and product file are changed.
 Afterwards the setup and product files are changed back for doing step 1.
 
-.. image:: /assets/images/examples/example-case-boxes-ur-program.png
+.. image:: /assets/images/examples/ur-2-step-template.png
 
 .. _example-empty-roi:
 
