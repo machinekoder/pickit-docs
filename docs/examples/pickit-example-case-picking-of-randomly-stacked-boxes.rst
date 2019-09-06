@@ -1,3 +1,5 @@
+.. _example-random-boxes:
+
 Pickit example case: Picking of randomly stacked boxes
 ======================================================
 
