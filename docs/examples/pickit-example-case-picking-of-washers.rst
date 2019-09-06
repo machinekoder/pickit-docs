@@ -33,9 +33,9 @@ The video clearly shows the robot correcting its position when dropping off the 
 Robot program
 -------------
 
-To set up this application, we provide the **in hand check** template program, presented below.
+To set up this application, we provide the **in-hand check** template program, presented below.
 The template starts by first picking a part from the bin.
-Then, in a second step, the part is presented again to the camera while grasped (hence the name "in hand"),
+Then, in a second step, the part is presented again to the camera while grasped (hence the name "in-hand"),
 and a new detection is triggered, to determine the exact position of the part in the gripper.
 If this detection is successful, the part is dropped off neatly on the peg.
 Otherwise, the part is dropped back in the bin:
@@ -43,28 +43,28 @@ since accuracy is important, if we are not entirely sure of how the part is pres
 
 Below the image, all variables that need to be filled in the template are explained.
 The example program can be downloaded 
-`here <https://drive.google.com/uc?export=download&id=1oXJ0EtJxgWAZcB56fw66XmzmfrEaoj0e>`__.
+`here <https://drive.google.com/uc?export=download&id=1yBcGJEkV0K-By5QvIRH6QiTLySjjsDGB>`__.
 
-.. image:: /assets/images/examples/ur-program-in-hand-check.png
+.. image:: /assets/images/examples/ur-in-hand-check.png
 
 .. _drop-off-pose:
 
-Drop_off_pose
-~~~~~~~~~~~~~
+Drop
+~~~~
 
-The waypoint **drop_off_pose** is defined where the part needs to be dropped off, in case no correction is necessary.
+The waypoint **drop** is defined where the part needs to be dropped off, in case no correction is necessary.
 In the template, the robot will never move to this waypoint, but it is used to calculate the corrected waypoints **corr_drop** and **corr_pre_drop**.
 
-For this application, the **drop_off_pose** is defined by bringing the TCP of the robot just above the center of the peg.
+For this application, **drop** is defined by bringing the TCP of the robot just above the center of the peg.
 This position will then be approached by the calculated pick frame of the in hand check.
 This means if the calculated pick frame is in the center of the washer the washer will be dropped over the middle, shown in the top part of the image below.
 If the calculated pick frame is somewhere at the sides of the washer the washer will be dropped with an offset, shown in the bottom part of the image below.
 
-.. image:: /assets/images/examples/pick-frame-tcp-drop-off.png
+.. image:: /assets/images/examples/in-hand-check-tcp-pick-frame-correction.png
 
 .. note::
-  The **drop_off_pose** waypoint is important for the application to work as expected, and is closely tied to the pick frame of the Teach model used during the in hand check.
-  The **drop_off_pose** and the pick frame should be such that, if the gripper was grasping the part perfectly aligned with the pick frame, the robot could go to the **drop_off_pose** and accurately drop the part on the peg, without any correction. 
+  The **drop** waypoint is important for the application to work as expected, and is closely tied to the pick frame of the Teach model used during the in hand check.
+  The **drop** and the pick frame should be such that, if the gripper was grasping the part perfectly aligned with the pick frame, the robot could go to the **drop** and accurately drop the part on the peg, without any correction. 
   For this reason, there is an alerting popup message in the template.
 
 
@@ -73,7 +73,7 @@ Fixed waypoints
 
 **Home_pose** is the starting position of the robot program.
 **Detect_pose** is a waypoint where the robot does not block the field of view of the Pickit camera to look into the bin.
-**Present_pose** is a waypoint where the part is presented to the camera for the in hand check.
+**Present_pose** is a waypoint where the part is presented to the camera for the in-hand check.
 **Drop_off_bin** is a waypoint to drop back parts into the bin.
 
 Bin picking setup/product file
@@ -96,4 +96,4 @@ The product file is again a :ref:`teach` detection.
 This time, a full model of the washer is taught. In this tutorial, we place the pick frame in the center of the model.
 
 .. note::
-  Keep in mind that the Teach model pick frame must be defined such that, when dropping off the washer with the robot on **drop_off_pose**, it falls on the peg.
+  Keep in mind that the Teach model pick frame must be defined such that, when dropping off the washer with the robot on **drop**, it falls on the peg.
