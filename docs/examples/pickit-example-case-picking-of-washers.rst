@@ -64,7 +64,7 @@ If the gripper is grasping the washer from the side, when dropping off, the robo
 .. note::
   The **drop** waypoint is important for the application to work as expected, and is closely tied to the pick frame of the Teach model used during the in-hand check.
   The **drop** waypoint and the pick frame should be such that, if the gripper was grasping the part perfectly aligned with the pick frame, the robot could go to the **drop** waypoint and accurately drop the part on the peg, without any correction. 
-  For this reason, there is an alerting popup message in the template.
+  There is an alerting popup message in the template, highlighting this attention point.
 
 
 Fixed waypoints
