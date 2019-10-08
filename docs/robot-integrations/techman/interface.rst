@@ -21,6 +21,8 @@ Some general considerations that apply to all components:
    For instance, when a component exists with an error state, the value of this variable can be shown in a **Display** node to get an insight on the failure reason.
    Refer to the picking example article [TODO: Add link] for the recommended usage.
 
+.. _tm-init:
+
 init
 ~~~~
 
@@ -45,6 +47,8 @@ Robot mode is enabled in the Pickit web interface, and is a requisite for perfor
 .. image:: /assets/images/robot-integrations/techman/tm-init-3.png
    :scale: 45 %
 
+.. _tm-configure:
+
 configure
 ~~~~~~~~~
 
@@ -68,6 +72,8 @@ The most typical failure reason is specifying non-existent IDs.
 
 .. image:: /assets/images/robot-integrations/techman/tm-configure-2.png
    :scale: 45 %
+
+.. _tm-findobjects:
 
 findObjects
 ~~~~~~~~~~~
@@ -114,6 +120,8 @@ OK if there is a next detected object, FAIL if the set of detected objects has b
 .. image:: /assets/images/robot-integrations/techman/tm-nextobject-1.png
    :scale: 45 %
 
+.. _tm-getresult:
+
 getResult
 ~~~~~~~~~
 
@@ -152,7 +160,7 @@ saveSnapshot
 ~~~~~~~~~~~~
 
 Save a snapshot with the latest detection results.
-The saved snapshot can then be loaded or downloaded by going to the :ref:`_Snapshots` page on the Pickit web interface and searching for a file whose name contains the capture timestamp.
+The saved snapshot can then be loaded or downloaded by going to the :ref:`Snapshots` page on the Pickit web interface and searching for a file whose name contains the capture timestamp.
 
 **Parameters**
 
@@ -172,7 +180,7 @@ Trigger detection of the robot-camera calibration plate.
 This command requires the Pickit web interface to be in the :ref:`robot-camera-calibration` page, hence robot mode should be disabled.
 When Pickit is not in the :ref:`robot-camera-calibration` page, a pop-up is shown.
 
-This component is meant to be used only in robot-camera calibration programs such as this example [TODO: Add link].
+This component is meant to be used only in robot-camera calibration programs such as the :ref:`techman-calibration-program`.
 It is not meant to be used in picking programs.
 
 **Parameters**
