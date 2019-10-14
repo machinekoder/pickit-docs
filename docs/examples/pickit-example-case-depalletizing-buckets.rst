@@ -149,9 +149,9 @@ leaving the buckets of the next layer ready for detection.
 
 Below you can see the template that has been used to make the robot program.
 This template can be downloaded
-`here <https://drive.google.com/uc?export=download&id=1IkrnzaMOPcZTL0rqu90Sy9n9COhug7YZ>`__.
+`here <https://drive.google.com/uc?export=download&id=1VCoiDd7OWBovlI6JjE-ev1D2GXBB9fYR>`__.
 
-.. image:: /assets/images/examples/ur-depalletizing.png
+.. image:: /assets/images/examples/ur-simple-depalletizing.png
 
 Start picking!
 --------------
