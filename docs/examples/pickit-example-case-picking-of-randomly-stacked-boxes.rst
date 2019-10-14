@@ -92,7 +92,7 @@ Interested in enforce alignment? See this article about :ref:`enforce-alignment-
 Robot program
 -------------
 
-To set up this application, we provide the 2-step template program, presented below.
+To set up this application, we provide the two-step template program, presented below.
 The template starts by first picking a box from the stack.
 The box is dropped in an isolated area and here the correct orientation is determined.
 Finaly the box is picked again and dropped in a pattern.
@@ -123,13 +123,13 @@ Valid object is found
 
 If a valid object is found, the box is picked again.
 The robot passes by **detect_pose_1** to be sure to not block a detection on the stack and immediately a new detection on the stack is triggered.
-In the mean time the box is dropped, for this application the palletizing function of UR is used.
+In the meantime the box is dropped. For this application, the palletizing function of UR is used.
 
 No valid object is found
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-In this template Pickit tries multiple times to find an object.
-But if after n-tries no valid object is found, you can define what to do.
+In this template, Pickit tries multiple times to find an object.
+But if after n retries no valid object is found, you can define what to do.
 This means that there is something in the isolated area, but it is not the box that we are looking for.
 In this simple application this case never happened.
 But one can easily imagine that you would trigger a cleaning command for the isolated area.
